@@ -42,7 +42,7 @@ void GetAmplitudes() {
     // TFile * file = TFile::Open("/home/aram/3D_sensors/proc_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_collimatedTwice_3days.root");
     TFile * file = TFile::Open("/Users/PITLab/3D_sensors/proc_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_collimatedTwice_3days.root");
     TTree * pulse = (TTree*) file -> Get("pulse");
-    TString conditions = "baseline_RMS[3]<3 && amp[3]>amp[0] && amp[3]>amp[1] && amp[3]>amp[2] && amp[3]>amp[4] && amp[3]>amp[5] && amp[3]>amp[6] && amp[3]>0 && amp[7]<130 && amp[7]>20"; 
+    TString conditions = "baseline_RMS[3]<3 && amp[3]>amp[0] && amp[3]>amp[1] && amp[3]>amp[2] && amp[3]>amp[4] && amp[3]>amp[5] && amp[3]>amp[6] && amp[3]>55 && amp[7]<130 && amp[7]>20"; 
     // && LP2_50[2]<-1.0 && LP2_50[4]<-1.0 && LP2_50[5]<-1.0 && LP2_50[1]<-1.0";
     int trigger = 3, mcp = 7;
     gStyle->SetOptStat(1110);
@@ -156,12 +156,12 @@ void GetAmplitudes() {
         // ---------------------------- Timewalk corrected --------------------------------
         deltaT->cd(4);
         gStyle->SetOptFit(1011);
-	string corrected_dt_command = "LP2_" + to_string(fit_amps[i]) + "[3] - LP2_"+ to_string(fit_amps[i]) + "[7] - "+Form("(%g + %g * amp[3] + %g*amp[3] * amp[3] + %g * amp[3] * amp[3] * amp[3])", p0, p1, p2, p3)+">>DT_" + to_string(fit_amps[i]) + "_hist_corr";
+	string corrected_dt_command = "LP2_" + to_string(fit_amps[i]) + "[3] - LP2_"+ to_string(fit_amps[i]) + "[7] - "+Form("(%g + %g * amp[3] + %g*amp[3] * amp[3] + %g * amp[3] * amp[3] * amp[3])", p0, p1, p2, p3)+">>DT_" + to_string(fit_amps[i]) + "_hist_corr(20,-0.3,0.3)";
         std::cout<<"--------------------------------------------++++++++++>>>> "<<corrected_dt_command<<std::endl;
         pulse->Draw((corrected_dt_command).c_str(), conditions, "HIST E");
         TH1D * DT_corr = (TH1D*)gDirectory->Get(("DT_" + to_string(fit_amps[i]) + "_hist_corr").c_str());
         // DT_corr->Rebin(4);
-        TF1 * fgaus_corr = new TF1("fgaus_corr","gaus",-1.0,1.0);
+        TF1 * fgaus_corr = new TF1("fgaus_corr","gaus",-0.3,0.3);
         std::cout<<DT_corr->GetMaximum()<<std::endl;
         fgaus_corr->SetParameters(DT_corr->GetMaximum(), DT_corr->GetMean(), DT_corr->GetRMS());
         DT->Fit(fgaus_corr, "R");
@@ -179,7 +179,7 @@ void GetAmplitudes() {
             chi_sq.push_back(0.0);
         
         deltaT->cd(5);
-        string corrected_dt_vs_amp_command = "LP2_" + to_string(fit_amps[i]) + "[3] - LP2_"+ to_string(fit_amps[i]) + "[7] - "+Form("(%g + %g * amp[3] + %g * amp[3] * amp[3] + %g * amp[3] * amp[3] * amp[3])", p0, p1, p2, p3)+":amp[3]>>DT_amp3_" + to_string(fit_amps[i]) + "_hist_corr";
+        string corrected_dt_vs_amp_command = "LP2_" + to_string(fit_amps[i]) + "[3] - LP2_"+ to_string(fit_amps[i]) + "[7] - "+Form("(%g + %g * amp[3] + %g * amp[3] * amp[3] + %g * amp[3] * amp[3] * amp[3])", p0, p1, p2, p3)+":amp[3]>>DT_amp3_" + to_string(fit_amps[i]) + "_hist_corr(30,10,70,60,-0.3,0.3)";
         std::cout<<"--------------------------------------------++++++++++>>>> "<<corrected_dt_vs_amp_command<<std::endl;
         pulse->Draw((corrected_dt_vs_amp_command).c_str(), conditions, "colz");
         TH2D*DT_amp3_corr = (TH2D*)gDirectory->Get(("DT_amp3_" + to_string(fit_amps[i]) + "_hist_corr").c_str());
@@ -187,7 +187,7 @@ void GetAmplitudes() {
         DT_amp3_corr->SetTitle("DeltaT vs trigger strip amplitude"); // strigger
         
         deltaT->cd(6);
-        string corrected_dt_vs_MCP_amp_command = "LP2_" + to_string(fit_amps[i]) + "[3]-LP2_"+ to_string(fit_amps[i]) + "[7] - "+ Form("(%g + %g * amp[3] + %g * amp[3] * amp[3] + %g * amp[3] * amp[3] * amp[3])", p0, p1, p2, p3) + ":amp[7]>>DT_amp7_" + to_string(fit_amps[i]) + "_hist_corr";
+        string corrected_dt_vs_MCP_amp_command = "LP2_" + to_string(fit_amps[i]) + "[3]-LP2_"+ to_string(fit_amps[i]) + "[7] - "+ Form("(%g + %g * amp[3] + %g * amp[3] * amp[3] + %g * amp[3] * amp[3] * amp[3])", p0, p1, p2, p3) + ":amp[7]>>DT_amp7_" + to_string(fit_amps[i]) + "_hist_corr(30,10,140,60,-0.3,0.3)";
         std::cout<<corrected_dt_vs_MCP_amp_command<<std::endl;
         pulse->Draw((corrected_dt_vs_MCP_amp_command).c_str(), conditions, "colz");
         TH2D * DT_amp7_corr = (TH2D*)gDirectory->Get(("DT_amp7_" + to_string(fit_amps[i]) + "_hist_corr").c_str());
