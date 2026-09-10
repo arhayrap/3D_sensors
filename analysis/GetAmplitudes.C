@@ -153,16 +153,13 @@ void GetAmplitudes() {
         deltaT->SaveAs(("DeltaT_LP2_" + to_string(fit_amps[i]) + ".png").c_str());
         // }
 
-        /*auto twcorr = [&](double x) {
-            return polyline->Eval(x);
-        };*/
-
         // ---------------------------- Timewalk corrected --------------------------------
         deltaT->cd(4);
-        string corrected_dt_command = "LP2_" + to_string(fit_amps[i]) + "[3] - LP2_"+ to_string(fit_amps[i]) + "[7] - "+Form("(%g + %g * amp[3] + %g*amp[3] * amp[3] + %g * amp[3] * amp[3] * amp[3])", p0, p1, p2, p3)+">>DT_" + to_string(fit_amps[i]) + "_hist_corr";
+        gStyle->SetOptFit(1011);
+	string corrected_dt_command = "LP2_" + to_string(fit_amps[i]) + "[3] - LP2_"+ to_string(fit_amps[i]) + "[7] - "+Form("(%g + %g * amp[3] + %g*amp[3] * amp[3] + %g * amp[3] * amp[3] * amp[3])", p0, p1, p2, p3)+">>DT_" + to_string(fit_amps[i]) + "_hist_corr";
         std::cout<<"--------------------------------------------++++++++++>>>> "<<corrected_dt_command<<std::endl;
         pulse->Draw((corrected_dt_command).c_str(), conditions, "HIST E");
-        TH1D * DT_corr = (TH1D*)gDirectory->Get(("DT_corr_" + to_string(fit_amps[i]) + "_hist_corr").c_str());
+        TH1D * DT_corr = (TH1D*)gDirectory->Get(("DT_" + to_string(fit_amps[i]) + "_hist_corr").c_str());
         // DT_corr->Rebin(4);
         TF1 * fgaus_corr = new TF1("fgaus_corr","gaus",-1.0,1.0);
         std::cout<<DT_corr->GetMaximum()<<std::endl;
@@ -180,7 +177,7 @@ void GetAmplitudes() {
             chi_sq.push_back(fgaus_corr->GetChisquare()/fgaus_corr->GetNDF());
         else
             chi_sq.push_back(0.0);
-
+        
         deltaT->cd(5);
         string corrected_dt_vs_amp_command = "LP2_" + to_string(fit_amps[i]) + "[3] - LP2_"+ to_string(fit_amps[i]) + "[7] - "+Form("(%g + %g * amp[3] + %g * amp[3] * amp[3] + %g * amp[3] * amp[3] * amp[3])", p0, p1, p2, p3)+":amp[3]>>DT_amp3_" + to_string(fit_amps[i]) + "_hist_corr";
         std::cout<<"--------------------------------------------++++++++++>>>> "<<corrected_dt_vs_amp_command<<std::endl;
@@ -188,8 +185,15 @@ void GetAmplitudes() {
         TH2D*DT_amp3_corr = (TH2D*)gDirectory->Get(("DT_amp3_" + to_string(fit_amps[i]) + "_hist_corr").c_str());
         // TF1 * fited_curve = TimewalkCalculation(DT_amp3); // polyline
         DT_amp3_corr->SetTitle("DeltaT vs trigger strip amplitude"); // strigger
-
         
+        deltaT->cd(6);
+        string corrected_dt_vs_MCP_amp_command = "LP2_" + to_string(fit_amps[i]) + "[3]-LP2_"+ to_string(fit_amps[i]) + "[7] - "+ Form("(%g + %g * amp[3] + %g * amp[3] * amp[3] + %g * amp[3] * amp[3] * amp[3])", p0, p1, p2, p3) + ":amp[7]>>DT_amp7_" + to_string(fit_amps[i]) + "_hist_corr";
+        std::cout<<corrected_dt_vs_MCP_amp_command<<std::endl;
+        pulse->Draw((corrected_dt_vs_MCP_amp_command).c_str(), conditions, "colz");
+        TH2D * DT_amp7_corr = (TH2D*)gDirectory->Get(("DT_amp7_" + to_string(fit_amps[i]) + "_hist_corr").c_str());
+        DT_amp7_corr->SetTitle("DeltaT vs MCP amplitude");
+
+        deltaT->SaveAs(("DeltaT_LP2_" + to_string(fit_amps[i]) + ".png").c_str());
         
     }
 
