@@ -17,6 +17,7 @@ initial = time.time()
 
 RawDataPath = "./data/AC100W80_Strip3mm/raw"
 RawDataPath = "./Collimated_data"
+RawDataPath = "./Double_collimation_Ru106_3days"
 # RawDataPath = "./Double_collimation_2"
 OutputFilePath = "./data/AC100W80_Strip3mm/converted" 
 OutputFilePath = "./Converted_data"
@@ -266,16 +267,20 @@ inputFiles=[]
 for ic in range(nchan):
         # this_file = "%s/C%i--AC100W80_strip3mm_bv116_mcp4400_trigCh1_48k_take2.trc" % (RawDataPath, ic+1)
 	# this_file = "%s/F%i--AC100W80_strip3mm_bv116_mcp4400_trigCh1_48k_take2_linear.trc" % (RawDataPath, ic+1)
-        this_file = "%s/C%i--AC100W80_strip3mm_bv116_mcp4400_trigCh1_Ch8_collimated.trc" % (RawDataPath, ic+1)
+        # this_file = "%s/C%i--AC100W80_strip3mm_bv116_mcp4400_trigCh1_Ch8_collimated.trc" % (RawDataPath, ic+1)
         # this_file = "%s/F%i--AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_collimatedTwice_3days.trc" % (RawDataPath, ic+1)
         # this_file = "%s/C%i--AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_collimatedTwice_3days.trc" % (RawDataPath, ic+1)
+        # this_file = "%s/C%i--AC100W80_strip3mm_bv116_mcp4400_trigChi4_Ch8_collimatedTwice_Ru106_3days_4.trc" % (RawDataPath, ic+1)
+        this_file = "%s/F%i--AC100W80_strip3mm_bv116_mcp4400_trigChi4_Ch8_collimatedTwice_Ru106_3days_5_from_memory.trc" % (RawDataPath, ic+1)
         inputFiles.append(this_file)
 
 # outputFile = "%s/conv_AC100W80_strip3mm_bv116_mcp4400_trigCh1_48k_take2.root"%(OutputFilePath)
 # outputFile = "%s/conv_AC100W80_strip3mm_bv116_mcp4400_trigCh1_48k_take2_linear.root"%(OutputFilePath)
-outputFile = "%s/conv_AC100W80_strip3mm_bv116_mcp4400_trigCh1_Ch8_collimated.root" % (OutputFilePath)
+# outputFile = "%s/conv_AC100W80_strip3mm_bv116_mcp4400_trigCh1_Ch8_collimated.root" % (OutputFilePath)
 # outputFile = "%s/conv_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_collimatedTwice_3days.root" % (OutputFilePath)
 # outputFile = "%s/conv_C_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_collimatedTwice_3days.root" % (OutputFilePath)
+# outputFile = "%s/conv_AC100W80_strip3mm_bv116_mcp4400_trigChi4_Ch8_collimatedTwice_Ru106_3days_4.root" % (OutputFilePath)
+outputFile = "%s/conv_AC100W80_strip3mm_bv116_mcp4400_trigChi4_Ch8_collimatedTwice_Ru106_3days_5_from_memory.root" % (OutputFilePath)
 
 ##### Get necessary information about format
 
