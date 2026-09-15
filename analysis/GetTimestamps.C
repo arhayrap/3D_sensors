@@ -10,6 +10,10 @@
 #include "TGraph.h"
 #include "TStyle.h"
 #include <string>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <stdio.h>
+#include <errno.h>
 
 void GetTimestamps() {
     // TFile * file = TFile::Open("/home/aram/3D_sensors/proc_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_collimatedTwice_3days.root");
@@ -32,54 +36,61 @@ void GetTimestamps() {
     // conditions += "&& amp[4]>amp[0] && amp[4]>amp[1] && amp[4]>amp[2] && amp[4]>amp[3] && amp[4]>amp[5] && amp[4]>amp[6]"; // Channel 4
     // conditions += "&& amp[5]>amp[0] && amp[5]>amp[1] && amp[5]>amp[2] && amp[5]>amp[3] && amp[5]>amp[4] && amp[5]>amp[6]"; // Channel 5
     // conditions += "&& amp[6]>amp[0] && amp[6]>amp[1] && amp[6]>amp[2] && amp[6]>amp[3] && amp[6]>amp[4] && amp[6]>amp[5]"; // Channel 6
-    
-    // conditions += " && amp[3]>(amp[2]+amp[3]+amp[4])*0.59";
-    
+    // conditions += " && amp[3]>(amp[2]+amp[3]+amp[4])*0.59";    
     // conditions += " && LP2_20[2]>-12 && LP2_20[2]<-10";
+
+    int trigger = 5, mcp = 7;
+    string output_folder = "amplitude_percentage_scan_" + to_string(trigger) + "_mcp";
+
+    if (mkdir(output_folder.c_str(), 0777) == -1)
+        std::cerr << "Error :  " << strerror(errno) << std::endl;
+
+    else
+        std::cout << "Directory created"<< std::endl;
+
     for (int i = 10; i < 70; i++) {
     std::string conditions =
-        "baseline_RMS[3]<3"
-        "&&LP2_10[3]<-1"
-        "&&LP2_80[3]<-1"
-        "&&amp[3]>(amp[2]+amp[3]+amp[4])*" +
+        "baseline_RMS["+to_string(trigger)+"]<3"
+        "&&LP2_10["+to_string(trigger)+"]<-1"
+        "&&LP2_80["+to_string(trigger)+"]<-1"
+        "&&amp["+to_string(trigger)+"]>(amp["+to_string(trigger-1)+"]+amp["+to_string(trigger)+"]+amp["+to_string(trigger+1)+"])*" +
         std::to_string(i) + "/100.0";
 
     std::cout << conditions << std::endl;
     std::cout << pulse->GetEntries(conditions.c_str()) << std::endl;
     
-    int trigger = 3, mcp = 7;
     gStyle->SetOptStat(1110);
     gStyle->SetOptFit(1011);
 
     // Amplitudes 
     TCanvas * amplitudes = new TCanvas("Amplitudes", "Amplitudes", 2100, 1100);
     amplitudes->Divide(4,2);
-    for (int i = 0; i < 8; i++) {
-        amplitudes->cd(i+1);
-        pulse->Draw(("amp["+to_string(i)+"]>>hist" + to_string(i)).c_str(), conditions.c_str(), "hist e");
-        TH1D*hist = (TH1D*)gDirectory->Get(("hist" + to_string(i)).c_str());
-        if (i == mcp) { hist->SetTitle("MCP"); }
-        else if (i == trigger) { hist->SetTitle("Trigger strip"); }
-        else { hist->SetTitle(("Channel " + to_string(i+1)).c_str()); }
+    for (int j = 0; j < 8; j++) {
+        amplitudes->cd(j+1);
+        pulse->Draw(("amp["+to_string(j)+"]>>amp_hist" + to_string(i) + "_" + to_string(j)).c_str(), conditions.c_str(), "hist e");
+        TH1D*hist = (TH1D*)gDirectory->Get(("amp_hist" + to_string(i) + "_" + to_string(j)).c_str());
+        if (j == mcp) { hist->SetTitle("MCP"); }
+        else if (j == trigger) { hist->SetTitle("Trigger strip"); }
+        else { hist->SetTitle(("Channel " + to_string(j+1)).c_str()); }
         hist->GetXaxis()->SetTitle("Amplitude [mV]");
         hist->GetYaxis()->SetTitle("Events");
     }
-    amplitudes->SaveAs(("./amplitude_percentage_scan/Amplitudes" + to_string(i) + ".png").c_str());
+    amplitudes->SaveAs(("./"+ output_folder +"/Amplitudes" + to_string(i) + ".png").c_str());
 
     // Amplitude dependency
     TCanvas * amplitudes_dependency = new TCanvas("Amplitude dependency", "Amplitudes dependency", 2100, 1100);
     amplitudes_dependency->Divide(4,2);
     for (int j = 0; j < 8; j++) {
         amplitudes_dependency->cd(j+1);
-        pulse->Draw(("amp["+to_string(j)+"]:amp["+to_string(trigger)+"]>>hist" + to_string(j)).c_str(), conditions.c_str(), "colz"); // y:x
-        TH1D*hist = (TH1D*)gDirectory->Get(("hist" + to_string(j)).c_str());
+        pulse->Draw(("amp["+to_string(j)+"]:amp["+to_string(trigger)+"]>>amp_hist" + to_string(i) + "_" + to_string(j)).c_str(), conditions.c_str(), "colz"); // y:x
+        TH1D*hist = (TH1D*)gDirectory->Get(("amp_hist" + to_string(i) + "_" + to_string(j)).c_str());
         if (j == mcp) { hist->SetTitle("MCP"); }
         else if (j == trigger) { hist->SetTitle("Trigger strip"); }
         else { hist->SetTitle(("Channel " + to_string(j+1)).c_str()); }
         hist->GetXaxis()->SetTitle("Trigger channel Amplitude [mV]");
         hist->GetYaxis()->SetTitle(("Channel: " + to_string(j+1) + " amplitude [mV]").c_str());
     }
-    amplitudes_dependency->SaveAs(("./amplitude_percentage_scan/Amplitudes_comparison_" + to_string(i) + ".png").c_str());
+    amplitudes_dependency->SaveAs(("./" + output_folder + "/Amplitudes_comparison_" + to_string(i) + ".png").c_str());
 
     // Timestamps
     int fit_amps[] = {10, 15, 20, 25, 30, 35, 40, 50, 60, 70, 80}; 
@@ -92,8 +103,8 @@ void GetTimestamps() {
             timestamps->cd(k+1);
             gPad->SetLogy(1);
             std::cout<<j<<" ----------------- "<<sizeof(fit_amps)/sizeof(fit_amps[0])<<" ----------------- "<<to_string(fit_amps[j])<<" ---------------- "<<"LP2_" + to_string(fit_amps[j]) + "["+to_string(k)+"]>>LP2_" + to_string(fit_amps[j]) + "_hist" + to_string(k)<<std::endl;
-            pulse->Draw(("LP2_" + to_string(fit_amps[j]) + "["+to_string(k)+"]>>LP2_" + to_string(fit_amps[j]) + "_hist" + to_string(k)).c_str(), conditions.c_str(), "");
-            TH1D*hist = (TH1D*)gDirectory->Get(("LP2_" + to_string(fit_amps[j]) + "_hist" + to_string(k)).c_str());
+            pulse->Draw(("LP2_" + to_string(fit_amps[j]) + "["+to_string(k)+"]>>LP2_" + to_string(i) + "_"  + to_string(fit_amps[j]) + "_" + to_string(k) + "_hist").c_str(), conditions.c_str(), "");
+            TH1D*hist = (TH1D*)gDirectory->Get(("LP2_" + to_string(i) + "_"  + to_string(fit_amps[j]) + "_" + to_string(k) + "_hist").c_str());
             if (k == mcp) { hist->SetTitle("MCP"); }
             else if (k == trigger) { hist->SetTitle("Trigger strip"); }
             else { hist->SetTitle(("Channel " + to_string(k+1)).c_str()); }
@@ -101,7 +112,7 @@ void GetTimestamps() {
             hist->GetYaxis()->SetTitle("Events");
         }
         // timestamps->SetLogy();
-        timestamps->SaveAs(("./amplitude_percentage_scan/Timestamps_LP2_" + to_string(fit_amps[j]) + "_" + to_string(i) + ".png").c_str());
+        timestamps->SaveAs(("./" + output_folder + "/Timestamps_LP2_" + to_string(fit_amps[j]) + "_" + to_string(i) + ".png").c_str());
     }
 
     for (int j = 0; j < sizeof(fit_amps)/sizeof(fit_amps[0]); j++){
@@ -110,15 +121,15 @@ void GetTimestamps() {
         for (int k = 0; k < 8; k++) {
             timestamps->cd(k+1);
             gPad->SetLogy(1);
-            pulse->Draw(("linear_RE_" + to_string(fit_amps[j]) + "["+to_string(k)+"]>>linear_RE_" + to_string(fit_amps[j]) + "_hist" + to_string(k)).c_str(), conditions.c_str());
-            TH1D*hist = (TH1D*)gDirectory->Get(("linear_RE_" + to_string(fit_amps[j]) + "_hist" + to_string(k)).c_str());
+            pulse->Draw(("linear_RE_" + to_string(fit_amps[j]) + "["+to_string(k)+"]>>linear_RE_" + to_string(i) + "_"  + to_string(fit_amps[j]) + "_" + to_string(k) + "_hist").c_str(), conditions.c_str());
+            TH1D*hist = (TH1D*)gDirectory->Get(("linear_RE_" + to_string(i) + "_"  + to_string(fit_amps[j]) + "_" + to_string(k) + "_hist").c_str());
             if (k == mcp) { hist->SetTitle("MCP"); }
             else if (k == trigger) { hist->SetTitle("Trigger strip"); }
             else { hist->SetTitle(("Channel " + to_string(k+1)).c_str()); }
             hist->GetXaxis()->SetTitle("Timestamp [ns]");
             hist->GetYaxis()->SetTitle("Events");
         }
-        timestamps->SaveAs(("./amplitude_percentage_scan/Timestamps_RE_" + to_string(fit_amps[j]) + "_" + to_string(i) + ".png").c_str());
+        timestamps->SaveAs(("./"+ output_folder +"/Timestamps_RE_" + to_string(fit_amps[j]) + "_" + to_string(i) + ".png").c_str());
     }
     
     std::cout<<"NEXT FRACTION"<<std::endl;
