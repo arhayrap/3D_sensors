@@ -31,7 +31,6 @@ TF1 * TimewalkCalculation(TH2D * histo2D) {
         if (projX -> GetMean() == 0.0) continue;
         means.push_back(projX -> GetMean());
         amps.push_back(histo2D -> GetXaxis() -> GetBinCenter(i + 1));
-        // std::cout << "===================> " << means[i] << std::endl;
     }
     TCanvas * timewalk_canvas = new TCanvas("timewalk", "timewalk", 1000, 500);
     timewalk_canvas -> Divide(2, 1);
@@ -50,37 +49,56 @@ TF1 * TimewalkCalculation(TH2D * histo2D) {
 }
 
 void DataOverview() {
-    // TFile * file = TFile::Open("/home/aram/3D_sensors/proc_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_collimatedTwice_3days.root");
-    // TFile * file = TFile::Open("/Users/PITLab/3D_sensors/proc_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_collimatedTwice_3days.root");
-    // TFile * file = TFile::Open("/Users/PITLab/3D_sensors/Processed_data/proc_AC100W80_strip3mm_bv116_mcp4400_trigChi4_Ch8_collimatedTwice_Ru106_3days_4.root");
-    // TFile * file = TFile::Open("/Users/PITLab/3D_sensors/Processed_data/proc_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_collimatedTwice_Ru106_3days_5_from_memory.root");
-    TFile * file = TFile::Open("/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_3days.root"); // proc_F_AC100W40_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_3days.root");
-    // TFile * file = TFile::Open("/Users/PITLab/3D_sensors/first_files/prep_AC100W80_strip3mm_bv116_mcp4400_linear.root");
+    // TFile * file = TFile::Open("/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv125_mcp4400_trigCh4_Ch8_Ru106_2days.root"); // proc_F_AC100W40_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_3days.root");
+
+    // TFile * file = TFile::Open("/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_4days.root");
+    // string output_folder = "./AC100W40_110V_0p3mm_Ru106";
+
+    TFile * file = TFile::Open("/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv120_mcp4400_trigCh4_Ch8_Ru106_3days.root");
+    string output_folder = "./AC100W40_120V_0p3mm_Ru106";
+    
     TTree * pulse = (TTree * ) file -> Get("pulse");
-    // TString conditions = "";
-    // TString conditions = "LP2_10[3]<-1 && LP2_20[3]<-1 && LP2_50[3]<-1 && LP2_80[3]<-1 && LP2_10[7]<-1 && LP2_20[7]<-1 && LP2_50[7]<-1 && LP2_80[7]<-1";
-    // TString conditions = "baseline_RMS[3]<3 && amp[3]>10 && LP2_20[3]<0 && amp[7]>20 && amp[7]<80 && amp[3]>amp[0]&&amp[3]>amp[1]&&amp[3]>amp[2] && amp[3]>amp[4] && amp[3]>amp[5] && amp[3]>amp[6]"; // baseline_RMS[3]<3 && amp[3]>amp[0] && amp[3]>amp[1] && amp[3]>amp[2] && amp[3]>amp[4] && amp[3]>amp[5] && amp[3]>amp[6] && amp[3]>35 && amp[7]<80 && amp[7]>20"; 
 
     int n_bins = 15;
     int rebin = 5;
     float rms_range_high = 1.0;
     float rms_range_low = 1.5;
-    int trigger = 5, mcp = 7; // The channels of the triggers and the time reference (MCP). Starts from 0 to 7.
+    int trigger = 3, mcp = 7; // The channels of the triggers and the time reference (MCP). Starts from 0 to 7.
+    float amplitude_fraction = 0.45;
 
-    TString conditions = "baseline_RMS["+to_string(trigger)+"]<3 && LP2_10["+to_string(trigger)+"]<-10 && LP2_80["+to_string(trigger)+"]<-10 && LP2_10["+to_string(trigger)+"]>-12.5 && LP2_80["+to_string(trigger)+"]>-12.5 && amp["+to_string(trigger)+"]>5*baseline_RMS["+to_string(trigger)+"]"; // LP2_10[3]>-13 && && LP2_80[3]>-13";
+    if (mkdir((output_folder).c_str(), 0777) == -1)
+        std::cerr << "Error :  " << strerror(errno) << std::endl;
+    else
+        std::cout << "Directory created"<< std::endl;
 
+    if (mkdir((output_folder+"/data_overview/").c_str(), 0777) == -1)
+        std::cerr << "Error :  " << strerror(errno) << std::endl;
+    else
+        std::cout << "Directory created"<< std::endl;
+    
+    // BIAS VOLTAGE = 120 V 
+    // float amplitude_fraction = 0.43; // channel 1
+    // float amplitude_fraction = 0.53; // channel 2
+    // float amplitude_fraction = 0.56; // channel 3
+    // float amplitude_fraction = 0.54; // channel 4
+    // float amplitude_fraction = 0.42; // channel 5
+    
+    // TString conditions = "baseline_RMS["+to_string(trigger)+"]<3 && LP2_10["+to_string(trigger)+"]<-10 && LP2_80["+to_string(trigger)+"]<-10 && LP2_10["+to_string(trigger)+"]>-12.5 && LP2_80["+to_string(trigger)+"]>-12.5"; //  && amp["+to_string(trigger)+"]>5*baseline_RMS["+to_string(trigger)+"]"; // LP2_10[3]>-13 && && LP2_80[3]>-13";
+    TString conditions = "baseline_RMS["+to_string(trigger)+"]<3 && LP2_10["+to_string(trigger)+"]<-10 && LP2_80["+to_string(trigger)+"]<-10 && LP2_10["+to_string(trigger)+"]>-13 && LP2_80["+to_string(trigger)+"]>-13";
+    // TString conditions = "baseline_RMS["+to_string(trigger)+"]<3"; //  && amp["+to_string(trigger)+"]>5*baseline_RMS["+to_string(trigger)+"]"; // LP2_10[3]>-13 && && LP2_80[3]>-13";
+    // conditions+="&&amp[3]>amp[0]&&amp[3]>amp[1]&&amp[3]>amp[2]&&amp[3]>amp[4]&&amp[3]>amp[5]&&amp[3]>amp[6]";
     // |(((((((((((((((((((((((((((((( Selecting the leading strip )))))))))))))))))))))))))))))))|
-    // conditions += "&& amp[0]>amp[1] && amp[0]>amp[2] && amp[0]>amp[3] && amp[0]>amp[4] && amp[0]>amp[5] && amp[0]>amp[6]"; // Channel 1
-    // conditions += "&& amp[1]>amp[0] && amp[1]>amp[2] && amp[1]>amp[3] && amp[1]>amp[4] && amp[1]>amp[5] && amp[1]>amp[6]"; // Channel 2
-    // conditions += "&& amp[2]>amp[0] && amp[2]>amp[1] && amp[2]>amp[3] && amp[2]>amp[4] && amp[2]>amp[5] && amp[2]>amp[6]"; // Channel 3
-    // conditions += "&& amp[3]>amp[0] && amp[3]>amp[1] && amp[3]>amp[2] && amp[3]>amp[4] && amp[3]>amp[5] && amp[3]>amp[6]"; // Channel 4: Trigger strip
-    // conditions += "&& amp[4]>amp[0] && amp[4]>amp[1] && amp[4]>amp[2] && amp[4]>amp[3] && amp[4]>amp[5] && amp[4]>amp[6]"; // Channel 4
-    // conditions += "&& amp[5]>amp[0] && amp[5]>amp[1] && amp[5]>amp[2] && amp[5]>amp[3] && amp[5]>amp[4] && amp[5]>amp[6]"; // Channel 5
-    // conditions += "&& amp[6]>amp[0] && amp[6]>amp[1] && amp[6]>amp[2] && amp[6]>amp[3] && amp[6]>amp[4] && amp[6]>amp[5]"; // Channel 6
+    // conditions += "&& amp[0]>1.7*amp[1] && amp[0]>1.7*amp[2] && amp[0]>1.7*amp[3] && amp[0]>1.7*amp[4] && amp[0]>1.7*amp[5] && amp[0]>1.7*amp[6]"; // Channel 1
 
-    conditions += " && amp["+to_string(trigger)+"]>(amp[2]+amp[3]+amp[4])*0.56"; // the lowest applied cut is at 56%
+    // float coeff = 1.7;
+    // conditions += Form("&& amp[1]>%f*amp[0] && amp[1]>%f*amp[2] && amp[1]>%f*amp[3] && amp[1]>%f*amp[4] && amp[1]>%f*amp[5] && amp[1]>%f*amp[6]", coeff, coeff, coeff, coeff, coeff, coeff); // Channel 2
+    // conditions += Form("&& amp[2]>%f*amp[0] && amp[2]>%f*amp[1] && amp[2]>%f*amp[3] && amp[2]>%f*amp[4] && amp[2]>%f*amp[5] && amp[2]>%f*amp[6]", coeff, coeff, coeff, coeff, coeff, coeff); // Channel 3
+    // conditions += Form("&& amp[3]>%f*amp[0] && amp[3]>%f*amp[1] && amp[3]>%f*amp[2] && amp[3]>%f*amp[4] && amp[3]>%f*amp[5] && amp[3]>%f*amp[6]", coeff, coeff, coeff, coeff, coeff, coeff); // Channel 4: Trigger strip
+    // conditions += Form("&& amp[4]>%f*amp[0] && amp[4]>%f*amp[1] && amp[4]>%f*amp[2] && amp[4]>%f*amp[3] && amp[4]>%f*amp[5] && amp[4]>%f*amp[6]", coeff, coeff, coeff, coeff, coeff, coeff); // Channel 4
+    // conditions += Form("&& amp[5]>%f*amp[0] && amp[5]>%f*amp[1] && amp[5]>%f*amp[2] && amp[5]>%f*amp[3] && amp[5]>%f*amp[4] && amp[5]>%f*amp[6]", coeff, coeff, coeff, coeff, coeff, coeff); // Channel 5
+    // conditions += Form("&& amp[6]>%f*amp[0] && amp[6]>%f*amp[1] && amp[6]>%f*amp[2] && amp[6]>%f*amp[3] && amp[6]>%f*amp[4] && amp[6]>%f*amp[5]", coeff, coeff, coeff, coeff, coeff, coeff); // Channel 6
 
-    // conditions += " && LP2_20[2]>-12 && LP2_20[2]<-10";
+    conditions += " && amp["+to_string(trigger)+"]>(amp["+to_string(trigger-1)+"]+amp["+to_string(trigger)+"]+amp["+to_string(trigger+1)+"])*"+to_string(amplitude_fraction); // the lowest applied cut is at 56%
 
     // ______________________________________________________________________________________
     // ______________________________ Amplitude proportion cut ______________________________
@@ -91,9 +109,10 @@ void DataOverview() {
     std::vector<float> proportion_cut, efficiency;
 
     for (int i = 10; i <= 70; ++i) {
-        std::string base_cut = "baseline_RMS["+std::to_string(t)+"]<3"
-            "&&LP2_10["+std::to_string(t)+"]<-1"
+        std::string base_cut = "baseline_RMS["+std::to_string(t)+"]<3"+
+            "&&LP2_10["+std::to_string(t)+"]<-1"+
             "&&LP2_80["+std::to_string(t)+"]<-1";
+            // "&&amp[3]>amp[0]&&amp[3]>amp[1]&&amp[3]>amp[2]&&amp[3]>amp[4]&&amp[3]>amp[5]&&amp[3]>amp[6]";
             
         std::string cut =
             "baseline_RMS["+std::to_string(t)+"]<3"
@@ -101,6 +120,7 @@ void DataOverview() {
             "&&LP2_80["+std::to_string(t)+"]<-1"
             "&&amp["+std::to_string(t)+"]>(amp["+std::to_string(t-1)+"]+amp["+std::to_string(t)+"]+amp["+std::to_string(t+1)+"])*" +
             std::to_string(i) + ".0/100.0";
+            // "&&amp[3]>amp[0]&&amp[3]>amp[1]&&amp[3]>amp[2]&&amp[3]>amp[4]&&amp[3]>amp[5]&&amp[3]>amp[6]";
         
         std::cout << cut << std::endl;
         std::cout << pulse -> GetEntries(cut.c_str()) << std::endl;
@@ -117,14 +137,10 @@ void DataOverview() {
     proportion_cut_vs_efficiency->GetYaxis()->SetRangeUser(0,110);
     proportion_cut_vs_efficiency->SetTitle(("Leading strip, channel: "+to_string(t)).c_str());
     proportion_cut_vs_efficiency->Draw("APL*");
-    canvas_proportion_cut_vs_efficiency->SaveAs(("proportion_cut_vs_efficiency_lead_channel_"+to_string(t)+".png").c_str());
+    canvas_proportion_cut_vs_efficiency->SaveAs((output_folder+"/data_overview/"+"proportion_cut_vs_efficiency_lead_channel_"+to_string(t)+".png").c_str());
 
     }
     
-    //  && amp[3]>60 && amp[3]>amp[0]&&amp[3]>amp[1]&&amp[3]>amp[2] && amp[3]>amp[4] && amp[3]>amp[5] && amp[3]>amp[6]"; // baseline_RMS[3]<3 && amp[3]>amp[0] && amp[3]>amp[1] && amp[3]>amp[2] && amp[3]>amp[4] && amp[3]>amp[5] && amp[3]>amp[6] && amp[3]>35 && amp[7]<80 && amp[7]>20"; 
-    // TString conditions = "baseline_RMS[3]<3 && LP2_10[3]>-10 && LP2_10[3]<-8 && LP2_80[3]>-10 && LP2_80[3]<-8 && amp[3]>65 && amp[3]>amp[0] && amp[3]>amp[1] && amp[3]>amp[2] && amp[3]>amp[4] && amp[3]>amp[5] && amp[3]>amp[6]"; // baseline_RMS[3]<3 && amp[3]>amp[0] && amp[3]>amp[1] && amp[3]>amp[2] && amp[3]>amp[4] && amp[3]>amp[5] && amp[3]>amp[6] && amp[3]>35 && amp[7]<80 && amp[7]>20"; 
-    // && LP2_50[2]<-1.0 && LP2_50[4]<-1.0 && LP2_50[5]<-1.0 && LP2_50[1]<-1.0";
-
     gStyle -> SetOptStat(1110);
     gStyle -> SetOptFit(1011);
 
@@ -145,7 +161,7 @@ void DataOverview() {
         hist -> GetXaxis() -> SetTitle("Amplitude [mV]");
         hist -> GetYaxis() -> SetTitle("Events");
     }
-    amplitudes -> SaveAs("Amplitudes.png");
+    amplitudes -> SaveAs((output_folder+"/data_overview/"+"Amplitudes.png").c_str());
 
     // Amplitude dependency
     TCanvas * amplitudes_dependency = new TCanvas("Amplitude dependency", "Amplitudes dependency", 2100, 1100);
@@ -164,7 +180,7 @@ void DataOverview() {
         hist -> GetXaxis() -> SetTitle("Trigger channel Amplitude [mV]");
         hist -> GetYaxis() -> SetTitle(("Channel: " + to_string(i + 1) + " amplitude [mV]").c_str());
     }
-    amplitudes_dependency -> SaveAs("Amplitudes_comparison.png");
+    amplitudes_dependency -> SaveAs((output_folder+"/data_overview/"+"Amplitudes_correlation.png").c_str());
 
     // Timestamps
     int fit_amps[] = {
@@ -213,7 +229,7 @@ void DataOverview() {
             hist -> GetYaxis() -> SetTitle("Events");
         }
         // timestamps->SetLogy();
-        timestamps -> SaveAs(("Timestamps_LP2_" + to_string(fit_amps[i]) + ".png").c_str());
+        timestamps -> SaveAs((output_folder+"/data_overview/"+"Timestamps_LP2_" + to_string(fit_amps[i]) + ".png").c_str());
     }
 
     for (int i = 0; i < sizeof(fit_amps) / sizeof(fit_amps[0]); i++) {
@@ -234,7 +250,7 @@ void DataOverview() {
             hist -> GetXaxis() -> SetTitle("Timestamp [ns]");
             hist -> GetYaxis() -> SetTitle("Events");
         }
-        timestamps -> SaveAs(("Timestamps_RE_" + to_string(fit_amps[i]) + ".png").c_str());
+        timestamps -> SaveAs((output_folder+"/data_overview/"+"Timestamps_RE_" + to_string(fit_amps[i]) + ".png").c_str());
     }
 
     std::vector < double > timing_resolution;
@@ -259,11 +275,9 @@ void DataOverview() {
         DT -> GetYaxis() -> SetTitle("Events");
         Double_t DT_range_low = DT -> GetMean() - rms_range_low * DT -> GetRMS();
         Double_t DT_range_high = DT -> GetMean() + rms_range_high * DT -> GetRMS();
-        std::cout << ")))))))))))))))))))))))> " << DT_range_low << "     " << DT_range_high << std::endl;
         // DT->GetXaxis()->SetRangeUser(DT_range_low, DT_range_high);
         DT -> Rebin(rebin);
         TF1 * fgaus = new TF1("fgaus", "gaus", DT_range_low, DT_range_high);
-        std::cout << DT -> GetMaximum() << std::endl;
         fgaus -> SetParameters(DT -> GetMaximum(), DT -> GetMean(), DT -> GetRMS());
         DT -> Fit(fgaus, "R");
         fgaus -> SetLineWidth(2);
@@ -274,7 +288,7 @@ void DataOverview() {
         if (fgaus -> GetParameter(2) * 1000 < 1000000) {
             timing_resolution.push_back(fgaus -> GetParameter(2) * 1000);
             timing_resolution_err.push_back(fgaus -> GetParError(2) * 1000);
-            std::cout << "------------> " << fgaus -> GetChisquare() / fgaus -> GetNDF() << std::endl;
+            // std::cout << "------------> " << fgaus -> GetChisquare() / fgaus -> GetNDF() << std::endl;
             if (fgaus -> GetNDF() != 0)
                 chi_sq.push_back(fgaus -> GetChisquare() / fgaus -> GetNDF());
             else
@@ -284,19 +298,15 @@ void DataOverview() {
         // gPad->SetLogy(1);
         pulse -> Draw(("LP2_" + to_string(fit_amps[i]) + "[" + to_string(trigger) + "]-LP2_" + to_string(fit_amps[i]) + "["+to_string(mcp)+"]:amp[" + to_string(trigger) + "]>>DT_amp"+to_string(trigger)+"_" + to_string(fit_amps[i]) + "_hist").c_str(), conditions, "colz");
         TH2D * DT_amp3 = (TH2D * ) gDirectory -> Get(("DT_amp"+to_string(trigger)+"_" + to_string(fit_amps[i]) + "_hist").c_str());
-        // DT_amp3->GetYaxis()->SetRangeUser(DT_range_low, DT_range_high);
         DT_amp3 -> GetXaxis() -> SetTitle("Amplitude [mV]");
-        DT_amp3 -> GetYaxis() -> SetTitle("DeltaT [ns]"); // DT_amp7->GetYaxis()->Set(n_bins, DT_range_low, DT_range_high);        
+        DT_amp3 -> GetYaxis() -> SetTitle("DeltaT [ns]");
+        // DT_amp7->GetYaxis()->Set(n_bins, DT_range_low, DT_range_high);        
         TF1 * polyline = TimewalkCalculation(DT_amp3); // polyline <===============================================================================>
         double p0 = polyline -> GetParameter(0);
         double p1 = polyline -> GetParameter(1);
         double p2 = polyline -> GetParameter(2);
         double p3 = polyline -> GetParameter(3);
-        std::cout << ">>>>>>>>>>>>>>>>> " << polyline -> Eval(10.0) << std::endl;
-        std::cout << ">>>>>>>>>>>>>>>>> " << polyline -> Eval(20.0) << std::endl;
-        std::cout << ">>>>>>>>>>>>>>>>> " << polyline -> Eval(30.0) << std::endl;
 
-        // std::cout<<"-------------------------------------------->>>> "<<Form("(%g+%g*amp[3]+%g*amp[3]*amp[3]+%g*amp[3]*amp[3]*amp[3])", p0, p1, p2, p3)<<std::endl;
         DT_amp3 -> SetTitle("DeltaT vs trigger strip amplitude"); // strigger
 
         deltaT -> cd(3);
@@ -306,8 +316,9 @@ void DataOverview() {
         TH2D * DT_amp7 = (TH2D * ) gDirectory -> Get(("DT_amp"+to_string(mcp)+"_" + to_string(fit_amps[i]) + "_hist").c_str());
         DT_amp7 -> SetTitle("DeltaT vs MCP amplitude");
         DT_amp7 -> GetXaxis() -> SetTitle("Amplitude [mV]");
-        DT_amp7 -> GetYaxis() -> SetTitle("DeltaT [ns]"); // DT_amp7->GetYaxis()->Set(n_bins, DT_range_low, DT_range_high);
-        deltaT -> SaveAs(("DeltaT_LP2_" + to_string(fit_amps[i]) + ".png").c_str());
+        DT_amp7 -> GetYaxis() -> SetTitle("DeltaT [ns]");
+        // DT_amp7->GetYaxis()->Set(n_bins, DT_range_low, DT_range_high);
+        deltaT -> SaveAs((output_folder+"/data_overview/"+"DeltaT_LP2_" + to_string(fit_amps[i]) + ".png").c_str());
 
         // ---------------------------- Timewalk corrected --------------------------------
         deltaT -> cd(4);
@@ -335,7 +346,7 @@ void DataOverview() {
         fit_amps_err.push_back(0.0);
         corr_timing_resolution.push_back(fgaus_corr -> GetParameter(2) * 1000);
         corr_timing_resolution_err.push_back(fgaus_corr -> GetParError(2) * 1000);
-        std::cout << "------CORRECTED------> " << fgaus_corr -> GetChisquare() / n_bins << std::endl;
+        // std::cout << "------CORRECTED------> " << fgaus_corr -> GetChisquare() / n_bins << std::endl;
         corr_chi_sq.push_back(fgaus_corr -> GetChisquare() / n_bins);
         /*
         if (fgaus_corr->GetNDF()!=0)
@@ -346,7 +357,6 @@ void DataOverview() {
         deltaT -> cd(5);
         // gPad->SetLogy(1);
         string corrected_dt_vs_amp_command = "LP2_" + to_string(fit_amps[i]) + "[" + to_string(trigger) + "] - LP2_" + to_string(fit_amps[i]) + "["+to_string(mcp)+"] - " + Form("(%g + %g * amp[%d] + %g*amp[%d] * amp[%d] + %g * amp[%d] * amp[%d] * amp[%d])", p0, p1, trigger, p2, trigger, trigger, p3, trigger, trigger, trigger) + ":amp["+to_string(trigger)+"]>>DT_amp"+to_string(trigger)+"_" + to_string(fit_amps[i]) + "_hist_corr";
-        std::cout << "--------------------------------------------++++++++++>>>> " << corrected_dt_vs_amp_command << std::endl;
         pulse -> Draw((corrected_dt_vs_amp_command).c_str(), conditions, "colz");
         TH2D * DT_amp3_corr = (TH2D * ) gDirectory -> Get(("DT_amp"+to_string(trigger)+"_" + to_string(fit_amps[i]) + "_hist_corr").c_str());
         DT_amp3_corr -> GetXaxis() -> SetTitle("Amplitude [mV]");
@@ -358,7 +368,6 @@ void DataOverview() {
         deltaT -> cd(6);
         // gPad->SetLogy(1);
         string corrected_dt_vs_MCP_amp_command = "LP2_" + to_string(fit_amps[i]) + "["+to_string(trigger)+"]-LP2_" + to_string(fit_amps[i]) + "["+to_string(mcp)+"] - " + Form("(%g + %g * amp[%d] + %g*amp[%d] * amp[%d] + %g * amp[%d] * amp[%d] * amp[%d])", p0, p1, trigger, p2, trigger, trigger, p3, trigger, trigger, trigger) + ":amp["+to_string(mcp)+"]>>DT_amp"+to_string(mcp)+"_" + to_string(fit_amps[i]) + "_hist_corr";
-        std::cout << corrected_dt_vs_MCP_amp_command << std::endl;
         pulse -> Draw((corrected_dt_vs_MCP_amp_command).c_str(), conditions, "colz");
         TH2D * DT_amp7_corr = (TH2D * ) gDirectory -> Get(("DT_amp"+to_string(mcp)+"_" + to_string(fit_amps[i]) + "_hist_corr").c_str());
         // DT_amp7_corr->GetYaxis()->SetRangeUser(DT_range_low, DT_range_high);
@@ -366,7 +375,7 @@ void DataOverview() {
         DT_amp7_corr -> GetYaxis() -> SetTitle("DeltaT [ns]"); // DT_amp7->GetYaxis()->Set(n_bins, DT_range_low, DT_range_high);
         DT_amp7_corr -> SetTitle("DeltaT vs MCP amplitude");
 
-        deltaT -> SaveAs(("DeltaT_LP2_" + to_string(fit_amps[i]) + ".png").c_str());
+        deltaT -> SaveAs((output_folder+"/data_overview/"+"DeltaT_LP2_" + to_string(fit_amps[i]) + ".png").c_str());
 
     }
 
@@ -416,6 +425,6 @@ void DataOverview() {
     CHI_corr_LP2 -> SetTitle("");
     CHI_corr_LP2 -> Draw("APL*");
 
-    DT_corr_CHI -> SaveAs("Corrected_summary.png");
+    DT_corr_CHI -> SaveAs((output_folder+"/data_overview/"+"Corrected_summary.png").c_str());
 
 }
