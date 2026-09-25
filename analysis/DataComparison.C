@@ -63,22 +63,51 @@ TF1 * TimewalkCalculation(TH2D * histo2D, TCanvas * canvas) {
 void DataComparison() {
 
     string filenames[] = {
+        // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_4days.root", // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_4days.root",
+        // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_low_threshold_retaken.root", // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_4days.root",
+
+        
+        "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv103_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root",
+        "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv105_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root",
         "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv108_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root",
-        "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_4days.root",
+        "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_4days.root", // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_4days.root",
+        "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_low_threshold_retaken.root", // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_4days.root",
         "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv113_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root",
-        "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_2days.root", //  1 black
-        "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv120_mcp4400_trigCh4_Ch8_Ru106_3days.root", //  2 red
-        "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv125_mcp4400_trigCh4_Ch8_Ru106_2days.root", //  3 green
-        // "/Users/PITLab/3D_sensors/first_files/prep_AC100W80_strip3mm_bv116_mcp4400_linear.root" // 4 dark blue
+        "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_2days.root",
+        "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv120_mcp4400_trigCh4_Ch8_Ru106_3days.root",
+        "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv125_mcp4400_trigCh4_Ch8_Ru106_2days.root",
+
+        // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_low_threshold_retaken.root", // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_4days.root",
+        // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_low_threshold_retaken.root", // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_4days.root",
+        // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv113_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root",
+        // "/Users/PITLab/3D_sensors/first_files/prep_AC100W80_strip3mm_bv116_mcp4400_linear.root" // 4 dark blue 
     };
 
     string legend_labels[] = {
+        
+        // "Ru106 AC100W40 110V",
+        // "Ru106 AC100W40 110V new",
+        
+        "Ru106 AC100W40 103V",
+        "Ru106 AC100W40 105V",
+        "Ru106 AC100W40 108V",
+        "Ru106 AC100W40 110V",
+        "Ru106 AC100W40 110V new",
+        "Ru106 AC100W40 113V",
+        "Ru106 AC100W40 116V",
+        "Ru106 AC100W40 120V",
+        "Ru106 AC100W40 125V",   
+        
+        /*
+        "Ru106 AC100W40 103V",
+        "Ru106 AC100W40 105V",
         "Ru106 AC100W40 108V",
         "Ru106 AC100W40 110V",
         "Ru106 AC100W40 113V",
         "Ru106 AC100W40 116V",
         "Ru106 AC100W40 120V",
         "Ru106 AC100W40 125V",
+        */
         // "Ce137 AC100W80 116V"
     };
     
@@ -92,13 +121,27 @@ void DataComparison() {
     bias_voltage_err.push_back(0.0);
     bias_voltage_err.push_back(0.0);
     bias_voltage_err.push_back(0.0);
+    bias_voltage_err.push_back(0.0);
+    bias_voltage_err.push_back(0.0);
+    bias_voltage_err.push_back(0.0);
+    // bias_voltage_err.push_back(0.0);
+    // bias_voltage_err.push_back(0.0);
     
+    
+    // bias_voltage.push_back(110);
+    // bias_voltage.push_back(110);
+
+    
+    bias_voltage.push_back(103);
+    bias_voltage.push_back(105);
     bias_voltage.push_back(108);
+    bias_voltage.push_back(110);
     bias_voltage.push_back(110);
     bias_voltage.push_back(113);
     bias_voltage.push_back(116);
     bias_voltage.push_back(120);
     bias_voltage.push_back(125);
+    
 
     int fit_amps[] = {
         10,
@@ -128,7 +171,7 @@ void DataComparison() {
     };    
 
     std::vector < TTree * > pulse;
-    int n_bins = 30;
+    int n_bins = 25;
     int rebin = 1; // Used for the amplitude and timestamp histograms
     
     float rms_range_high = 1.0;
@@ -136,19 +179,38 @@ void DataComparison() {
     float rms_full_range_high = 5;
     float rms_full_range_low = 5;
     
-    float corr_rms_range_high = 3;
-    float corr_rms_range_low = 3;
+    float corr_rms_range_high = 3.0;
+    float corr_rms_range_low = 3.0;
     float corr_rms_full_range_high = 5;
     float corr_rms_full_range_low = 5;
     
     int trigger = 3, mcp = 7; // The channels of the triggers and the time reference (MCP). Starts from 0 to 7.
     std::vector < float > amplitude_fraction;
+    /*amplitude_fraction.push_back(0.5);
     amplitude_fraction.push_back(0.5);
     amplitude_fraction.push_back(0.44);
     amplitude_fraction.push_back(0.48);
     amplitude_fraction.push_back(0.56);
     amplitude_fraction.push_back(0.48);
-    amplitude_fraction.push_back(0.45);
+    amplitude_fraction.push_back(0.45);*/
+
+    /*amplitude_fraction.push_back(0.0);
+    amplitude_fraction.push_back(0.0);
+    amplitude_fraction.push_back(0.0);
+    amplitude_fraction.push_back(0.0);
+    amplitude_fraction.push_back(0.0);
+    amplitude_fraction.push_back(0.0);
+    amplitude_fraction.push_back(0.0);*/
+
+    amplitude_fraction.push_back(0.5);
+    amplitude_fraction.push_back(0.5);
+    amplitude_fraction.push_back(0.5);
+    amplitude_fraction.push_back(0.5);
+    amplitude_fraction.push_back(0.5);
+    amplitude_fraction.push_back(0.5);
+    amplitude_fraction.push_back(0.5);
+    amplitude_fraction.push_back(0.5);
+    amplitude_fraction.push_back(0.5);
     
     std::vector<double> timing_resolution_50;
     std::vector<double> timing_resolution_50_err;
@@ -156,7 +218,9 @@ void DataComparison() {
     std::vector<double> corr_timing_resolution_50_err;
     
     string output_folder = "./CombinedDatasets";
-    string base_conditions = "baseline_RMS[" + to_string(trigger) + "]<3 && LP2_10[" + to_string(trigger) + "]>-12 && LP2_80[" + to_string(trigger) + "]>-12 && LP2_10[" + to_string(trigger) + "]<0 && LP2_80[" + to_string(trigger) + "]<0";
+    string base_conditions = "baseline_RMS[" + to_string(trigger) + "]<3 && LP2_10[" + to_string(trigger) + "]>-12 && LP2_90[" + to_string(trigger) + "]>-12 && LP2_10[" + to_string(trigger) + "]<0 && LP2_90[" + to_string(trigger) + "]<0";
+    base_conditions += "&&amp[3]>amp[0]&&amp[3]>amp[1]&&amp[3]>amp[2]&&amp[3]>amp[4]&&amp[3]>amp[5]&&amp[3]>amp[6]";
+    
     if (mkdir((output_folder).c_str(), 0777) == -1)
         std::cerr << "Error :  " << strerror(errno) << std::endl;
     else
@@ -173,7 +237,6 @@ void DataComparison() {
     // TString conditions = "";
     // TString conditions = "LP2_10[3]<-1 && LP2_20[3]<-1 && LP2_50[3]<-1 && LP2_80[3]<-1 && LP2_10[7]<-1 && LP2_20[7]<-1 && LP2_50[7]<-1 && LP2_80[7]<-1";
     // TString conditions = "baseline_RMS[3]<3 && amp[3]>10 && LP2_20[3]<0 && amp[7]>20 && amp[7]<80 && amp[3]>amp[0]&&amp[3]>amp[1]&&amp[3]>amp[2] && amp[3]>amp[4] && amp[3]>amp[5] && amp[3]>amp[6]"; // baseline_RMS[3]<3 && amp[3]>amp[0] && amp[3]>amp[1] && amp[3]>amp[2] && amp[3]>amp[4] && amp[3]>amp[5] && amp[3]>amp[6] && amp[3]>35 && amp[7]<80 && amp[7]>20"; 
-    // base_conditions += "&&amp[3]>amp[0]&&amp[3]>amp[1]&&amp[3]>amp[2]&&amp[3]>amp[4]&&amp[3]>amp[5]&&amp[3]>amp[6]";
     // base_conditions += "&&LP2_10[" + to_string(trigger) + "]<-11 && LP2_80[" + to_string(trigger) + "]<-11";
     // TString conditions = "baseline_RMS["+to_string(trigger)+"]<3 && LP2_10["+to_string(trigger)+"]<-10 && LP2_80["+to_string(trigger)+"]<-10 && LP2_10["+to_string(trigger)+"]>-12.5 && LP2_80["+to_string(trigger)+"]>-12.5"; //  && amp["+to_string(trigger)+"]>5*baseline_RMS["+to_string(trigger)+"]"; // LP2_10[3]>-13 && && LP2_80[3]>-13";
 
@@ -209,8 +272,12 @@ void DataComparison() {
             // |=====================================================| Custom selections |=====================================================|
             // |=====================================================| Custom selections |=====================================================|
             
-            if (legend_labels[j] == "Ru106 AC100W40 120V" || legend_labels[j] == "Ru106 AC100W40 116V") {
-                conditions += "&&LP2_10[" + to_string(trigger)+"]<-11 && LP2_80["+to_string(trigger)+"]<-11";
+            // if (legend_labels[j] == "Ru106 AC100W40 120V" || legend_labels[j] == "Ru106 AC100W40 116V" || legend_labels[j] == "Ru106 AC100W40 113V") {
+            //     conditions += "&&LP2_10[" + to_string(trigger)+"]<-10 && LP2_80["+to_string(trigger)+"]<-10";
+            // }
+            conditions += "&&LP2_10[" + to_string(trigger)+"]<-10 && LP2_90["+to_string(trigger)+"]<-10";
+            if (legend_labels[j] == "Ru106 AC100W40 105V") {
+                conditions += "&&LP2_10[" + to_string(trigger)+"]<-8 && LP2_90["+to_string(trigger)+"]<-8";
             }
             if (legend_labels[j] == "Ru106 AC100W40 108V") {
                 conditions += "&&amp[7]<400";
@@ -218,6 +285,12 @@ void DataComparison() {
             conditions += " && amp[" + to_string(trigger) + "]>(amp[" + to_string(trigger - 1) + "]+amp[" + to_string(trigger) + "]+amp[" + to_string(trigger + 1) + "])*" + to_string(amplitude_fraction.at(j));
             float min = * std::min_element(mins.begin(), mins.end());
             float max = * std::max_element(maxes.begin(), maxes.end());
+            
+            if (i != 7) {
+                max = 120;
+                min = 0;
+            }
+            
             if (j != 0) pulse.at(j) -> Draw(("amp[" + to_string(i) + "]>>hist_" + to_string(i) + "_" + to_string(j) + "(" + to_string(n_bins * rebin) + "," + to_string(min) + "," + to_string(max) + ")").c_str(), conditions, "HIST E SAME");
             else pulse.at(j) -> Draw(("amp[" + to_string(i) + "]>>hist_" + to_string(i) + "_" + to_string(j) + "(" + to_string(n_bins * rebin) + "," + to_string(min) + "," + to_string(max) + ")").c_str(), conditions, "HIST E");
             TH1D * hist = (TH1D * ) gDirectory -> Get(("hist_" + to_string(i) + "_" + to_string(j)).c_str());
@@ -277,8 +350,12 @@ void DataComparison() {
                 // |=====================================================| Custom selections |=====================================================|
     
                 // if (k == 0) conditions += "&&LP2_10["+to_string(trigger)+"]<-11"+"&&LP2_80["+to_string(trigger)+"]<-11";
-                if (legend_labels[k] == "Ru106 AC100W40 120V" || legend_labels[k] == "Ru106 AC100W40 116V" || legend_labels[k] == "Ru106 AC100W40 113V") {
-                    conditions += "&&LP2_10[" + to_string(trigger)+"]<-11 && LP2_80["+to_string(trigger)+"]<-11";
+                // if (legend_labels[j] == "Ru106 AC100W40 120V" || legend_labels[j] == "Ru106 AC100W40 116V" || legend_labels[j] == "Ru106 AC100W40 113V") {
+                //    conditions += "&&LP2_10[" + to_string(trigger)+"]<-10 && LP2_80["+to_string(trigger)+"]<-10";
+                // }
+                conditions += "&&LP2_10[" + to_string(trigger)+"]<-10 && LP2_90["+to_string(trigger)+"]<-10";
+                if (legend_labels[j] == "Ru106 AC100W40 105V") {
+                    conditions += "&&LP2_10[" + to_string(trigger)+"]<-8 && LP2_90["+to_string(trigger)+"]<-8";
                 }
                 if (legend_labels[j] == "Ru106 AC100W40 108V") {
                     conditions += "&&amp[7]<400";
@@ -338,6 +415,15 @@ void DataComparison() {
     std::vector < std::vector < double > > corr_chi_sq;
     // std::vector < std::vector < double > > fit_amps_err;
     std::vector < double > fit_amps_err;
+    std::vector < std::vector < double > > amplitude;
+    std::vector < std::vector < double > > noise;
+    std::vector < std::vector < double > > risetime;
+    std::vector < std::vector < double > > jitterRMS;
+    std::vector < std::vector < double > > jitter;
+    std::vector < std::vector < double > > risetime_90_10;
+    std::vector < std::vector < double > > jitter_90_10;
+    std::vector < std::vector < double > > risetime_80_20;
+    std::vector < std::vector < double > > jitter_80_20;
     std::vector < std::vector < double > > baseline;
     std::vector < std::vector < double > > baseline_RMS;
     std::vector < std::vector < double > > signal_noise_ratio;
@@ -365,10 +451,18 @@ void DataComparison() {
         chi_sq.emplace_back(); // .push_back(std::vector < double >);
         corr_chi_sq.emplace_back(); // .push_back(std::vector < double >);
         // fit_amps_err.push_back(std::vector < double >);
+        risetime.emplace_back();
+        noise.emplace_back();
+        amplitude.emplace_back();
+        risetime_90_10.emplace_back();
+        risetime_80_20.emplace_back();
+        jitter.emplace_back(); // .push_back(std::vector < double >);
+        jitterRMS.emplace_back();
+        jitter_90_10.emplace_back(); // .push_back(std::vector < double >);
+        jitter_80_20.emplace_back(); // .push_back(std::vector < double >);
         baseline.emplace_back(); // .push_back(std::vector < double >);
         baseline_RMS.emplace_back(); // .push_back(std::vector < double >);
         signal_noise_ratio.emplace_back(); // .push_back(std::vector < double >);
-        
 
         TString conditions = base_conditions;
         
@@ -381,9 +475,13 @@ void DataComparison() {
         // |=====================================================| Custom selections |=====================================================|
         // |=====================================================| Custom selections |=====================================================|
         
-        if (legend_labels[dt] == "Ru106 AC100W40 120V" || legend_labels[dt] == "Ru106 AC100W40 116V" || legend_labels[dt] == "Ru106 AC100W40 113V") {
-            conditions += "&&LP2_10[" + to_string(trigger)+"]<-11 && LP2_80["+to_string(trigger)+"]<-11";
+        // if (legend_labels[dt] == "Ru106 AC100W40 120V" || legend_labels[dt] == "Ru106 AC100W40 116V" || legend_labels[dt] == "Ru106 AC100W40 113V") {
+        //     conditions += "&&LP2_10[" + to_string(trigger)+"]<-10 && LP2_80["+to_string(trigger)+"]<-10";
+        // }
+        if (legend_labels[dt] == "Ru106 AC100W40 105V") {
+            conditions += "&&LP2_10[" + to_string(trigger)+"]<-8 && LP2_90["+to_string(trigger)+"]<-8";
         }
+        conditions += "&&LP2_10[" + to_string(trigger)+"]<-10 && LP2_90["+to_string(trigger)+"]<-10";
         if (legend_labels[dt] == "Ru106 AC100W40 108V") {
             conditions += "&&amp[7]<400";
         }
@@ -400,11 +498,63 @@ void DataComparison() {
         // --------------------------------------------------------------------------------
 
         for (int i = 0; i < sizeof(fit_amps) / sizeof(fit_amps[0]); i++) {
+        
+            new TCanvas("tmp", "tmp");
             
+            pulse.at(dt) -> Draw(("noise["+to_string(trigger)+"]>>noise").c_str(), conditions, "HIST E");
+            pulse.at(dt) -> Draw(("baseline["+to_string(trigger)+"]>>baseline").c_str(), conditions, "HIST E");
+            pulse.at(dt) -> Draw(("amp["+to_string(trigger)+"]>>amplitude").c_str(), conditions, "HIST E");
+            pulse.at(dt) -> Draw(("baseline_RMS["+to_string(trigger)+"]>>baseline_RMS").c_str(), conditions, "HIST E");
+            pulse.at(dt) -> Draw(("risetime["+to_string(trigger)+"]>>risetime").c_str(), conditions, "HIST E");
+            pulse.at(dt) -> Draw(("(LP2_90["+to_string(trigger)+"]-LP2_10["+to_string(trigger)+"])>>risetime_90_10").c_str(), conditions, "colz"); //;"HIST E");
+            pulse.at(dt) -> Draw(("(LP2_80["+to_string(trigger)+"]-LP2_20["+to_string(trigger)+"])>>risetime_80_20").c_str(), conditions, "colz"); //;"HIST E");
             
-            baseline.at(dt).push_back(0.0);
-            baseline_RMS.at(dt).push_back(0.0);
-            signal_noise_ratio.at(dt).push_back(0.0);
+            TCanvas *risetime_canvas = new TCanvas("risetime_canvas", "risetime_canvas");
+            // pulse.at(dt) -> Draw(("risetime["+to_string(trigger)+"]*noise["+to_string(trigger)+"]/amp["+to_string(trigger)+"]>>jitter").c_str(), conditions, "HIST E");
+            pulse.at(dt) -> Draw(("(LP2_90["+to_string(trigger)+"]-LP2_10["+to_string(trigger)+"])*noise["+to_string(trigger)+"]/amp["+to_string(trigger)+"]>>jitter_90_10").c_str(), conditions, "HIST E");
+            pulse.at(dt) -> Draw(("(LP2_80["+to_string(trigger)+"]-LP2_20["+to_string(trigger)+"])*noise["+to_string(trigger)+"]/amp["+to_string(trigger)+"]>>jitter_80_20").c_str(), conditions, "HIST E");
+
+            // pulse.at(dt) -> Draw(("(linear_RE_90["+to_string(trigger)+"]-linear_RE_10["+to_string(trigger)+"])>>risetime_90_10").c_str(), conditions, "colz"); //;"HIST E");
+            risetime_canvas->SaveAs("jitter_canvas.png");
+            
+            std::cout<<"))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"<<std::endl;
+            std::cout<<"))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"<<std::endl;
+            std::cout<<"))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"<<std::endl;
+            std::cout<<"))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"<<std::endl;
+            std::cout<<conditions<<std::endl;
+            std::cout<<"))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"<<std::endl;
+            std::cout<<"))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"<<std::endl;
+            std::cout<<"))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"<<std::endl;
+            std::cout<<"))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"<<std::endl;
+            
+            TH1D * amplitude_hist = (TH1D * ) gDirectory -> Get("amplitude");
+            TH1D * baseline_hist = (TH1D * ) gDirectory -> Get("baseline");
+            TH1D * noise_hist = (TH1D * ) gDirectory -> Get("noise");
+            TH1D * baseline_RMS_hist = (TH1D * ) gDirectory -> Get("baseline_RMS");
+            TH1D * risetime_hist = (TH1D * ) gDirectory -> Get("risetime");
+            TH1D * risetime_90_10_hist = (TH1D * ) gDirectory -> Get("risetime_90_10");
+            TH1D * risetime_80_20_hist = (TH1D * ) gDirectory -> Get("risetime_80_20");
+            TH1D * jitter_90_10_hist = (TH1D * ) gDirectory -> Get("jitter_90_10");
+            TH1D * jitter_80_20_hist = (TH1D * ) gDirectory -> Get("jitter_80_20");
+            TH1D * jitter_hist = (TH1D * ) gDirectory -> Get("jitter");
+            
+            baseline.at(dt).push_back(baseline_hist->GetMean());
+            baseline_RMS.at(dt).push_back(baseline_RMS_hist->GetMean());
+            signal_noise_ratio.at(dt).push_back(amplitude_hist->GetMean()/noise_hist->GetRMS());
+            amplitude.at(dt).push_back(amplitude_hist->GetMean());
+            noise.at(dt).push_back(noise_hist->GetRMS());
+            risetime.at(dt).push_back(risetime_hist->GetMean());
+            jitter_90_10.at(dt).push_back(jitter_90_10_hist->GetRMS()*1000);
+            jitter_80_20.at(dt).push_back(jitter_80_20_hist->GetRMS()*1000);
+            risetime_90_10.at(dt).push_back(risetime_90_10_hist->GetMean());
+            risetime_80_20.at(dt).push_back(risetime_80_20_hist->GetMean());
+            // jitter.at(dt).push_back(risetime_hist->GetMean()/(amplitude_hist->GetMean()/noise_hist->GetRMS()));
+            // jitterRMS.at(dt).push_back(jitter_hist->GetRMS());
+            // jitter_90_10.at(dt).push_back(risetime_90_10_hist->GetMean()*1000/(amplitude_hist->GetMean()/noise_hist->GetRMS()));
+            
+            // baseline.at(dt).push_back(0.0);
+            // baseline_RMS.at(dt).push_back(0.0);
+            // signal_noise_ratio.at(dt).push_back(0.0);
             
             TCanvas * deltaT = new TCanvas(("Delta T (LP2_" + to_string(fit_amps[i]) + ")").c_str(), ("Delta T (LP2_" + to_string(fit_amps[i]) + ")").c_str(), 2400, 1200);
             deltaT -> Divide(4, 2);
@@ -479,7 +629,7 @@ void DataComparison() {
             // DT_amp7 -> GetYaxis() -> SetRangeUser(DT_range_low, DT_range_high);
             DT_amp7 -> SetTitle("DeltaT vs MCP amplitude");
             DT_amp7 -> GetXaxis() -> SetTitle("Amplitude [mV]");
-            DT_amp7 -> GetYaxis() -> SetTitle("DeltaT [ns]"); 
+            DT_amp7 -> GetYaxis() -> SetTitle("DeltaT [ns]");
 
             // --------------------------------------------------------------------------------
             // ---------------------------- Timewalk corrected --------------------------------
@@ -523,14 +673,14 @@ void DataComparison() {
                     corr_timing_resolution_50.push_back(fgaus_corr -> GetParameter(2) * 1000);
                     corr_timing_resolution_50_err.push_back(fgaus_corr -> GetParError(2) * 1000);
                 }
+                if (fgaus_corr -> GetNDF() != 0)
+                    corr_chi_sq.at(dt).push_back(fgaus_corr -> GetChisquare() / fgaus_corr -> GetNDF());
+                else
+                    corr_chi_sq.at(dt).push_back(0.0);
             }
 
             // std::cout << "------CORRECTED------> " << fgaus_corr -> GetChisquare() / n_bins << std::endl;
-            // corr_chi_sq.at(dt).push_back(fgaus_corr -> GetChisquare() / n_bins);
-            if (fgaus_corr -> GetNDF() != 0)
-                corr_chi_sq.at(dt).push_back(fgaus_corr -> GetChisquare() / fgaus_corr -> GetNDF());
-            else
-                corr_chi_sq.at(dt).push_back(0.0);
+            // corr_chi_sq.at(dt).push_back(fgaus_corr -> GetChisquare() / fgaus_corr -> GetNDF());
 
             deltaT -> cd(6);
             gPad->SetLeftMargin(0.20);
@@ -675,7 +825,7 @@ void DataComparison() {
         if (fp == NULL) {
             printf("Error opening file!\n");
         }
-        fprintf(fp, "ID,Dataset,Resolution,TimingResolution,Baseline,BaselineRMS,Signal/Noise\n");
+        fprintf(fp, "ID,Dataset,TimingResolution[ps],CorrTimingResolution[ps],Baseline[mV],BaselineRMS[mV],Signal[mV],Noise[mV],Risetime 10-90% (ps),Jitter 10-90% (ps),Risetime 20-80% (ps),Jitter 20-80% (ps),Landau Contibution\n"); // ,Risetime(TimingDAQ)[ps],Jitter(TimingDAQ)[ps]
         for (int j = 0; j < bias_voltage.size(); j++) {
             std::cout<<legend_labels[j].c_str()<<std::endl;
             std::cout<<timing_resolution.at(j).at(i)<<std::endl;
@@ -685,7 +835,7 @@ void DataComparison() {
             std::cout<<baseline.at(j).at(i)<<std::endl;
             std::cout<<baseline_RMS.at(j).at(i)<<std::endl;
             std::cout<<signal_noise_ratio.at(j).at(i)<<std::endl;
-            fprintf(fp, "%d,%s,%f±%f,%f±%f,%f,%f,%f\n", j+1, legend_labels[j].c_str(), timing_resolution.at(j).at(i), timing_resolution_err.at(j).at(i), corr_timing_resolution.at(j).at(i), corr_timing_resolution_err.at(j).at(i), baseline.at(j).at(i), baseline_RMS.at(j).at(i), signal_noise_ratio.at(j).at(i));
+            fprintf(fp, "%d,%s,%f±%f,%f±%f,%f,%f,%f,%f,%f,%f,%f,%f,%f\n", j+1, legend_labels[j].c_str(), timing_resolution.at(j).at(i), timing_resolution_err.at(j).at(i), corr_timing_resolution.at(j).at(i), corr_timing_resolution_err.at(j).at(i), baseline.at(j).at(i), baseline_RMS.at(j).at(i), amplitude.at(j).at(i), noise.at(j).at(i), risetime_90_10.at(j).at(i), jitter_90_10.at(j).at(i), risetime_80_20.at(j).at(i), jitter_80_20.at(j).at(i), sqrt(pow(corr_timing_resolution.at(j).at(i),2)-pow(jitter_90_10.at(j).at(i),2))); // , risetime.at(j).at(i), jitter.at(j).at(i)
         }
         fclose(fp);
     }
