@@ -69,7 +69,7 @@ void AmpFraction(string filename, string output_folder, int trigger, int mcp) {
             "baseline_RMS[" + to_string(trigger) + "]<3" +
             "&&LP2_10[" + to_string(trigger) + "]<-1" +
             "&&LP2_80[" + to_string(trigger) + "]<-1" +
-            "&&amp[3]>amp[2]&&amp[3]>amp[4]" + // &&amp[3]>amp[0]&&amp[3]>amp[1]&&amp[3]>amp[2]&&amp[3]>amp[4]&&amp[3]>amp[5]&&amp[3]>amp[6]" +
+            "&&amp[3]>amp[2]&&amp[3]>amp[4]" + "&&amp[3]>amp[0]&&amp[3]>amp[1]&&amp[3]>amp[2]&&amp[3]>amp[4]&&amp[3]>amp[5]&&amp[3]>amp[6]" +
             "&&amp[" + to_string(trigger) + "]>(amp[" + to_string(trigger - 1) + "]+amp[" + to_string(trigger) + "]+amp[" + to_string(trigger + 1) + "])*" + std::to_string(i) + "/100.0";
 
         std::cout << conditions << std::endl;

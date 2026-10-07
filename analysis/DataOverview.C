@@ -234,6 +234,7 @@ void DataOverview(string filename, string output_folder, int n_bins, int rebin, 
         timestamps -> SaveAs((output_folder + "/data_overview/" + "Timestamps_LP2_" + to_string(fit_amps[i]) + ".png").c_str());
     }
 
+    /*
     for (int i = 0; i < sizeof(fit_amps) / sizeof(fit_amps[0]); i++) {
         TCanvas * timestamps = new TCanvas(("Timestamps (linear_RE_" + to_string(fit_amps[i]) + ")").c_str(), ("Timestamps (linear_RE_" + to_string(fit_amps[i]) + ")").c_str(), 2100, 1100);
         timestamps -> Divide(4, 2);
@@ -254,6 +255,7 @@ void DataOverview(string filename, string output_folder, int n_bins, int rebin, 
         }
         timestamps -> SaveAs((output_folder + "/data_overview/" + "Timestamps_RE_" + to_string(fit_amps[i]) + ".png").c_str());
     }
+    */
 
     std::vector < double > timing_resolution;
     std::vector < double > corr_timing_resolution;
