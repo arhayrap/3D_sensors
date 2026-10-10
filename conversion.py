@@ -32,8 +32,10 @@ initial = time.time()
 # RawDataPath = "./AC100W80_110V_Ru106_3mm_1day"
 # RawDataPath = "./AC100W80_116V_Ru106_3mm_1day"
 # RawDataPath = "./AC100W80_116V_Sr90_3mm_4days"
+# RawDataPath = "./AC100W80_116V_Sr90_3mm_1day_low_trigger"
+RawDataPath = "./AC100W80_110V_Sr90_3mm_3days"
+# RawDataPath = "./AC100W80_110V_Sr90_3mm_1day" // also low trigger
 # RawDataPath = "./AC100W80_116V_Sr90_3mm_1day"
-RawDataPath = "./AC100W80_110V_Sr90_3mm_1day"
 # RawDataPath = "./Double_collimation_2"
 # OutputFilePath = "./data/AC100W80_Strip3mm/converted" 
 OutputFilePath = "./Converted_data"
@@ -319,7 +321,11 @@ for ic in range(nchan):
         # this_file = "%s/C%i--AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold.trc" % (RawDataPath, ic+1)
         # this_file = "%s/F%i--AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold.trc" % (RawDataPath, ic+1)
         # this_file = "%s/C%i--AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold.trc" % (RawDataPath, ic+1)
-        this_file = "%s/F%i--AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold.trc" % (RawDataPath, ic+1)
+        # this_file = "%s/F%i--AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold.trc" % (RawDataPath, ic+1)
+        # this_file = "%s/C%i--AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold_trigger.trc" % (RawDataPath, ic+1)
+        # this_file = "%s/F%i--AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold_trigger.trc" % (RawDataPath, ic+1)
+        # this_file = "%s/C%i--AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold_trigger.trc" % (RawDataPath, ic+1)
+        this_file = "%s/F%i--AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold_trigger.trc" % (RawDataPath, ic+1)
         inputFiles.append(this_file)
 
 # outputFile = "%s/conv_AC100W80_strip3mm_bv116_mcp4400_trigCh1_48k_take2.root"%(OutputFilePath)
@@ -360,7 +366,11 @@ for ic in range(nchan):
 # outputFile = "%s/conv_C_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root" % (OutputFilePath)
 # outputFile = "%s/conv_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root" % (OutputFilePath)
 # outputFile = "%s/conv_C_AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root" % (OutputFilePath)
-outputFile = "%s/conv_F_AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root" % (OutputFilePath)
+# outputFile = "%s/conv_F_AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root" % (OutputFilePath)
+# outputFile = "%s/conv_C_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root" % (OutputFilePath)
+# outputFile = "%s/conv_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root" % (OutputFilePath)
+# outputFile = "%s/conv_C_AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold_trigger.root" % (OutputFilePath)
+outputFile = "%s/conv_F_AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold_trigger.root" % (OutputFilePath)
 
 ##### Get necessary information about format
 

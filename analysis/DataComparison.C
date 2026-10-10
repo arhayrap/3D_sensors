@@ -29,21 +29,28 @@
 #include <sstream>
 
 string filenames[] = {
+    // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv108_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root",
     // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv105_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root",
     // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root",
     // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv113_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root",
     // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root",
-    "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_.root",
     // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_low_threshold.root",
-    "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root",
-    "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root"
+    // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root",
+    // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root",
+
+    "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold_trigger.root",
+    "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold_trigger.root",
+    "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_.root"
 };
 
 string additional_tags[] = {
-    "Old dataset",
+    // "Old dataset: 116 V Sr90 80 um",
     // "Low threshold",
-    "High threshold",
-    "High threshold"
+    // "High threshold (tstrip)",
+    "High threshold (tstrip mcp)",
+    "High threshold (tstrip mcp)",
+    "Old dataset: 116 V Sr90 80 um",
+    // ""
 };
 
 string legend_labels[sizeof(filenames)/sizeof(filenames[0])] = {};
@@ -74,7 +81,7 @@ for (int i = 0; i < sizeof(filenames)/sizeof(filenames[0]); i++) {
         }
         token = strtok(NULL, "_");
     }
-    legend_labels[i] += (" :" + additional_tags[i]);
+    // legend_labels[i] += (" " + additional_tags[i]);
     legend_labels[i].erase(std::remove(legend_labels[i].begin(), legend_labels[i].end(), '\0'), legend_labels[i].end());
     bias_voltage_err.push_back(0.0);
     amplitude_fraction.push_back(0.5);
@@ -92,8 +99,8 @@ float rms_range_low = 1.5;
 float rms_full_range_high = 5; // 5;
 float rms_full_range_low = 5; // 5;
 
-float corr_rms_range_high = 3.0;
-float corr_rms_range_low = 3.0;
+float corr_rms_range_high = 2.0;
+float corr_rms_range_low = 2.0;
 float corr_rms_full_range_high = 5;
 float corr_rms_full_range_low = 5;
 
@@ -153,9 +160,10 @@ amplitude_fraction.push_back(0.5);
 string output_folder = "./CombinedDatasets";
 string base_conditions = "baseline_RMS[" + to_string(trigger) + "]<3";
 
-base_conditions += "&& LP2_10[" + to_string(trigger) + "]<-7";
 // base_conditions += "&& LP2_50[" + to_string(trigger) + "]<-3";
-base_conditions += "&& LP2_90[" + to_string(trigger) + "]<-7";
+
+base_conditions += "&& LP2_10[" + to_string(trigger) + "]<-1";
+base_conditions += "&& LP2_90[" + to_string(trigger) + "]<-1";
 
 base_conditions += "&&amp[" + to_string(trigger) + "]>amp[" + to_string(trigger-3) + "]";
 base_conditions += "&&amp[" + to_string(trigger) + "]>amp[" + to_string(trigger-2) + "]";
@@ -191,10 +199,14 @@ TF1 * TimewalkCalculation(TH2D * histo2D, TCanvas * canvas) {
 }
 
 string add_custom_selections(string conditions, int index) {
-    if (legend_labels[index] == "AC100W40 108V Ru106") {
+    std::cout<<legend_labels[index]<<std::endl;
+    if (legend_labels[index] == "AC100W40 108V Ru106 ") {
         conditions += "&&amp[7]<400";
     }
-    conditions += "&&amp[" + to_string(trigger) + "]<80";
+    if (legend_labels[index] == "AC100W80 116V Sr90 ") {
+        conditions += "&&amp[7]<200";
+    }
+    // conditions += "&&amp[" + to_string(trigger) + "]<80";
     conditions += "&&amp[" + to_string(trigger) + "]>(amp[" + to_string(trigger - 1) + "]+amp[" + to_string(trigger) + "]+amp[" + to_string(trigger + 1) + "])*" + to_string(amplitude_fraction.at(index));
 
     // if (k == 0) conditions += "&&LP2_10["+to_string(trigger)+"]<-11"+"&&LP2_80["+to_string(trigger)+"]<-11";
@@ -241,7 +253,7 @@ void draw_amplitudes(std::vector<TTree*> pulse) {
             if (j != 0) pulse.at(j) -> Draw(("amp[" + to_string(i) + "]>>hist_" + to_string(i) + "_" + to_string(j) + "(" + to_string(n_bins * rebin) + "," + to_string(min) + "," + to_string(max) + ")").c_str(), conditions.c_str(), "HIST E SAME");
             else        pulse.at(j) -> Draw(("amp[" + to_string(i) + "]>>hist_" + to_string(i) + "_" + to_string(j) + "(" + to_string(n_bins * rebin) + "," + to_string(min) + "," + to_string(max) + ")").c_str(), conditions.c_str(), "HIST E");
             TH1D * hist = (TH1D * ) gDirectory -> Get(("hist_" + to_string(i) + "_" + to_string(j)).c_str());
-            hist -> GetXaxis() -> SetRangeUser(0, max/2);
+            hist -> GetXaxis() -> SetRangeUser(0, max);
             if (i == mcp) {
                 hist -> SetTitle("MCP");
             } else if (i == trigger) {
@@ -739,7 +751,7 @@ int DataComparison() {
             printf("Error opening file!\n");
         }
         fprintf(fp, "ID,Dataset,TimingResolution[ps],CorrTimingResolution[ps],Baseline[mV],BaselineRMS[mV],Signal[mV],Noise[mV],Risetime 10-90% (ps),Jitter 10-90% (ps),Risetime 20-80% (ps),Jitter 20-80% (ps),Landau Contibution\n"); // ,Risetime(TimingDAQ)[ps],Jitter(TimingDAQ)[ps]
-        for (int j = 0; j < bias_voltage.size(); j++) {
+        for (int j = 0; j < sizeof(filenames)/sizeof(filenames[0]); j++) {
             std::cout << legend_labels[j].c_str() << std::endl;
             std::cout << timing_resolution.at(j).at(i) << std::endl;
             std::cout << timing_resolution_err.at(j).at(i) << std::endl;

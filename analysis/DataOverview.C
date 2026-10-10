@@ -89,7 +89,7 @@ void DataOverview(string filename, string output_folder, int n_bins, int rebin, 
     TString conditions = "baseline_RMS[" + to_string(trigger) + "]<3 && LP2_10[" + to_string(trigger) + "]<-10 && LP2_80[" + to_string(trigger) + "]<-10 && LP2_10[" + to_string(trigger) + "]>-13 && LP2_80[" + to_string(trigger) + "]>-13";
 
     // TString conditions = "baseline_RMS["+to_string(trigger)+"]<3";
-    // conditions+="&&amp[3]>amp[0]&&amp[3]>amp[1]&&amp[3]>amp[2]&&amp[3]>amp[4]&&amp[3]>amp[5]&&amp[3]>amp[6]";
+    conditions+="&&amp[3]>amp[0]&&amp[3]>amp[1]&&amp[3]>amp[2]&&amp[3]>amp[4]&&amp[3]>amp[5]&&amp[3]>amp[6]";
     // conditions += "&& amp[0]>1.7*amp[1] && amp[0]>1.7*amp[2] && amp[0]>1.7*amp[3] && amp[0]>1.7*amp[4] && amp[0]>1.7*amp[5] && amp[0]>1.7*amp[6]"; // Channel 1
 
     // float coeff = 1.7;
