@@ -9,35 +9,17 @@ import os
 import sys
 nchan=8
 
-# parser = argparse.ArgumentParser(description='Run info.')
+parser = argparse.ArgumentParser(description='Run info.')
 # parser.add_argument('--runNumber',metavar='runNumber', type=str,default = -1, help='runNumber (default -1)',required=False)
-# args = parser.parse_args()
+parser.add_argument('--inputFilePattern', type = str, help = "The pattern of the input binary files.", required = True)
+parser.add_argument('--input_folder', type = str, help = "The name of the input file folder.", default = "",  required = False)
+# parser.add_argument('--channel_type', type = str, help = "The first letter of the name of the channel type: Channel (C), Function (Math, F), Memory (M), Digital (D) etc.", default = "C", required = False)
+args = parser.parse_args()
 
 initial = time.time()
 
-# RawDataPath = "./data/AC100W80_Strip3mm/raw"
-# RawDataPath = "./Collimated_data"
-# RawDataPath = "./Double_collimation_Ru106_3days"
-# RawDataPath = "./80um_Ru106"
-# RawDataPath = "./AC100W40_116V_Ru106_3mm_2days"
-# RawDataPath = "./AC100W40_125V_Ru106_3mm_2days"
-# RawDataPath = "./AC100W40_110V_Ru106_3mm_4days"
-# RawDataPath = "./AC100W40_113V_Ru106_3mm_2days"
-# RawDataPath = "./AC100W40_108V_Ru106_3mm_1day"
-# RawDataPath = "./AC100W40_105V_Ru106_3mm_1day"
-# RawDataPath = "./AC100W40_103V_Ru106_3mm_1day"
-# RawDataPath = "./AC100W40_110V_Ru106_3mm_1day_new"
-# RawDataPath = "./AC100W80_105V_Ru106_3mm_3day"
-# RawDataPath = "./AC100W80_113V_Ru106_3mm_1day"
-# RawDataPath = "./AC100W80_110V_Ru106_3mm_1day"
-# RawDataPath = "./AC100W80_116V_Ru106_3mm_1day"
-# RawDataPath = "./AC100W80_116V_Sr90_3mm_4days"
-# RawDataPath = "./AC100W80_116V_Sr90_3mm_1day_low_trigger"
-RawDataPath = "./AC100W80_110V_Sr90_3mm_3days"
-# RawDataPath = "./AC100W80_110V_Sr90_3mm_1day" // also low trigger
-# RawDataPath = "./AC100W80_116V_Sr90_3mm_1day"
-# RawDataPath = "./Double_collimation_2"
-# OutputFilePath = "./data/AC100W80_Strip3mm/converted" 
+InputFiles = args.inputFilePattern 
+RawDataPath = args.input_folder # "./DJ_LGAD_W50_120V_Sr90_3mm_15mV"
 OutputFilePath = "./Converted_data"
 
 LocalMode=True
@@ -276,106 +258,22 @@ def calc_horizontal_array(points_per_frame,horizontal_interval,horizontal_offset
 	return x_axis*1e9
 
 
-
-
-
-
 sourceFiles=[]
 inputFiles=[]
 for ic in range(nchan):
-        # this_file = "%s/C%i--AC100W80_strip3mm_bv116_mcp4400_trigCh1_48k_take2.trc" % (RawDataPath, ic+1)
-	# this_file = "%s/F%i--AC100W80_strip3mm_bv116_mcp4400_trigCh1_48k_take2_linear.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W80_strip3mm_bv116_mcp4400_trigCh1_Ch8_collimated.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_collimatedTwice_3days.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_collimatedTwice_3days.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W80_strip3mm_bv116_mcp4400_trigChi4_Ch8_collimatedTwice_Ru106_3days_4.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W80_strip3mm_bv116_mcp4400_trigChi4_Ch8_collimatedTwice_Ru106_3days_5_from_memory.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W40_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_3days.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W40_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_3days.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W40_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_2days.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W40_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_2days.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W40_strip3mm_bv125_mcp4400_trigCh4_Ch8_Ru106_2days.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W40_strip3mm_bv125_mcp4400_trigCh4_Ch8_Ru106_2days.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_4days.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_4days.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W40_strip3mm_bv113_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W40_strip3mm_bv113_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W40_strip3mm_bv108_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W40_strip3mm_bv108_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W40_strip3mm_bv105_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W40_strip3mm_bv105_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W40_strip3mm_bv103_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W40_strip3mm_bv103_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W80_strip3mm_bv105_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W80_strip3mm_bv105_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W80_strip3mm_bv113_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W80_strip3mm_bv113_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_low_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold_trigger.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/F%i--AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold_trigger.trc" % (RawDataPath, ic+1)
-        # this_file = "%s/C%i--AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold_trigger.trc" % (RawDataPath, ic+1)
-        this_file = "%s/F%i--AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold_trigger.trc" % (RawDataPath, ic+1)
+        # this_file = "%s/F%i--DJ100W50B9_strip3mm_bv120_mcp4400_trigExt_MCP_channel_only_3000.trc" % (RawDataPath, ic+1)
+        this_file = "%s/%s%i--%s" % (RawDataPath, args.inputFilePattern.split("--")[0][0], ic+1, args.inputFilePattern.split("--")[1])
+        print(this_file)
         inputFiles.append(this_file)
 
-# outputFile = "%s/conv_AC100W80_strip3mm_bv116_mcp4400_trigCh1_48k_take2.root"%(OutputFilePath)
-# outputFile = "%s/conv_AC100W80_strip3mm_bv116_mcp4400_trigCh1_48k_take2_linear.root"%(OutputFilePath)
-# outputFile = "%s/conv_AC100W80_strip3mm_bv116_mcp4400_trigCh1_Ch8_collimated.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_collimatedTwice_3days.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_collimatedTwice_3days.root" % (OutputFilePath)
-# outputFile = "%s/conv_AC100W80_strip3mm_bv116_mcp4400_trigChi4_Ch8_collimatedTwice_Ru106_3days_4.root" % (OutputFilePath)
-# outputFile = "%s/conv_AC100W80_strip3mm_bv116_mcp4400_trigChi4_Ch8_collimatedTwice_Ru106_3days_5_from_memory.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W40_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_3days.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W40_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_3days.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W40_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_2days.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W40_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_2days.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W40_strip3mm_bv125_mcp4400_trigCh4_Ch8_Ru106_2days.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W40_strip3mm_bv125_mcp4400_trigCh4_Ch8_Ru106_2days.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_4days.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_4days.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W40_strip3mm_bv113_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W40_strip3mm_bv113_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W40_strip3mm_bv108_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W40_strip3mm_bv108_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W40_strip3mm_bv105_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W40_strip3mm_bv105_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W40_strip3mm_bv103_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W40_strip3mm_bv103_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_low_threshold_retaken.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W40_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_low_threshold_retaken.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W80_strip3mm_bv105_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W80_strip3mm_bv105_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W80_strip3mm_bv113_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W80_strip3mm_bv113_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_low_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root" % (OutputFilePath)
-# outputFile = "%s/conv_C_AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold_trigger.root" % (OutputFilePath)
-outputFile = "%s/conv_F_AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold_trigger.root" % (OutputFilePath)
+outputFile = OutputFilePath + "/conv_" + args.inputFilePattern.replace("*--", "_").split(".trc")[0] + ".root"
+print(outputFile)
+# outputFile = "%s/conv_F_DJ100W50B9_strip3mm_bv120_mcp4400_trigExt_MCP_channel_only_3000.root" % (OutputFilePath)
 
 ##### Get necessary information about format
 
-vertical_gains =[]
-vertical_offsets =[]
+vertical_gains = []
+vertical_offsets = []
 nsegments=0
 points_per_frame=0
 horizontal_interval=0
@@ -398,7 +296,7 @@ offset,full_offset = get_waveform_block_offset(inputFiles[0])
 #print "offset is ",offset
 
 ## get event times and offsets
-trigger_times,horizontal_offsets = get_segment_times(inputFiles[0],offset,nsegments)
+trigger_times ,horizontal_offsets  = get_segment_times(inputFiles[0],offset,nsegments)
 trigger_times2,horizontal_offsets2 = get_segment_times(inputFiles[1],offset,nsegments)
 trigger_times3,horizontal_offsets3 = get_segment_times(inputFiles[2],offset,nsegments)
 trigger_times3,horizontal_offsets4 = get_segment_times(inputFiles[3],offset,nsegments)
@@ -438,9 +336,6 @@ outTree.Branch('channel', channel, 'channel[%i][%i]/F' %(nchan,points_per_frame)
 outTree.Branch('time', time_array, 'time[1]['+str(points_per_frame)+']/F' )
 outTree.Branch('timeoffsets',time_offsets,f'timeoffsets[{nchan}]/F')
 
-
-
-
 # New conversion
 for iseg in range(nsegments):
     if iseg % 1000 == 0:
@@ -463,7 +358,6 @@ for iseg in range(nsegments):
     time_array[0] = calc_horizontal_array(points_per_frame, horizontal_interval, horizontal_offsets[iseg])
 
     outTree.Fill()
-
 
 # # OLD conversion
 # for i in range(nsegments):
@@ -493,9 +387,6 @@ for iseg in range(nsegments):
 #     #time_offsets[7] = horizontal_offsets8[i]-horizontal_offsets[i]
 
 #     outTree.Fill()
-
-
-
 
 print("done filling the tree")
 outRoot.cd()

@@ -28,6 +28,8 @@
 
 #include <sstream>
 
+// #include "DrawFunctions.C"
+
 string filenames[] = {
     // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W40_strip3mm_bv108_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root",
     // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv105_mcp4400_trigCh4_Ch8_Ru106_low_threshold.root",
@@ -39,18 +41,35 @@ string filenames[] = {
     // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold.root",
 
     "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv110_mcp4400_trigCh4_Ch8_Sr90_high_threshold_trigger.root",
+    "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv113_mcp4400_trigCh4_Ch8_Sr90_high_threshold_trigger.root",
     "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_high_threshold_trigger.root",
     "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80_strip3mm_bv116_mcp4400_trigCh4_Ch8_Sr90_.root"
+    
+    // "/Users/PITLab/3D_sensors/Processed_data/proc_F_AC100W80B3_strip3mm_bv160_mcp4400_trigCh4_Sr90_test_run_2.root"
+
+    // "/Users/PITLab/3D_sensors/Processed_data/proc_F_DJ100W50B9_strip3mm_bv105_mcp4400_trigCh6_Ch8_Sr90.root",
+
+    // "/Users/PITLab/3D_sensors/Processed_data/proc_F_DJ100W50B9_strip3mm_bv105_mcp4400_trigCh6_Ch8_Sr90.root",
+    // "/Users/PITLab/3D_sensors/Processed_data/proc_F_DJ100W50B9_strip3mm_bv105_mcp4400_trigCh6_Ch8_rep_1_15mV_Sr90.root",
+
+    // "/Users/PITLab/3D_sensors/Processed_data/proc_F_DJ100W50B9_strip3mm_bv110_mcp4400_trigCh6_Ch8_rep_1_15mV_Sr90.root",
+    // "/Users/PITLab/3D_sensors/Processed_data/proc_F_DJ100W50B9_strip3mm_bv110_mcp4400_trigCh6_Ch8_rep_3_17p5mV_Sr90.root",
+    // "/Users/PITLab/3D_sensors/Processed_data/proc_F_DJ100W50B9_strip3mm_bv110_mcp4400_trigCh6_Ch8_Sr90.root",
+
+    // "/Users/PITLab/3D_sensors/Processed_data/proc_F_DJ100W50B9_strip3mm_bv117_mcp4400_trigCh6_Ch8_Sr90.root",
+    // "/Users/PITLab/3D_sensors/Processed_data/proc_F_DJ100W50B9_strip3mm_bv117_mcp4400_trigCh6_Ch8_rep_Sr90.root",
+    // "/Users/PITLab/3D_sensors/Processed_data/proc_F_DJ100W50B9_strip3mm_bv117_mcp4400_trigCh6_Ch8_rep_2_15mV_Sr90.root"
 };
 
 string additional_tags[] = {
     // "Old dataset: 116 V Sr90 80 um",
     // "Low threshold",
     // "High threshold (tstrip)",
-    "High threshold (tstrip mcp)",
-    "High threshold (tstrip mcp)",
-    "Old dataset: 116 V Sr90 80 um",
-    // ""
+    // "High threshold (tstrip mcp)",
+    // "High threshold (tstrip mcp)",
+    // "High threshold (tstrip mcp)",
+    // "Old dataset: 116 V Sr90 80 um",
+    // " 15 mV", " 17.5 mV", " 20 mV"
 };
 
 string legend_labels[sizeof(filenames)/sizeof(filenames[0])] = {};
@@ -71,9 +90,9 @@ for (int i = 0; i < sizeof(filenames)/sizeof(filenames[0]); i++) {
         if (std::strstr(token, "AC") != nullptr) { // Add wafer
     	    legend_labels[i]+=(string(token)+" ");
         }
-        if (std::strstr(token, "Ru") != nullptr || std::strstr(token, "Sr") != nullptr) { // Add the source
-    	    legend_labels[i]+=(string(token)+" ");
-        }
+        // if (std::strstr(token, "Ru") != nullptr || std::strstr(token, "Sr") != nullptr) { // Add the source
+    	//     legend_labels[i]+=(string(token)+" ");
+        // }
         if (std::strstr(token, "bv") != nullptr) { // bias voltage
     	    std::string bv(token + 2, token + sizeof(token)-2);
     	    legend_labels[i]+=(string(bv) +"V ");
@@ -91,7 +110,7 @@ for (int i = 0; i < sizeof(filenames)/sizeof(filenames[0]); i++) {
 std::cout<<legend_labels[3]<<std::endl;
 std::cout<<legend_labels[3].c_str()<<std::endl;
 
-int n_bins = 60;
+int n_bins = 30;
 int rebin = 1; // Used for the amplitude and timestamp histograms
 
 float rms_range_high = 1.0;
@@ -99,8 +118,8 @@ float rms_range_low = 1.5;
 float rms_full_range_high = 5; // 5;
 float rms_full_range_low = 5; // 5;
 
-float corr_rms_range_high = 2.0;
-float corr_rms_range_low = 2.0;
+float corr_rms_range_high = 3;
+float corr_rms_range_low = 3;
 float corr_rms_full_range_high = 5;
 float corr_rms_full_range_low = 5;
 
@@ -117,6 +136,7 @@ int fit_amps[] = {
     70,
     80
 };
+
 std::vector < double > fit_amps_V = {
     10.0,
     15.0,
@@ -158,45 +178,30 @@ amplitude_fraction.push_back(0.5);
 */
 
 string output_folder = "./CombinedDatasets";
-string base_conditions = "baseline_RMS[" + to_string(trigger) + "]<3";
+string base_conditions = ""; // "baseline_RMS[" + to_string(trigger) + "]<3";
 
 // base_conditions += "&& LP2_50[" + to_string(trigger) + "]<-3";
 
-base_conditions += "&& LP2_10[" + to_string(trigger) + "]<-1";
-base_conditions += "&& LP2_90[" + to_string(trigger) + "]<-1";
+// base_conditions += "&& LP2_10[" + to_string(trigger) + "]>1";
+// base_conditions += "&& LP2_90[" + to_string(trigger) + "]>1";
 
+
+// base_conditions += "&&amp[" + to_string(trigger) + "]>12";
+// base_conditions += "&&amp[" + to_string(mcp) + "]>3";
+// base_conditions += "&& LP2_10[" + to_string(mcp) + "]>1";
+// base_conditions += "&& LP2_90[" + to_string(mcp) + "]>1";
+// base_conditions += "&& LP2_10[" + to_string(trigger) + "]>-1 && LP2_10[" + to_string(trigger) + "]<1";
+// base_conditions += "&& LP2_90[" + to_string(trigger) + "]>-1 && LP2_90[" + to_string(trigger) + "]<1";
+
+// base_conditions += "baseline_RMS[5]<3&&baseline_RMS[7]<3&&LP2_10[5]<-1&&LP2_90[5]<-1&&amp[5]<200&&amp[7]<500"; // &&LP2_10[5]<-4&&LP2_90[5]<-4&&LP2_10[5]>-6.5&&LP2_90[5]>-6.5&&amp[7]<500"; // LP2_10[7]>-3&&LP2_90[7]>-3&&
+base_conditions += "baseline_RMS[3]<3&&baseline_RMS[7]<3&&LP2_10[3]<-1&&LP2_90[3]<-1&&amp[3]<80"; // &&amp[5]<200&&amp[7]<500"; // &&LP2_10[5]<-4&&LP2_90[5]<-4&&LP2_10[5]>-6.5&&LP2_90[5]>-6.5&&amp[7]<500"; // LP2_10[7]>-3&&LP2_90[7]>-3&&
+// base_conditions += "&&amp[5]>15";
 base_conditions += "&&amp[" + to_string(trigger) + "]>amp[" + to_string(trigger-3) + "]";
 base_conditions += "&&amp[" + to_string(trigger) + "]>amp[" + to_string(trigger-2) + "]";
 base_conditions += "&&amp[" + to_string(trigger) + "]>amp[" + to_string(trigger-1) + "]";
 base_conditions += "&&amp[" + to_string(trigger) + "]>amp[" + to_string(trigger+1) + "]";
 base_conditions += "&&amp[" + to_string(trigger) + "]>amp[" + to_string(trigger+2) + "]";
 base_conditions += "&&amp[" + to_string(trigger) + "]>amp[" + to_string(trigger+3) + "]";
-
-TF1 * TimewalkCalculation(TH2D * histo2D, TCanvas * canvas) {
-    histo2D -> RebinX(2);
-    int nPoints = histo2D -> GetXaxis() -> GetNbins();
-    std::vector < double > means;
-    std::vector < double > amps;
-    for (int i = 0; i < nPoints; i++) {
-        TH1D * projX = (TH1D * ) histo2D -> ProjectionY("projY", i + 1, i + 2);
-        if (projX -> GetMean() == 0.0) continue;
-        means.push_back(projX -> GetMean());
-        amps.push_back(histo2D -> GetXaxis() -> GetBinCenter(i + 1));
-    }
-    canvas -> cd(4);
-    gPad -> SetLeftMargin(0.20);
-    auto timewalk_curve = new TGraph(means.size(), amps.data(), means.data());
-    timewalk_curve -> GetXaxis() -> SetTitle("Amplitude [mV]");
-    timewalk_curve -> GetYaxis() -> SetTitle("DeltaT [ns]");
-    timewalk_curve -> Draw("ACP*");
-    timewalk_curve -> SetTitle("Means and timewalk fit.");
-    TF1 * polyline = new TF1("polyline", "[0]+[1]*x+[2]*x^2+[3]*x^3"); // +[4]*x^4+[5]*x^5");
-    timewalk_curve -> Fit(polyline);
-    polyline -> SetLineColor(2);
-    polyline -> SetLineWidth(2);
-    polyline -> Draw("samel");
-    return polyline;
-}
 
 string add_custom_selections(string conditions, int index) {
     std::cout<<legend_labels[index]<<std::endl;
@@ -206,8 +211,25 @@ string add_custom_selections(string conditions, int index) {
     if (legend_labels[index] == "AC100W80 116V Sr90 ") {
         conditions += "&&amp[7]<200";
     }
+    
+    if (legend_labels[index] == "110V   15 mV" || legend_labels[index] == "110V   17.5 mV") {
+        conditions += "&&amp[5]<38";
+    }
+    
+    if (legend_labels[index] == "110V   15 mV") { // && legend_labels[index] == "110V   17.5 mV") {
+        conditions += "&&amp[5]>25"; // >15";
+    }
+    
+    if (legend_labels[index] == "110V   17.5 mV") { // && legend_labels[index] == "110V   17.5 mV") {
+        conditions += "&&amp[5]>25"; // 17.5";
+    }
+    
+    // std::cout<<"}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} "<<legend_labels[index]<<std::endl;
+    
     // conditions += "&&amp[" + to_string(trigger) + "]<80";
-    conditions += "&&amp[" + to_string(trigger) + "]>(amp[" + to_string(trigger - 1) + "]+amp[" + to_string(trigger) + "]+amp[" + to_string(trigger + 1) + "])*" + to_string(amplitude_fraction.at(index));
+    
+    // conditions += "&&amp[3]>12";
+    // conditions += "&&amp[" + to_string(trigger) + "]>(amp[" + to_string(trigger - 1) + "]+amp[" + to_string(trigger) + "]+amp[" + to_string(trigger + 1) + "])*" + to_string(amplitude_fraction.at(index));
 
     // if (k == 0) conditions += "&&LP2_10["+to_string(trigger)+"]<-11"+"&&LP2_80["+to_string(trigger)+"]<-11";
     // if (legend_labels[j] == "Ru106 AC100W40 120V" || legend_labels[j] == "Ru106 AC100W40 116V" || legend_labels[j] == "Ru106 AC100W40 113V") {
@@ -229,6 +251,112 @@ string add_custom_selections(string conditions, int index) {
     return conditions;
 }
 
+TF1 * TimewalkCalculation(TH2D * histo2D, TCanvas * canvas) {
+    histo2D -> RebinX(2);
+    int nPoints = histo2D -> GetXaxis() -> GetNbins();
+    std::vector < double > means;
+    std::vector < double > amps;
+    for (int i = 0; i < nPoints; i++) {
+        TH1D * projX = (TH1D * ) histo2D -> ProjectionY("projY", i + 1, i + 2);
+        if (projX -> GetMean() == 0.0) continue;
+        means.push_back(projX -> GetMean());
+        // means.push_back(projX -> GetXaxis() -> GetBinCenter( projX -> GetMaximumBin() ));
+        amps.push_back(histo2D -> GetXaxis() -> GetBinCenter(i + 1));
+    }
+    canvas -> cd(4);
+    gPad -> SetLeftMargin(0.20);
+    auto timewalk_curve = new TGraph(means.size(), amps.data(), means.data());
+    timewalk_curve -> GetXaxis() -> SetTitle("Amplitude [mV]");
+    timewalk_curve -> GetYaxis() -> SetTitle("DeltaT [ns]");
+    timewalk_curve -> Draw("ACP*");
+    timewalk_curve -> SetTitle("Means and timewalk fit.");
+    TF1 * polyline = new TF1("polyline", "[0]+[1]*x+[2]*x^2+[3]*x^3"); // +[4]*x^4+[5]*x^5");
+    timewalk_curve -> Fit(polyline);
+    polyline -> SetLineColor(2);
+    polyline -> SetLineWidth(2);
+    polyline -> Draw("samel");
+    return polyline;
+}
+
+void draw_channel(TTree* pulse, int ch, int dataset_index) {
+    TCanvas * amplitudes = new TCanvas("Amplitude and waveform", "AmplitudeAndWaveform", 2100, 1100);
+    amplitudes -> Divide(2, 1);
+    // for (int i = 0; i < 8; i++) {
+    // TLegend * legend = new TLegend(0.4, 0.7, 0.9, 0.9);
+    std::vector < float > mins, maxes;
+    
+    // for (int j = 0; j < pulse.size(); j++) {
+    //     maxes.push_back(pulse.at(j) -> GetMaximum(("amp[" + to_string(i) + "]>>hist_" + to_string(i) + "_" + to_string(j)).c_str()));
+    //     mins.push_back(pulse.at(j) -> GetMinimum(("amp[" + to_string(i) + "]>>hist_" + to_string(i) + "_" + to_string(j)).c_str()));
+    // }
+    
+    maxes.push_back(pulse -> GetMaximum(("amp[" + to_string(ch) + "]>>amps_" + to_string(ch)).c_str()));
+    mins.push_back(pulse -> GetMinimum(("amp[" + to_string(ch) + "]>>amps_" + to_string(ch)).c_str()));
+    
+    // for (int j = 0; j < pulse.size(); j++) {
+    string conditions = base_conditions;
+    conditions = add_custom_selections(conditions, dataset_index);
+    
+    float max = pulse -> GetMaximum(("amp[" + to_string(ch) + "]>>amps_" + to_string(ch)).c_str()); // * std::min_element(mins.begin(), mins.end());
+    float min = pulse -> GetMinimum(("amp[" + to_string(ch) + "]>>amps_" + to_string(ch)).c_str()); // * std::max_element(maxes.begin(), maxes.end());
+            
+    if (ch == mcp) {
+        min = 0;
+        max = 800;
+    } 
+    /* else {
+        min = 0;
+        max = 40;
+    } */
+    
+    // if (j != 0) pulse.at(j) -> Draw(("amp[" + to_string(i) + "]>>hist_" + to_string(i) + "_" + to_string(j) + "(" + to_string(n_bins * rebin) + "," + to_string(min) + "," + to_string(max) + ")").c_str(), conditions.c_str(), "HIST E SAME");
+    // else pulse.at(j) -> Draw(("amp[" + to_string(i) + "]>>hist_" + to_string(i) + "_" + to_string(j) + "(" + to_string(n_bins * rebin) + "," + to_string(min) + "," + to_string(max) + ")").c_str(), conditions.c_str(), "HIST E");
+
+    amplitudes -> cd(1);
+    gPad -> SetLeftMargin(0.20);    
+    pulse -> Draw(("amp[" + to_string(ch) + "]>>amps_" + to_string(dataset_index+1) + "_"  + to_string(ch) + "(" + to_string(n_bins * rebin) + "," + to_string(min) + "," + to_string(max) + ")").c_str(), conditions.c_str(), "HIST E");
+    TH1D * hist = (TH1D * ) gDirectory -> Get(("amps_" + to_string(dataset_index+1) + "_"  + to_string(ch)).c_str());
+    hist -> GetXaxis() -> SetRangeUser(0, max);
+    if (ch == mcp) {
+        hist -> SetTitle("MCP");
+    } else if (ch == trigger) {
+        hist -> SetTitle("Trigger strip");
+    } else {
+        hist -> SetTitle(("Channel " + to_string(ch + 1)).c_str());
+    }
+    hist -> GetXaxis() -> SetTitle("Amplitude [mV]");
+    hist -> GetYaxis() -> SetTitle("Events");
+    std::cout << hist -> GetMean() << std::endl;
+    // legend -> AddEntry(hist, legend_labels[j].c_str());
+    hist -> Scale(1.0 / pulse -> GetEntries(conditions.c_str()));
+    hist -> GetYaxis() -> SetRangeUser(0, 0.4);
+    // hist -> GetXaxis() -> SetRangeUser(0, 50);
+    hist -> SetLineWidth(3);
+    hist -> SetLineColor(1);
+    // legend -> Draw("SAME");
+    
+    amplitudes -> cd(2);
+    gPad -> SetLeftMargin(0.20);
+    
+    string plotting_conditions = conditions;
+    
+    if (ch == mcp) {
+        plotting_conditions += " && time[0]>-1 && time[0]<3";
+    } 
+    // else if (ch == trigger) {
+    //     plotting_conditions += " && time[0]>-4.5 && time[0]<-3.5";
+    // }
+    
+    pulse -> Draw(("channel[" + to_string(ch) + "]:time[0]>>waveforms_" + to_string(dataset_index+1) + "_"  + to_string(ch) + "(" + to_string(n_bins * rebin) + "," + to_string(min) + "," + to_string(max) + ")").c_str(), plotting_conditions.c_str(), "");
+    // TGraph * graph = (TGraph * ) gDirectory -> Get(("waveforms_" + to_string(dataset_index+1) + "_" + to_string(ch)).c_str());
+    // graph -> GetXaxis() -> SetTitle("Time [ns]");
+    // graph -> GetYaxis() -> SetTitle("Amplitude [mV]");
+    
+    amplitudes -> Update();
+    
+    amplitudes -> SaveAs((output_folder + "/Amp_waveforms_" + to_string(dataset_index+1) + "_" + to_string(ch+1) + ".png").c_str());
+}
+
 void draw_amplitudes(std::vector<TTree*> pulse) {
     TCanvas * amplitudes = new TCanvas("Amplitudes", "Amplitudes", 2100, 1100);
     amplitudes -> Divide(4, 2);
@@ -246,10 +374,19 @@ void draw_amplitudes(std::vector<TTree*> pulse) {
             conditions = add_custom_selections(conditions, j);
             float min = * std::min_element(mins.begin(), mins.end());
             float max = * std::max_element(maxes.begin(), maxes.end());
+            // || i == mcp) {
+            
+            // if (i == trigger) { draw_channel(pulse.at(j), i, j); }
+            
             if (i == mcp) {
                 min = 0;
                 max = 800;
-            }
+            } 
+            // else {
+            //     min = 0;
+            //     max = 40;
+            // }
+            
             if (j != 0) pulse.at(j) -> Draw(("amp[" + to_string(i) + "]>>hist_" + to_string(i) + "_" + to_string(j) + "(" + to_string(n_bins * rebin) + "," + to_string(min) + "," + to_string(max) + ")").c_str(), conditions.c_str(), "HIST E SAME");
             else        pulse.at(j) -> Draw(("amp[" + to_string(i) + "]>>hist_" + to_string(i) + "_" + to_string(j) + "(" + to_string(n_bins * rebin) + "," + to_string(min) + "," + to_string(max) + ")").c_str(), conditions.c_str(), "HIST E");
             TH1D * hist = (TH1D * ) gDirectory -> Get(("hist_" + to_string(i) + "_" + to_string(j)).c_str());
@@ -267,6 +404,7 @@ void draw_amplitudes(std::vector<TTree*> pulse) {
             legend -> AddEntry(hist, legend_labels[j].c_str());
             hist -> Scale(1.0 / pulse.at(j) -> GetEntries(conditions.c_str()));
             hist -> GetYaxis() -> SetRangeUser(0, 0.4);
+            // hist -> GetXaxis() -> SetRangeUser(0, 50);
             hist -> SetLineWidth(3);
             if (j == 4) hist -> SetLineColor(94);
             else hist -> SetLineColor(j + 1);
@@ -275,6 +413,10 @@ void draw_amplitudes(std::vector<TTree*> pulse) {
         amplitudes -> Update();
     }
     amplitudes -> SaveAs((output_folder + "/Amplitudes_comparison.png").c_str());
+    for (int j = 0; j < pulse.size(); j++) {
+        // if (i == trigger) 
+        draw_channel(pulse.at(j), trigger, j);
+    }
 }
 
 void draw_timestamps(std::vector <TTree * > pulse) {
@@ -297,10 +439,18 @@ void draw_timestamps(std::vector <TTree * > pulse) {
                 string conditions = base_conditions;
                 conditions = add_custom_selections(conditions, k);
                 
-                float min = -12;
-                min = * std::min_element(mins.begin(), mins.end());
-                float max = -6;
-                max = * std::max_element(maxes.begin(), maxes.end());
+                float min = -7;
+                // min = * std::min_element(mins.begin(), mins.end());
+                float max = -3;
+                // max = * std::max_element(maxes.begin(), maxes.end());
+
+                /*if (j != 7) {
+                    min = -0.5;
+                    max = 0.5;
+                } else {
+                    min = 3.4;
+                    max = 4.2;
+                }*/
 
                 timestamps -> cd(j + 1);
                 gPad -> SetLogy(1);
@@ -561,7 +711,7 @@ int DataComparison() {
             deltaT -> cd(5);
             gPad -> SetLeftMargin(0.20);
 
-            histname = "DT_" + to_string(fit_amps[i]) + "_" + to_string(dt) + "_hist_corr";
+            histname = "DT_" + to_string(fit_amps[i]) + "_" + to_string(dt) + "_hist_corr("+ to_string(n_bins) +",-0.2,0.2)";
 
             // gPad -> SetLogy(1);
             gStyle -> SetOptFit(1011);
@@ -581,13 +731,14 @@ int DataComparison() {
             DT_corr -> SetTitle("Corrected Delta T");
             DT_corr -> GetXaxis() -> SetTitle("DeltaT [ns]");
             DT_corr -> GetYaxis() -> SetTitle("Events");
+            if (legend_labels[dt] == "Ru106 AC100W40 125V" || legend_labels[dt] == "Ru106 AC100W80 113V") {
+                DT_corr -> Rebin(2);
+            }
             TF1 * fgaus_corr = new TF1("fgaus_corr", "gaus", DT_range_low, DT_range_high);
             std::cout << DT_corr -> GetMaximum() << std::endl;
             fgaus_corr -> SetParameters(DT_corr -> GetMaximum(), DT_corr -> GetMean(), DT_corr -> GetRMS());
             // DT_corr -> Rebin(rebin);
-            if (legend_labels[dt] == "Ru106 AC100W40 125V" || legend_labels[dt] == "Ru106 AC100W80 113V") {
-                DT_corr -> Rebin(2);
-            }
+
             DT_corr -> Fit(fgaus_corr, "R");
             fgaus_corr -> SetLineWidth(2);
             fgaus_corr -> SetLineColor(2);

@@ -67,11 +67,17 @@ void AmpFraction(string filename, string output_folder, int trigger, int mcp) {
     for (int i = 10; i < 70; i++) {
         std::string conditions =
             "baseline_RMS[" + to_string(trigger) + "]<3" +
-            "&&LP2_10[" + to_string(trigger) + "]<-1" +
-            "&&LP2_80[" + to_string(trigger) + "]<-1" +
-            "&&amp[3]>amp[2]&&amp[3]>amp[4]" + "&&amp[3]>amp[0]&&amp[3]>amp[1]&&amp[3]>amp[2]&&amp[3]>amp[4]&&amp[3]>amp[5]&&amp[3]>amp[6]" +
+            // "&&LP2_10[" + to_string(trigger) + "]<-1" +
+            // "&&LP2_80[" + to_string(trigger) + "]<-1" +
+            "&&LP2_10[" + to_string(trigger) + "]>-1" +
+            "&&LP2_80[" + to_string(trigger) + "]>-1" +
+            "&&LP2_10[" + to_string(trigger) + "]<1" +
+            "&&LP2_80[" + to_string(trigger) + "]<1" +
+            "&&amp[3]>12" + 
+            // "&&amp[3]>amp[0]&&amp[3]>amp[1]&&amp[3]>amp[2]&&amp[3]>amp[4]&&amp[3]>amp[5]&&amp[3]>amp[6]" +
             "&&amp[" + to_string(trigger) + "]>(amp[" + to_string(trigger - 1) + "]+amp[" + to_string(trigger) + "]+amp[" + to_string(trigger + 1) + "])*" + std::to_string(i) + "/100.0";
 
+        // "&&amp[3]>amp[2]&&amp[3]>amp[4]" + 
         std::cout << conditions << std::endl;
         std::cout << pulse -> GetEntries(conditions.c_str()) << std::endl;
 
@@ -133,6 +139,51 @@ void AmpFraction(string filename, string output_folder, int trigger, int mcp) {
             hist -> GetYaxis() -> SetTitle(("Channel: " + to_string(j + 1) + " amplitude [mV]").c_str());
         }
         amplitudes_dependency -> SaveAs((output_folder + amplitude_fraction_folder + "/Amplitudes_comparison_" + to_string(i) + ".png").c_str());
+
+    for (int t = 1; t < 6; t++) {
+
+        std::vector < float > proportion_cut, efficiency;
+
+        for (int i = 10; i <= 70; ++i) {
+            std::string base_cut = "baseline_RMS[" + std::to_string(t) + "]<3" +
+                "&&LP2_10[" + to_string(t) + "]>-1" +
+                "&&LP2_80[" + to_string(t) + "]>-1" +
+                "&&LP2_10[" + to_string(t) + "]<1" +
+                "&&LP2_80[" + to_string(t) + "]<1" +
+                "&&amp[" + std::to_string(t) + "]>12" +
+                // "&&LP2_10[" + std::to_string(t) + "]<-1" +
+                // "&&LP2_80[" + std::to_string(t) + "]<-1" +
+                "&&amp[3]>amp[0]&&amp[3]>amp[1]&&amp[3]>amp[2]&&amp[3]>amp[4]&&amp[3]>amp[5]&&amp[3]>amp[6]";
+
+            std::string cut = "baseline_RMS[" + std::to_string(t) + "]<3" + 
+                "&&LP2_10[" + to_string(t) + "]>-1" +
+                "&&LP2_80[" + to_string(t) + "]>-1" +
+                "&&LP2_10[" + to_string(t) + "]<1" +
+                "&&LP2_80[" + to_string(t) + "]<1" +
+                "&&amp[" + std::to_string(t) + "]>12" +
+                // "&&LP2_10[" + to_string(t) + "]<-1" +
+                // "&&LP2_80[" + to_string(t) + "]<-1" +
+                "&&amp[" + std::to_string(t) + "]>(amp[" + std::to_string(t - 1) + "]+amp[" + std::to_string(t) + "]+amp[" + std::to_string(t + 1) + "])*" + std::to_string(i) + ".0/100.0" +
+                "&&amp[3]>amp[0]&&amp[3]>amp[1]&&amp[3]>amp[2]&&amp[3]>amp[4]&&amp[3]>amp[5]&&amp[3]>amp[6]";
+            
+            std::cout << cut << std::endl;
+            std::cout << pulse -> GetEntries(cut.c_str()) << std::endl;
+            
+            proportion_cut.push_back(i);
+            efficiency.push_back(pulse -> GetEntries(cut.c_str()) * 100.0 / pulse -> GetEntries(base_cut.c_str()));
+        }
+        
+        TCanvas * canvas_proportion_cut_vs_efficiency = new TCanvas("Amplitude proportion cut", "Amplitude proportion cut", 600, 500);
+        canvas_proportion_cut_vs_efficiency -> cd();
+        TGraph * proportion_cut_vs_efficiency = new TGraph(proportion_cut.size(), proportion_cut.data(), efficiency.data());
+        proportion_cut_vs_efficiency -> GetXaxis() -> SetTitle("Amplitude proportion cut [mV]");
+        proportion_cut_vs_efficiency -> GetYaxis() -> SetTitle("Efficiency [%]");
+        proportion_cut_vs_efficiency -> GetYaxis() -> SetRangeUser(0, 110);
+        proportion_cut_vs_efficiency -> SetTitle(("Leading strip, channel: " + to_string(t)).c_str());
+        proportion_cut_vs_efficiency -> Draw("APL*");
+        canvas_proportion_cut_vs_efficiency -> SaveAs((output_folder + amplitude_fraction_folder + "/proportion_cut_vs_efficiency_lead_channel_" + to_string(t) + ".png").c_str());
+    
+    }
 
         // Timestamps
         int fit_amps[] = {
