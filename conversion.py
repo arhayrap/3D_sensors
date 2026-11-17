@@ -8,6 +8,7 @@ import argparse
 import os
 import sys
 nchan=8
+# nchan=4
 
 parser = argparse.ArgumentParser(description='Run info.')
 # parser.add_argument('--runNumber',metavar='runNumber', type=str,default = -1, help='runNumber (default -1)',required=False)
