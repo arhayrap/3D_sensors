@@ -21,7 +21,7 @@ initial = time.time()
 
 InputFiles = args.inputFilePattern 
 RawDataPath = args.input_folder # "./DJ_LGAD_W50_120V_Sr90_3mm_15mV"
-OutputFilePath = "./Converted_data"
+OutputFilePath = "/home/daq/3D_sensors/Converted_data"
 
 LocalMode=True
 CopyToEOS=False
