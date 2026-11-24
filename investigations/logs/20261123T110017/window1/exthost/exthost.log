@@ -600,3 +600,22 @@
 2026-11-23 16:04:24.138 [warning] [Decorations] CAPPING events from decorations provider vscode.git 485
 2026-11-23 16:04:29.297 [warning] [Decorations] CAPPING events from decorations provider vscode.git 485
 2026-11-23 16:04:34.466 [warning] [Decorations] CAPPING events from decorations provider vscode.git 485
+2026-11-24 09:19:35.007 [warning] [Decorations] CAPPING events from decorations provider vscode.git 484
+2026-11-24 10:35:27.737 [error] [ms-python.vscode-pylance] provider FAILED
+2026-11-24 10:35:27.744 [error] Error: Request textDocument/codeAction failed with message: request cancelled
+	at handleResponse (/root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/vendor.bundle.js:16:418)
+	at handleMessage (/root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/vendor.bundle.js:15:1121299)
+	at Immediate.<anonymous> (/root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/vendor.bundle.js:15:1120770)
+	at process.processImmediate (node:internal/timers:574:21)
+2026-11-24 10:47:26.741 [error] [ms-python.vscode-pylance] provider FAILED
+2026-11-24 10:47:26.742 [error] Error: Request textDocument/codeAction failed with message: request cancelled
+	at handleResponse (/root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/vendor.bundle.js:16:418)
+	at handleMessage (/root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/vendor.bundle.js:15:1121299)
+	at Immediate.<anonymous> (/root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/vendor.bundle.js:15:1120770)
+	at process.processImmediate (node:internal/timers:574:21)
+2026-11-24 10:57:21.595 [error] [ms-python.vscode-pylance] provider FAILED
+2026-11-24 10:57:21.595 [error] Error: Request textDocument/codeAction failed with message: request cancelled
+	at handleResponse (/root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/vendor.bundle.js:16:418)
+	at handleMessage (/root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/vendor.bundle.js:15:1121299)
+	at Immediate.<anonymous> (/root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/vendor.bundle.js:15:1120770)
+	at process.processImmediate (node:internal/timers:574:21)

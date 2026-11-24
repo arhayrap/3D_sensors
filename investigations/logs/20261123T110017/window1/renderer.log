@@ -2779,3 +2779,470 @@
     at x7t._setDesiredScrollPositionNow (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:27977)
     at GT._pointerMoveCallback (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:27723)
     at HTMLDivElement.<anonymous> (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:111:56888)
+2026-11-24 09:19:34.710 [warning] [CloudSandboxApi] No 'github' session with scopes [read:user, user:email, repo, workflow]
+2026-11-24 09:19:34.711 [warning] [CloudSandboxAgentHost] Discovery failed: Connecting to a cloud sandbox requires a signed-in GitHub account.
+2026-11-24 09:19:34.711 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 09:19:34.712 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 09:19:34.836 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 09:19:34.842 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 09:19:34.955 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 09:19:34.957 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 09:19:35.136 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 09:19:35.139 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 09:19:35.171 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 09:19:35.171 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 09:19:35.174 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 09:19:35.174 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 09:20:49.376 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at bre.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62110)
+    at n7e._doRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:69317)
+    at n7e.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:68713)
+    at new s7e (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:78678)
+    at s._createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:2000)
+    at s.createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:1440)
+    at yre.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:132607)
+    at oJi.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:361:2164)
+    at a_i.insertItemInDOM (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:23870)
+    at h (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22160)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22429
+    at zJt.transact (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:5970)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22332)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2203:21877)
+    at a_i.onScroll (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:29080)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A._deliverQueue (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3758)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:4093)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:36792)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at yN._setState (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:23224)
+    at yN.setScrollPositionNow (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21617)
+    at yN.setScrollPositionSmooth (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21708)
+    at Kz._onMouseWheel (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:43046)
+    at HTMLDivElement.i (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:41572)
+2026-11-24 09:20:52.817 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at bre.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62110)
+    at n7e._doRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:69317)
+    at n7e.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:68713)
+    at new s7e (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:78678)
+    at s._createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:2000)
+    at s.createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:1440)
+    at yre.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:132607)
+    at oJi.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:361:2164)
+    at a_i.insertItemInDOM (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:23870)
+    at h (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22160)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22429
+    at zJt.transact (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:5970)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22332)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2203:21877)
+    at a_i.onScroll (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:29080)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A._deliverQueue (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3758)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:4093)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:36792)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at yN._setState (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:23224)
+    at yN.setScrollPositionNow (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21617)
+    at yN.setScrollPositionSmooth (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21708)
+    at Kz._onMouseWheel (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:43046)
+    at HTMLDivElement.i (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:41572)
+2026-11-24 10:16:13.356 [warning] [CloudSandboxApi] No 'github' session with scopes [read:user, user:email, repo, workflow]
+2026-11-24 10:16:13.357 [warning] [CloudSandboxAgentHost] Discovery failed: Connecting to a cloud sandbox requires a signed-in GitHub account.
+2026-11-24 10:16:13.388 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:16:13.388 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:16:13.410 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:16:13.411 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:16:13.446 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:16:13.447 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:16:13.462 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:16:13.462 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:16:13.465 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:16:13.467 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:16:13.478 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:16:13.478 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:18:48.907 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at t$._runFn (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62266)
+    at t$._run (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:6694)
+    at t$.endUpdate (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:7326)
+    at Sz.finish (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:113304)
+    at FB.set (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:2882)
+    at sbe.setVisible (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:6234)
+    at Cv.updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:28858)
+    at FY._updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2555:38916)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:2399)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:18045
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25094
+    at Set.forEach (<anonymous>)
+    at _messagePort.onmessage (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25083)
+2026-11-24 10:21:31.753 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:21:31.753 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:21:31.755 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:21:31.755 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:21:31.758 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:21:31.759 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:21:31.793 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:21:31.793 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:21:31.795 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:21:31.797 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:21:31.799 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:21:31.800 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:24:19.206 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at t$._runFn (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62266)
+    at t$._run (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:6694)
+    at t$.endUpdate (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:7326)
+    at Sz.finish (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:113304)
+    at FB.set (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:2882)
+    at sbe.setVisible (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:6234)
+    at Cv.updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:28858)
+    at FY._updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2555:38916)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:2399)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:18045
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25094
+    at Set.forEach (<anonymous>)
+    at _messagePort.onmessage (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25083)
+2026-11-24 10:29:24.139 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:29:24.165 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:29:24.187 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:29:24.196 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:29:24.241 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:29:24.241 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:29:24.350 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:29:24.350 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:29:24.363 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:29:24.363 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:29:24.371 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:29:24.373 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:33:43.907 [warning] [CloudSandboxApi] No 'github' session with scopes [read:user, user:email, repo, workflow]
+2026-11-24 10:33:43.909 [warning] [CloudSandboxAgentHost] Discovery failed: Connecting to a cloud sandbox requires a signed-in GitHub account.
+2026-11-24 10:34:33.573 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:34:33.579 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:34:33.585 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:34:33.603 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:34:33.626 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:34:33.627 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:34:33.631 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:34:33.632 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:34:33.635 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:34:33.636 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:34:33.649 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:34:33.650 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:34:52.789 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at t$._runFn (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62266)
+    at t$._run (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:6694)
+    at t$.endUpdate (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:7326)
+    at Sz.finish (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:113304)
+    at FB.set (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:2882)
+    at sbe.setVisible (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:6234)
+    at Cv.updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:28858)
+    at FY._updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2555:38916)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:2399)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:18045
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25094
+    at Set.forEach (<anonymous>)
+    at _messagePort.onmessage (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25083)
+2026-11-24 10:44:25.008 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:44:25.024 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:44:25.071 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:44:25.094 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:44:25.121 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:44:25.122 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:44:25.164 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:44:25.166 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:44:25.176 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:44:25.178 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:44:25.181 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:44:25.185 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:47:32.580 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at t$._runFn (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62266)
+    at t$._run (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:6694)
+    at t$.endUpdate (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:7326)
+    at Sz.finish (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:113304)
+    at FB.set (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:2882)
+    at sbe.setVisible (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:6234)
+    at Cv.updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:28858)
+    at FY._updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2555:38916)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:2399)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:18045
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25094
+    at Set.forEach (<anonymous>)
+    at _messagePort.onmessage (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25083)
+2026-11-24 10:50:22.319 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at t$._runFn (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62266)
+    at t$._run (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:6694)
+    at t$.endUpdate (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:7326)
+    at Sz.finish (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:113304)
+    at FB.set (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:2882)
+    at sbe.setVisible (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:6234)
+    at Cv.updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:28858)
+    at FY._updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2555:38916)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:2399)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:18045
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25094
+    at Set.forEach (<anonymous>)
+    at _messagePort.onmessage (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25083)
+2026-11-24 10:53:32.026 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at t$._runFn (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62266)
+    at t$._run (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:6694)
+    at t$.endUpdate (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:7326)
+    at Sz.finish (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:113304)
+    at FB.set (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:2882)
+    at sbe.setVisible (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:6234)
+    at Cv.updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:28858)
+    at FY._updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2555:38916)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:2399)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:18045
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25094
+    at Set.forEach (<anonymous>)
+    at _messagePort.onmessage (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25083)
+2026-11-24 10:56:52.032 [warning] [CloudSandboxApi] No 'github' session with scopes [read:user, user:email, repo, workflow]
+2026-11-24 10:56:52.049 [warning] [CloudSandboxAgentHost] Discovery failed: Connecting to a cloud sandbox requires a signed-in GitHub account.
+2026-11-24 10:56:52.163 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:56:52.167 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:56:52.202 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:56:52.202 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:56:52.222 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:56:52.233 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:56:52.243 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:56:52.251 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:56:52.268 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:56:52.276 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 10:56:52.285 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:56:52.292 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 10:57:24.267 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at t$._runFn (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62266)
+    at t$._run (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:6694)
+    at t$.endUpdate (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:7326)
+    at Sz.finish (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:113304)
+    at FB.set (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:2882)
+    at sbe.setVisible (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:6234)
+    at Cv.updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:28858)
+    at FY._updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2555:38916)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:2399)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:18045
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25094
+    at Set.forEach (<anonymous>)
+    at _messagePort.onmessage (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25083)
+2026-11-24 10:58:59.696 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at t$._runFn (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62266)
+    at t$._run (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:6694)
+    at t$.endUpdate (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:7326)
+    at Sz.finish (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:113304)
+    at FB.set (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:2882)
+    at sbe.setVisible (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:6234)
+    at Cv.updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:28858)
+    at FY._updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2555:38916)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:2399)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:18045
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25094
+    at Set.forEach (<anonymous>)
+    at _messagePort.onmessage (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25083)
+2026-11-24 11:01:17.689 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at t$._runFn (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62266)
+    at t$._run (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:6694)
+    at t$.endUpdate (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:7326)
+    at Sz.finish (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:113304)
+    at FB.set (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:2882)
+    at sbe.setVisible (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:6234)
+    at Cv.updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:28858)
+    at FY._updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2555:38916)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:2399)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:18045
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25094
+    at Set.forEach (<anonymous>)
+    at _messagePort.onmessage (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25083)
+2026-11-24 11:02:50.386 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at t$._runFn (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62266)
+    at t$._run (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:6694)
+    at t$.endUpdate (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:7326)
+    at Sz.finish (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:113304)
+    at FB.set (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:2882)
+    at sbe.setVisible (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:6234)
+    at Cv.updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:28858)
+    at FY._updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2555:38916)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:2399)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:18045
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25094
+    at Set.forEach (<anonymous>)
+    at _messagePort.onmessage (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25083)
+2026-11-24 11:04:43.692 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 11:04:43.695 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 11:04:43.722 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 11:04:43.723 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 11:04:43.733 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 11:04:43.737 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 11:04:43.787 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 11:04:43.787 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 11:04:43.789 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 11:04:43.790 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 11:04:43.805 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 11:04:43.809 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 11:06:17.058 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at t$._runFn (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62266)
+    at t$._run (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:6694)
+    at t$.endUpdate (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:7326)
+    at Sz.finish (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:113304)
+    at FB.set (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:32:2882)
+    at sbe.setVisible (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:6234)
+    at Cv.updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2202:28858)
+    at FY._updateOutputHeight (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2555:38916)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:2399)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:18045
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25094
+    at Set.forEach (<anonymous>)
+    at _messagePort.onmessage (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:5986:25083)
+2026-11-24 12:37:08.893 [warning] [CloudSandboxApi] No 'github' session with scopes [read:user, user:email, repo, workflow]
+2026-11-24 12:37:08.894 [warning] [CloudSandboxAgentHost] Discovery failed: Connecting to a cloud sandbox requires a signed-in GitHub account.
+2026-11-24 12:37:08.894 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 12:37:08.895 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 12:37:08.960 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 12:37:08.960 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 12:37:09.028 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 12:37:09.029 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 12:37:09.037 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 12:37:09.039 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 12:37:09.041 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 12:37:09.065 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 12:37:09.070 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 12:37:09.072 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 12:45:00.373 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 12:45:00.394 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 12:45:00.444 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 12:45:00.452 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 12:45:00.532 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 12:45:00.560 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 12:45:00.581 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 12:45:00.596 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 12:45:00.604 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 12:45:00.609 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 12:45:00.609 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 12:45:00.611 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 13:12:52.267 [warning] [CloudSandboxApi] No 'github' session with scopes [read:user, user:email, repo, workflow]
+2026-11-24 13:12:52.268 [warning] [CloudSandboxAgentHost] Discovery failed: Connecting to a cloud sandbox requires a signed-in GitHub account.
+2026-11-24 13:12:52.268 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 13:12:52.269 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 13:12:52.273 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 13:12:52.277 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 13:12:52.278 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 13:12:52.279 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 13:12:52.292 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 13:12:52.313 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 13:12:52.370 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 13:12:52.421 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 13:12:52.461 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 13:12:52.506 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 14:28:59.510 [warning] [CloudSandboxApi] No 'github' session with scopes [read:user, user:email, repo, workflow]
+2026-11-24 14:28:59.517 [warning] [CloudSandboxAgentHost] Discovery failed: Connecting to a cloud sandbox requires a signed-in GitHub account.
+2026-11-24 14:28:59.519 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 14:28:59.528 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 14:28:59.533 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 14:28:59.537 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 14:28:59.537 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 14:28:59.538 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 14:28:59.547 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 14:28:59.550 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 14:28:59.631 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 14:28:59.914 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 14:28:59.995 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 14:28:59.997 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 16:50:22.769 [warning] [CloudSandboxApi] No 'github' session with scopes [read:user, user:email, repo, workflow]
+2026-11-24 16:50:22.772 [warning] [CloudSandboxAgentHost] Discovery failed: Connecting to a cloud sandbox requires a signed-in GitHub account.
+2026-11-24 16:50:22.831 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 16:50:22.834 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 16:50:22.850 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 16:50:22.895 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 16:50:22.967 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 16:50:22.978 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 16:50:22.990 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 16:50:23.062 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 16:50:23.135 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 16:50:23.165 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-24 16:50:23.190 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-24 16:50:23.194 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos

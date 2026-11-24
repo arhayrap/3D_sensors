@@ -34,3 +34,15 @@
 2026-11-23 12:28:01.870 [info] shell: bash
 2026-11-23 12:28:01.951 [info] > . /home/daq/my_venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2026.10.0-linux-x64/python_files/printEnvVariables.py
 2026-11-23 12:28:01.952 [info] shell: bash
+2026-11-24 10:17:31.521 [info] Active interpreter [/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge.ipynb]:  /home/daq/my_venv/bin/python
+2026-11-24 10:17:32.856 [info] > . /home/daq/my_venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2026.10.0-linux-x64/python_files/printEnvVariables.py
+2026-11-24 10:17:32.860 [info] shell: bash
+2026-11-24 10:17:32.976 [info] > . /home/daq/my_venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2026.10.0-linux-x64/python_files/printEnvVariables.py
+2026-11-24 10:17:32.977 [info] shell: bash
+2026-11-24 10:33:43.928 [info] > . /home/daq/my_venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2026.10.0-linux-x64/python_files/printEnvVariables.py
+2026-11-24 10:33:43.928 [info] shell: bash
+2026-11-24 14:30:30.862 [info] Active interpreter [/home/daq/3D_sensors/investigations/DJ_LGAD_IR_LaserTest/TuneScan.ipynb]:  /home/daq/my_venv/bin/python
+2026-11-24 14:30:31.105 [info] > . /home/daq/my_venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2026.10.0-linux-x64/python_files/printEnvVariables.py
+2026-11-24 14:30:31.105 [info] shell: bash
+2026-11-24 14:30:31.130 [info] > . /home/daq/my_venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2026.10.0-linux-x64/python_files/printEnvVariables.py
+2026-11-24 14:30:31.130 [info] shell: bash

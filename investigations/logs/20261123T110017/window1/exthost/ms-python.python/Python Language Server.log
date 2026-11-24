@@ -84,3 +84,469 @@
 2026-11-23 15:02:13.923 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3214ms)
 2026-11-23 16:03:21.891 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (7607ms)
 2026-11-23 16:03:28.972 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (7052ms)
+2026-11-24 10:17:41.520 [info] (757211): FG(investigations): Long operation: parsing: file:///root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/typeshed-fallback/stdlib/builtins.pyi (2532ms)
+2026-11-24 10:17:45.218 [info] (757211): BG(investigations): Long operation: parsing: file:///home/daq/my_venv/lib/python3.14/site-packages/IPython/lib/display.py (2415ms)
+2026-11-24 10:17:45.222 [info] (757211): BG(investigations): Long operation: binding: file:///home/daq/my_venv/lib/python3.14/site-packages/IPython/display.py (3003ms)
+2026-11-24 10:17:45.222 [info] (757211): BG(investigations): Long operation: binding: file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#pylancePrefixCell (3428ms)
+2026-11-24 10:17:45.222 [info] (757211): BG(investigations): Long operation: parsing: file:///home/daq/my_venv/lib/python3.14/site-packages/numpy/__init__.pyi (2961ms)
+2026-11-24 10:17:45.881 [info] (757211): BG(investigations): Long operation: checking: vscode-notebook-cell:/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb#X10sZmlsZQ%3D%3D (5816ms)
+2026-11-24 10:17:45.882 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#X10sZmlsZQ%3D%3D (5816ms)
+2026-11-24 10:17:45.882 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W0sZmlsZQ%3D%3D (5838ms)
+2026-11-24 10:17:48.476 [info] (757211): BG(investigations): Long operation: parsing: file:///root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/typeshed-fallback/stdlib/types.pyi (2226ms)
+2026-11-24 10:17:56.841 [info] (757211): BG(investigations): Long operation: SemanticTokens range 0:0 - 4:10 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge.ipynb.py#W6sZmlsZQ%3D%3D (10972ms)
+2026-11-24 10:18:13.116 [info] (757211): BG(investigations): Long operation: binding: file:///home/daq/my_venv/lib/python3.14/site-packages/awkward/operations/__init__.py (5606ms)
+2026-11-24 10:18:13.132 [info] (757211): BG(investigations): Long operation: binding: file:///home/daq/my_venv/lib/python3.14/site-packages/awkward/__init__.py (6543ms)
+2026-11-24 10:18:13.132 [info] (757211): BG(investigations): Long operation: checking: vscode-notebook-cell:/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb#W5sZmlsZQ%3D%3D (15152ms)
+2026-11-24 10:18:13.134 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (15152ms)
+2026-11-24 10:18:13.134 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W1sZmlsZQ%3D%3D (15172ms)
+2026-11-24 10:18:16.444 [info] (757211): BG(investigations): Long operation: checking: vscode-notebook-cell:/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb#W3sZmlsZQ%3D%3D (3150ms)
+2026-11-24 10:18:16.444 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W3sZmlsZQ%3D%3D (3219ms)
+2026-11-24 10:18:18.917 [info] (757211): BG(investigations): Long operation: checking: vscode-notebook-cell:/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb#W0sZmlsZQ%3D%3D (2151ms)
+2026-11-24 10:18:18.919 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W0sZmlsZQ%3D%3D (2454ms)
+2026-11-24 10:18:29.012 [info] (757211): FG(investigations): Long operation: parsing: file:///home/daq/my_venv/lib/python3.14/site-packages/numpy/__init__.pyi (6287ms)
+2026-11-24 10:18:35.925 [info] (757211): FG(investigations): Long operation: binding: file:///home/daq/my_venv/lib/python3.14/site-packages/numpy/__init__.pyi (6861ms)
+2026-11-24 10:18:37.343 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (11686ms)
+2026-11-24 10:20:07.078 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4182ms)
+2026-11-24 10:20:16.660 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4128ms)
+2026-11-24 10:20:23.528 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4422ms)
+2026-11-24 10:20:38.269 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2052ms)
+2026-11-24 10:20:46.479 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3168ms)
+2026-11-24 10:20:54.605 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2778ms)
+2026-11-24 10:21:08.020 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2371ms)
+2026-11-24 10:21:23.013 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2553ms)
+2026-11-24 10:22:54.017 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3028ms)
+2026-11-24 10:22:56.386 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2343ms)
+2026-11-24 10:23:06.124 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3251ms)
+2026-11-24 10:23:08.876 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2710ms)
+2026-11-24 10:23:18.222 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2914ms)
+2026-11-24 10:23:20.284 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2050ms)
+2026-11-24 10:31:15.317 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2654ms)
+2026-11-24 10:31:22.543 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (5514ms)
+2026-11-24 10:31:35.911 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4537ms)
+2026-11-24 10:31:42.174 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4465ms)
+2026-11-24 10:31:45.465 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2189ms)
+2026-11-24 10:31:51.462 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4622ms)
+2026-11-24 10:31:56.998 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4269ms)
+2026-11-24 10:32:23.615 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4618ms)
+2026-11-24 10:32:26.667 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2144ms)
+2026-11-24 10:32:31.244 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3088ms)
+2026-11-24 10:32:39.743 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4622ms)
+2026-11-24 10:32:46.624 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4379ms)
+2026-11-24 10:32:54.258 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2193ms)
+2026-11-24 10:34:57.268 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4436ms)
+2026-11-24 10:35:14.130 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4168ms)
+2026-11-24 10:35:20.378 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2431ms)
+2026-11-24 10:35:25.841 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4542ms)
+2026-11-24 10:35:27.693 [error] Request textDocument/codeAction failed.
+  Message: Request textDocument/codeAction failed with message: request cancelled
+  Code: -32603 
+2026-11-24 10:35:32.414 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4674ms)
+2026-11-24 10:45:19.734 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2554ms)
+2026-11-24 10:45:22.875 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2232ms)
+2026-11-24 10:45:27.293 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2329ms)
+2026-11-24 10:45:30.782 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2380ms)
+2026-11-24 10:45:37.438 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3103ms)
+2026-11-24 10:45:42.709 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4131ms)
+2026-11-24 10:45:47.893 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2569ms)
+2026-11-24 10:45:53.493 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4602ms)
+2026-11-24 10:45:57.170 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2171ms)
+2026-11-24 10:46:03.098 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4302ms)
+2026-11-24 10:46:12.768 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2624ms)
+2026-11-24 10:46:15.742 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2447ms)
+2026-11-24 10:46:31.461 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4319ms)
+2026-11-24 10:46:37.626 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2840ms)
+2026-11-24 10:46:41.025 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2342ms)
+2026-11-24 10:46:46.082 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4123ms)
+2026-11-24 10:46:51.282 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3224ms)
+2026-11-24 10:46:54.672 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2352ms)
+2026-11-24 10:47:13.343 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4652ms)
+2026-11-24 10:47:25.783 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2648ms)
+2026-11-24 10:47:26.740 [error] Request textDocument/codeAction failed.
+  Message: Request textDocument/codeAction failed with message: request cancelled
+  Code: -32603 
+2026-11-24 10:47:31.133 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4336ms)
+2026-11-24 10:47:43.379 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4450ms)
+2026-11-24 10:47:49.246 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4106ms)
+2026-11-24 10:47:57.895 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4598ms)
+2026-11-24 10:48:38.744 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4200ms)
+2026-11-24 10:48:42.937 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2120ms)
+2026-11-24 10:48:47.711 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2342ms)
+2026-11-24 10:48:53.553 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4263ms)
+2026-11-24 10:49:15.643 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.644 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.663 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.671 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.672 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.674 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.675 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.676 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.677 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.680 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.681 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.684 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.688 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.691 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.691 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.695 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.697 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.697 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.699 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.699 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.699 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.700 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.701 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.705 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.708 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.711 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.721 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.722 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.723 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.723 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.724 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.725 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.726 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.731 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.732 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.732 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.733 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.734 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.734 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.752 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.753 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.753 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.755 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.757 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.758 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.760 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.760 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.761 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.762 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.763 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.764 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.766 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.766 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.766 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.768 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.769 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.771 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.772 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.772 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.776 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.776 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.776 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:15.779 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 114
+
+ Outputting literal text instead.
+2026-11-24 10:49:20.758 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4566ms)
+2026-11-24 10:49:37.771 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2586ms)
+2026-11-24 10:49:39.982 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2019ms)
+2026-11-24 10:50:00.685 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (5129ms)
+2026-11-24 10:50:30.188 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4457ms)
+2026-11-24 10:50:58.269 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (5046ms)
+2026-11-24 10:52:01.709 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4193ms)
+2026-11-24 10:52:25.833 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4471ms)
+2026-11-24 10:52:29.702 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2220ms)
+2026-11-24 10:52:35.547 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4386ms)
+2026-11-24 10:52:53.781 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2199ms)
+2026-11-24 10:52:57.506 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2594ms)
+2026-11-24 10:53:00.466 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2298ms)
+2026-11-24 10:53:06.164 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2893ms)
+2026-11-24 10:53:08.439 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2203ms)
+2026-11-24 10:53:19.838 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (5176ms)
+2026-11-24 10:53:24.247 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795539192514 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (2622ms)
+2026-11-24 10:53:32.553 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795539206302 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (3605ms)
+2026-11-24 10:53:37.880 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (5255ms)
+2026-11-24 10:54:16.346 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795539217963 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (2305ms)
+2026-11-24 10:54:20.661 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4300ms)
+2026-11-24 10:54:38.119 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795539254039 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (2126ms)
+2026-11-24 10:54:42.154 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4025ms)
+2026-11-24 10:55:02.517 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795539282192 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (2254ms)
+2026-11-24 10:55:07.046 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2303ms)
+2026-11-24 10:55:11.910 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2404ms)
+2026-11-24 10:55:18.083 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2286ms)
+2026-11-24 10:55:22.533 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795539312760 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (2900ms)
+2026-11-24 10:55:26.268 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2717ms)
+2026-11-24 10:55:28.360 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795539312760 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (2027ms)
+2026-11-24 10:57:21.556 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (2569ms)
+2026-11-24 10:57:21.595 [error] Request textDocument/codeAction failed.
+  Message: Request textDocument/codeAction failed with message: request cancelled
+  Code: -32603 
+2026-11-24 10:57:24.014 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2434ms)
+2026-11-24 10:57:31.322 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3377ms)
+2026-11-24 10:57:34.218 [info] (757211): BG(investigations): Long operation: SemanticTokens range 0:0 - 62:10 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (2886ms)
+2026-11-24 10:57:36.499 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2111ms)
+2026-11-24 10:57:59.130 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795539454379 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (2821ms)
+2026-11-24 10:58:02.226 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2783ms)
+2026-11-24 10:58:07.029 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795539476308 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (2476ms)
+2026-11-24 10:58:10.970 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3899ms)
+2026-11-24 10:58:32.492 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795539491073 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (2465ms)
+2026-11-24 10:58:41.088 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4352ms)
+2026-11-24 10:59:02.064 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795539524920 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (3446ms)
+2026-11-24 10:59:06.189 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4086ms)
+2026-11-24 10:59:19.622 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2608ms)
+2026-11-24 10:59:39.445 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (5140ms)
+2026-11-24 10:59:42.506 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795539565640 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (2170ms)
+2026-11-24 10:59:49.652 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (5388ms)
+2026-11-24 10:59:55.220 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795539565640 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (2049ms)
+2026-11-24 10:59:59.410 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4187ms)
+2026-11-24 11:00:09.248 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795539599963 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (2117ms)
+2026-11-24 11:00:13.496 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4226ms)
+2026-11-24 11:00:21.114 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795539613520 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (2125ms)
+2026-11-24 11:00:25.087 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3955ms)
+2026-11-24 11:01:15.922 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795539625120 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (2544ms)
+2026-11-24 11:01:22.807 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (5250ms)
+2026-11-24 11:01:25.931 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795539625120 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W5sZmlsZQ%3D%3D (2410ms)
+2026-11-24 11:01:40.394 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4404ms)
+2026-11-24 11:01:51.581 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3963ms)
+2026-11-24 11:01:58.147 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2481ms)
+2026-11-24 11:02:05.537 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4569ms)
+2026-11-24 11:02:10.434 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3067ms)
+2026-11-24 11:02:13.834 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2399ms)
+2026-11-24 11:02:16.085 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2174ms)
+2026-11-24 11:02:25.370 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4175ms)
+2026-11-24 11:02:49.926 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3561ms)
+2026-11-24 11:02:52.085 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2101ms)
+2026-11-24 11:03:06.070 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2190ms)
+2026-11-24 11:03:13.839 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2433ms)
+2026-11-24 11:03:15.916 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2021ms)
+2026-11-24 11:03:35.957 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2187ms)
+2026-11-24 11:04:48.501 [info] (757211): Starting service instance "<default>" for workspace ""
+2026-11-24 11:04:48.587 [info] (757211): Loading background bundle file:///root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/copilot-background.bundle.js into ...
+2026-11-24 11:04:49.766 [info] (757211): FG(<default>): Setting environmentName for service "<default>": "Python 3.14.4"
+2026-11-24 11:04:49.772 [info] (757211): FG(<default>): Setting pythonPath for service "<default>": "/usr/bin/python3"
+2026-11-24 11:04:49.774 [info] (757211): FG(<default>): No include entries specified; assuming /<default workspace root>
+2026-11-24 11:04:49.775 [info] (757211): FG(<default>): Auto-excluding **/node_modules
+2026-11-24 11:04:49.776 [info] (757211): FG(<default>): Auto-excluding **/__pycache__
+2026-11-24 11:04:49.777 [info] (757211): FG(<default>): Auto-excluding **/.*
+2026-11-24 11:04:49.778 [info] (757211): FG(<default>): Auto-excluding **/__editable__.*
+2026-11-24 11:04:49.930 [info] (757211): FG(<default>): Assuming Python version 3.14.4.final.0
+2026-11-24 11:04:50.430 [error] (757211): FG(<default>): File or directory "/<default workspace root>" does not exist.
+2026-11-24 11:04:50.431 [info] (757211): FG(<default>): No source files found.
+2026-11-24 11:04:51.451 [info] (757211): PQ(<default>): Priority queue background worker(8) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist
+2026-11-24 11:04:51.500 [info] (757211): PQ(<default>): Priority queue background worker(8) started
+2026-11-24 11:04:53.351 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3902ms)
+2026-11-24 11:04:58.798 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3996ms)
+2026-11-24 11:05:04.248 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2830ms)
+2026-11-24 11:05:06.314 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2031ms)
+2026-11-24 11:05:12.034 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4495ms)
+2026-11-24 11:05:27.442 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4929ms)
+2026-11-24 11:05:57.292 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (5030ms)
+2026-11-24 11:06:09.503 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2402ms)
+2026-11-24 11:06:18.868 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2644ms)
+2026-11-24 11:06:20.961 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2008ms)
+2026-11-24 11:06:31.048 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4701ms)
+2026-11-24 14:30:36.202 [info] (757211): BG(investigations): Long operation: checking: vscode-notebook-cell:/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb#X10sZmlsZQ%3D%3D (3748ms)
+2026-11-24 14:30:36.236 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#X10sZmlsZQ%3D%3D (3748ms)
+2026-11-24 14:30:37.070 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W0sZmlsZQ%3D%3D (4785ms)
+2026-11-24 14:30:43.436 [info] (757211): BG(investigations): Long operation: checking: vscode-notebook-cell:/home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb#W3sZmlsZQ%3D%3D (3710ms)
+2026-11-24 14:30:43.438 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3710ms)
+2026-11-24 14:30:43.543 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W1sZmlsZQ%3D%3D (3817ms)
+2026-11-24 14:34:15.735 [info] (757211): BG(investigations): Long operation: checking: vscode-notebook-cell:/home/daq/3D_sensors/investigations/DJ_LGAD_IR_LaserTest/TuneScan.ipynb#W3sZmlsZQ%3D%3D (2711ms)
+2026-11-24 14:34:15.735 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/DJ_LGAD_IR_LaserTest/TuneScan.ipynb.py#W3sZmlsZQ%3D%3D (2724ms)
+2026-11-24 14:40:42.720 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 2045
+
+ Outputting literal text instead.
+2026-11-24 14:41:12.772 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 2045
+
+ Outputting literal text instead.
+2026-11-24 14:41:49.282 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 2045
+
+ Outputting literal text instead.
+2026-11-24 14:42:52.032 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 561
+
+ Outputting literal text instead.
+2026-11-24 14:42:52.166 [info] (757211): 
+*Warning*: Pylance failed to parse docstring at offset 561
+
+ Outputting literal text instead.

@@ -246,3 +246,972 @@ Workspace folder /home/daq/3D_sensors/investigations
     '\x1B[31mTypeError\x1B[39m: only integer scalar arrays can be converted to a scalar index'
   ]
 }
+10:17:31.538 [info] Starting Kernel (Python Path: /home/daq/my_venv/bin/python, Venv, 3.14.4) for '/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge.ipynb' (disableUI=true)
+10:17:35.025 [info] Process Execution: /home/daq/my_venv/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+10:17:35.052 [info] Process Execution: /home/daq/my_venv/bin/python -m ipykernel_launcher --f=/run/user/0/jupyter/runtime/kernel-v31780b869077c9e8d0f7c53aaf4ef365d673f84fb.json
+    > cwd: /home/daq/3D_sensors/investigations/ZScan_IR
+10:17:35.099 [info] Process Execution: /home/daq/my_venv/bin/python -m pip list
+10:18:09.682 [info] Kernel successfully started
+10:18:49.187 [warn] Cell completed with errors [Iu [Error]: sigmoid() takes 4 positional arguments but 5 were given
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'TypeError',
+  evalue: 'sigmoid() takes 4 positional arguments but 5 were given',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mTypeError\x1B[39m                                 Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[5]\x1B[39m\x1B[32m, line 2\x1B[39m\n' +
+      '\x1B[32m      1\x1B[39m x_arr = np.linspace(\x1B[32m41.4\x1B[39m, \x1B[32m41.7\x1B[39m, \x1B[32m100\x1B[39m)\n' +
+      '\x1B[32m----> \x1B[39m\x1B[32m2\x1B[39m y_arr = sigmoid(x_arr, \x1B[32m40\x1B[39m, \x1B[32m7\x1B[39m, \x1B[32m41.55\x1B[39m, \x1B[32m15\x1B[39m)\n' +
+      '\x1B[32m      3\x1B[39m \n' +
+      '\x1B[32m      4\x1B[39m plt.plot(x_arr, y_arr)\n' +
+      '\x1B[32m      5\x1B[39m plt.show()\n',
+    '\x1B[31mTypeError\x1B[39m: sigmoid() takes 4 positional arguments but 5 were given'
+  ]
+}
+10:18:49.190 [warn] Cancel all remaining cells due to cancellation or failure in execution
+10:20:09.022 [info] Too many pending requests 1 for kernel ad0b25ed-1f76-4711-9453-672a03b7f182, waiting for it to be ready.
+10:33:22.505 [info] Interrupt kernel execution
+10:33:22.505 [info] Interrupt requested /home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb
+10:33:22.505 [info] Interrupt kernel execution
+10:33:22.505 [info] Interrupting kernel: python3144jvsc74a57bd091a68fcde2d23bab329ef993d55130d0e12dab49717beab3f66c1e87a3c49194
+10:33:22.507 [info] Interrupting kernel via SIGINT
+10:33:32.667 [info] Interrupt requested & sent for /home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb in notebookEditor.
+10:33:43.539 [info] Restart requested /home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb
+10:33:44.011 [info] Process Execution: /home/daq/my_venv/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+10:33:44.037 [info] Process Execution: /home/daq/my_venv/bin/python -m ipykernel_launcher --f=/run/user/0/jupyter/runtime/kernel-v3561362fddb700c1a2fb2f7bd4b7c7d1a304a040c.json
+    > cwd: /home/daq/3D_sensors/investigations/ZScan_IR
+10:33:44.841 [info] Restarted 1eb061bc-0f1d-4b0a-9455-1a26e67324ea
+10:34:28.888 [warn] Cell completed with errors [Iu [Error]: name 'X_mask' is not defined
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'NameError',
+  evalue: "name 'X_mask' is not defined",
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mNameError\x1B[39m                                 Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[4]\x1B[39m\x1B[32m, line 35\x1B[39m\n' +
+      '\x1B[32m     31\x1B[39m \n' +
+      '\x1B[32m     32\x1B[39m     \x1B[38;5;66;03m# print(X_range[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     33\x1B[39m     \x1B[38;5;66;03m# print(mean_amps[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     34\x1B[39m     mask = (mean_amps != \x1B[32m0\x1B[39m) & (mean_amps > \x1B[32m41.8\x1B[39m) & (mean_amps < \x1B[32m41.0\x1B[39m)\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m35\x1B[39m     params = curve_fit(gaus, X_range[X_mask][mask], mean_amps[mask], p0 = (np.max(mean_amps[mask]), np.mean(X_range), \x1B[32m10\x1B[39m))\n' +
+      '\x1B[32m     36\x1B[39m \n' +
+      '\x1B[32m     37\x1B[39m     X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     38\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(X_range[X_mask], mean_amps, label = f"Z position: {z}", marker = \x1B[33m"o"\x1B[39m)\n',
+    "\x1B[31mNameError\x1B[39m: name 'X_mask' is not defined"
+  ]
+}
+10:34:28.890 [warn] Cancel all remaining cells due to cancellation or failure in execution
+10:34:52.752 [warn] Cell completed with errors [Iu [Error]: zero-size array to reduction operation maximum which has no identity
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'ValueError',
+  evalue: 'zero-size array to reduction operation maximum which has no identity',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mValueError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[5]\x1B[39m\x1B[32m, line 36\x1B[39m\n' +
+      '\x1B[32m     32\x1B[39m     \x1B[38;5;66;03m# print(X_range[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     33\x1B[39m     \x1B[38;5;66;03m# print(mean_amps[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     34\x1B[39m     X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     35\x1B[39m     mask = (mean_amps != \x1B[32m0\x1B[39m) & (mean_amps > \x1B[32m41.8\x1B[39m) & (mean_amps < \x1B[32m41.0\x1B[39m)\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m36\x1B[39m     params = curve_fit(gaus, X_range[X_mask][mask], mean_amps[mask], p0 = (np.max(mean_amps[mask]), np.mean(X_range), \x1B[32m10\x1B[39m))\n' +
+      '\x1B[32m     37\x1B[39m \n' +
+      '\x1B[32m     38\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(X_range[X_mask], mean_amps, label = f"Z position: {z}", marker = \x1B[33m"o"\x1B[39m)\n' +
+      '\x1B[32m     39\x1B[39m     gaussian = [gaus(i, params[\x1B[32m0\x1B[39m][\x1B[32m0\x1B[39m], params[\x1B[32m0\x1B[39m][\x1B[32m1\x1B[39m], params[\x1B[32m0\x1B[39m][\x1B[32m2\x1B[39m]) \x1B[38;5;28;01mfor\x1B[39;00m i \x1B[38;5;28;01min\x1B[39;00m X_range[X_mask]]\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:3161\x1B[39m, in \x1B[36mmax\x1B[39m\x1B[34m(a, axis, out, keepdims, initial, where)\x1B[39m\n' +
+      '\x1B[32m   3049\x1B[39m \x1B[38;5;129m@array_function_dispatch\x1B[39m(_max_dispatcher)\n' +
+      "\x1B[32m   3050\x1B[39m \x1B[38;5;129m@set_module\x1B[39m(\x1B[33m'\x1B[39m\x1B[33mnumpy\x1B[39m\x1B[33m'\x1B[39m)\n" +
+      '\x1B[32m   3051\x1B[39m \x1B[38;5;28;01mdef\x1B[39;00m\x1B[38;5;250m \x1B[39m\x1B[34mmax\x1B[39m(a, axis=\x1B[38;5;28;01mNone\x1B[39;00m, out=\x1B[38;5;28;01mNone\x1B[39;00m, keepdims=np._NoValue, initial=np._NoValue,\n' +
+      '\x1B[32m   3052\x1B[39m          where=np._NoValue):\n' +
+      '\x1B[32m   3053\x1B[39m \x1B[38;5;250m    \x1B[39m\x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   3054\x1B[39m \x1B[33;03m    Return the maximum of an array or maximum along an axis.\x1B[39;00m\n' +
+      '\x1B[32m   3055\x1B[39m \n' +
+      '\x1B[32m   (...)\x1B[39m\x1B[32m   3159\x1B[39m \x1B[33;03m    5\x1B[39;00m\n' +
+      '\x1B[32m   3160\x1B[39m \x1B[33;03m    """\x1B[39;00m\n' +
+      "\x1B[32m-> \x1B[39m\x1B[32m3161\x1B[39m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[30;43m_wrapreduction\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43ma\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mnp\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mmaximum\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43mmax\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43maxis\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43;01mNone\x1B[39;49;00m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mout\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n" +
+      '\x1B[32m   3162\x1B[39m \x1B[30;43m                          \x1B[39;49m\x1B[30;43mkeepdims\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mkeepdims\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43minitial\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43minitial\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mwhere\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mwhere\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:83\x1B[39m, in \x1B[36m_wrapreduction\x1B[39m\x1B[34m(obj, ufunc, method, axis, dtype, out, **kwargs)\x1B[39m\n' +
+      '\x1B[32m     80\x1B[39m         \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[32m     81\x1B[39m             \x1B[38;5;28;01mreturn\x1B[39;00m reduction(axis=axis, out=out, **passkwargs)\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m83\x1B[39m \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[30;43mufunc\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mreduce\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mobj\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43maxis\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mdtype\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mout\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mpasskwargs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[31mValueError\x1B[39m: zero-size array to reduction operation maximum which has no identity'
+  ]
+}
+10:35:25.963 [warn] Cell completed with errors [Iu [Error]: zero-size array to reduction operation maximum which has no identity
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'ValueError',
+  evalue: 'zero-size array to reduction operation maximum which has no identity',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mValueError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[6]\x1B[39m\x1B[32m, line 35\x1B[39m\n' +
+      '\x1B[32m     31\x1B[39m \n' +
+      '\x1B[32m     32\x1B[39m     \x1B[38;5;66;03m# print(X_range[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     33\x1B[39m     \x1B[38;5;66;03m# print(mean_amps[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     34\x1B[39m     mask = (mean_amps != \x1B[32m0\x1B[39m) & (mean_amps > \x1B[32m41.8\x1B[39m) & (mean_amps < \x1B[32m41.0\x1B[39m)\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m35\x1B[39m     params = curve_fit(gaus, X_range, mean_amps[mask], p0 = (np.max(mean_amps[mask]), np.mean(X_range), \x1B[32m10\x1B[39m))\n' +
+      '\x1B[32m     36\x1B[39m \n' +
+      '\x1B[32m     37\x1B[39m     X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     38\x1B[39m \n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:3161\x1B[39m, in \x1B[36mmax\x1B[39m\x1B[34m(a, axis, out, keepdims, initial, where)\x1B[39m\n' +
+      '\x1B[32m   3049\x1B[39m \x1B[38;5;129m@array_function_dispatch\x1B[39m(_max_dispatcher)\n' +
+      "\x1B[32m   3050\x1B[39m \x1B[38;5;129m@set_module\x1B[39m(\x1B[33m'\x1B[39m\x1B[33mnumpy\x1B[39m\x1B[33m'\x1B[39m)\n" +
+      '\x1B[32m   3051\x1B[39m \x1B[38;5;28;01mdef\x1B[39;00m\x1B[38;5;250m \x1B[39m\x1B[34mmax\x1B[39m(a, axis=\x1B[38;5;28;01mNone\x1B[39;00m, out=\x1B[38;5;28;01mNone\x1B[39;00m, keepdims=np._NoValue, initial=np._NoValue,\n' +
+      '\x1B[32m   3052\x1B[39m          where=np._NoValue):\n' +
+      '\x1B[32m   3053\x1B[39m \x1B[38;5;250m    \x1B[39m\x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   3054\x1B[39m \x1B[33;03m    Return the maximum of an array or maximum along an axis.\x1B[39;00m\n' +
+      '\x1B[32m   3055\x1B[39m \n' +
+      '\x1B[32m   (...)\x1B[39m\x1B[32m   3159\x1B[39m \x1B[33;03m    5\x1B[39;00m\n' +
+      '\x1B[32m   3160\x1B[39m \x1B[33;03m    """\x1B[39;00m\n' +
+      "\x1B[32m-> \x1B[39m\x1B[32m3161\x1B[39m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[30;43m_wrapreduction\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43ma\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mnp\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mmaximum\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43mmax\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43maxis\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43;01mNone\x1B[39;49;00m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mout\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n" +
+      '\x1B[32m   3162\x1B[39m \x1B[30;43m                          \x1B[39;49m\x1B[30;43mkeepdims\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mkeepdims\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43minitial\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43minitial\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mwhere\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mwhere\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:83\x1B[39m, in \x1B[36m_wrapreduction\x1B[39m\x1B[34m(obj, ufunc, method, axis, dtype, out, **kwargs)\x1B[39m\n' +
+      '\x1B[32m     80\x1B[39m         \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[32m     81\x1B[39m             \x1B[38;5;28;01mreturn\x1B[39;00m reduction(axis=axis, out=out, **passkwargs)\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m83\x1B[39m \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[30;43mufunc\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mreduce\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mobj\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43maxis\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mdtype\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mout\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mpasskwargs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[31mValueError\x1B[39m: zero-size array to reduction operation maximum which has no identity'
+  ]
+}
+10:46:12.349 [warn] Cell completed with errors [Iu [Error]: zero-size array to reduction operation maximum which has no identity
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'ValueError',
+  evalue: 'zero-size array to reduction operation maximum which has no identity',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mValueError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[7]\x1B[39m\x1B[32m, line 35\x1B[39m\n' +
+      '\x1B[32m     31\x1B[39m \n' +
+      '\x1B[32m     32\x1B[39m     \x1B[38;5;66;03m# print(X_range[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     33\x1B[39m     \x1B[38;5;66;03m# print(mean_amps[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     34\x1B[39m     \x1B[38;5;66;03m# mask = (mean_amps != 0) & (mean_amps > 40.8) & (mean_amps < 41.0)\x1B[39;00m\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m35\x1B[39m     params = curve_fit(gaus, X_range[(X_range>=\x1B[32m40.8\x1B[39m) & (X_range<=\x1B[32m41.0\x1B[39m)], mean_amps[(X_range>=\x1B[32m40.8\x1B[39m) & (X_range<=\x1B[32m41.0\x1B[39m)], p0 = (np.max(mean_amps[mask]), np.mean(X_range), \x1B[32m10\x1B[39m))\n' +
+      '\x1B[32m     36\x1B[39m \n' +
+      '\x1B[32m     37\x1B[39m     X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     38\x1B[39m \n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:3161\x1B[39m, in \x1B[36mmax\x1B[39m\x1B[34m(a, axis, out, keepdims, initial, where)\x1B[39m\n' +
+      '\x1B[32m   3049\x1B[39m \x1B[38;5;129m@array_function_dispatch\x1B[39m(_max_dispatcher)\n' +
+      "\x1B[32m   3050\x1B[39m \x1B[38;5;129m@set_module\x1B[39m(\x1B[33m'\x1B[39m\x1B[33mnumpy\x1B[39m\x1B[33m'\x1B[39m)\n" +
+      '\x1B[32m   3051\x1B[39m \x1B[38;5;28;01mdef\x1B[39;00m\x1B[38;5;250m \x1B[39m\x1B[34mmax\x1B[39m(a, axis=\x1B[38;5;28;01mNone\x1B[39;00m, out=\x1B[38;5;28;01mNone\x1B[39;00m, keepdims=np._NoValue, initial=np._NoValue,\n' +
+      '\x1B[32m   3052\x1B[39m          where=np._NoValue):\n' +
+      '\x1B[32m   3053\x1B[39m \x1B[38;5;250m    \x1B[39m\x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   3054\x1B[39m \x1B[33;03m    Return the maximum of an array or maximum along an axis.\x1B[39;00m\n' +
+      '\x1B[32m   3055\x1B[39m \n' +
+      '\x1B[32m   (...)\x1B[39m\x1B[32m   3159\x1B[39m \x1B[33;03m    5\x1B[39;00m\n' +
+      '\x1B[32m   3160\x1B[39m \x1B[33;03m    """\x1B[39;00m\n' +
+      "\x1B[32m-> \x1B[39m\x1B[32m3161\x1B[39m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[30;43m_wrapreduction\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43ma\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mnp\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mmaximum\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43mmax\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43maxis\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43;01mNone\x1B[39;49;00m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mout\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n" +
+      '\x1B[32m   3162\x1B[39m \x1B[30;43m                          \x1B[39;49m\x1B[30;43mkeepdims\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mkeepdims\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43minitial\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43minitial\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mwhere\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mwhere\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:83\x1B[39m, in \x1B[36m_wrapreduction\x1B[39m\x1B[34m(obj, ufunc, method, axis, dtype, out, **kwargs)\x1B[39m\n' +
+      '\x1B[32m     80\x1B[39m         \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[32m     81\x1B[39m             \x1B[38;5;28;01mreturn\x1B[39;00m reduction(axis=axis, out=out, **passkwargs)\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m83\x1B[39m \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[30;43mufunc\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mreduce\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mobj\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43maxis\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mdtype\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mout\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mpasskwargs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[31mValueError\x1B[39m: zero-size array to reduction operation maximum which has no identity'
+  ]
+}
+10:47:53.134 [warn] Cell completed with errors [Iu [Error]: index 3 is out of bounds for axis 0 with size 3
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'IndexError',
+  evalue: 'index 3 is out of bounds for axis 0 with size 3',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mIndexError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[9]\x1B[39m\x1B[32m, line 41\x1B[39m\n' +
+      '\x1B[32m     37\x1B[39m \n' +
+      '\x1B[32m     38\x1B[39m     X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     39\x1B[39m \n' +
+      '\x1B[32m     40\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(X_range[X_mask], mean_amps, label = f"Z position: {z}", marker = \x1B[33m"o"\x1B[39m)\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m41\x1B[39m     gaussian = [gaus(i, params[\x1B[32m0\x1B[39m][\x1B[32m0\x1B[39m], params[\x1B[32m0\x1B[39m][\x1B[32m1\x1B[39m], params[\x1B[32m0\x1B[39m][\x1B[32m2\x1B[39m], params[\x1B[32m0\x1B[39m][\x1B[32m3\x1B[39m]) \x1B[38;5;28;01mfor\x1B[39;00m i \x1B[38;5;28;01min\x1B[39;00m X_range[X_mask]]\n' +
+      '\x1B[32m     42\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(X_range[X_mask], gaussian, label = f"Z position: {z}, params: {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m0\x1B[39m], \x1B[32m3\x1B[39m)}, {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m1\x1B[39m], \x1B[32m3\x1B[39m)}, {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m2\x1B[39m], \x1B[32m3\x1B[39m)}")\n' +
+      '\x1B[32m     43\x1B[39m     ax[\x1B[32m0\x1B[39m].set_xlabel(\x1B[33m"X position [mm]"\x1B[39m)\n' +
+      '\x1B[32m     44\x1B[39m     ax[\x1B[32m0\x1B[39m].set_ylabel(\x1B[33m"Mean amplitude"\x1B[39m)\n',
+    '\x1B[31mIndexError\x1B[39m: index 3 is out of bounds for axis 0 with size 3'
+  ]
+}
+10:48:14.716 [warn] Cell completed with errors [Iu [Error]: gaus() missing 1 required positional argument: 'std'
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'TypeError',
+  evalue: "gaus() missing 1 required positional argument: 'std'",
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mTypeError\x1B[39m                                 Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[11]\x1B[39m\x1B[32m, line 36\x1B[39m\n' +
+      '\x1B[32m     32\x1B[39m     \x1B[38;5;66;03m# print(X_range[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     33\x1B[39m     \x1B[38;5;66;03m# print(mean_amps[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     34\x1B[39m     \x1B[38;5;66;03m# mask = (mean_amps != 0) & (mean_amps > 40.8) & (mean_amps < 41.0)\x1B[39;00m\n' +
+      '\x1B[32m     35\x1B[39m     mask = (X_range>=\x1B[32m40.8\x1B[39m) & (X_range<=\x1B[32m41.0\x1B[39m)\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m36\x1B[39m     params = curve_fit(gaus, X_range[mask], mean_amps[mask], p0 = (np.max(mean_amps[mask]), np.mean(X_range[mask]), \x1B[32m10\x1B[39m))\n' +
+      '\x1B[32m     37\x1B[39m \n' +
+      '\x1B[32m     38\x1B[39m     X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     39\x1B[39m \n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:1024\x1B[39m, in \x1B[36mcurve_fit\x1B[39m\x1B[34m(f, xdata, ydata, p0, sigma, absolute_sigma, check_finite, bounds, method, jac, full_output, nan_policy, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   1021\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m ydata.size != \x1B[32m1\x1B[39m \x1B[38;5;129;01mand\x1B[39;00m n > ydata.size:\n' +
+      '\x1B[32m   1022\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mTypeError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mThe number of func parameters=\x1B[39m\x1B[38;5;132;01m{\x1B[39;00mn\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m must not\x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m   1023\x1B[39m                     \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33m exceed the number of data points=\x1B[39m\x1B[38;5;132;01m{\x1B[39;00mydata.size\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m1024\x1B[39m res = \x1B[30;43mleastsq\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mfunc\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mp0\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mDfun\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mjac\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mfull_output\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43;01mTrue\x1B[39;49;00m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n' +
+      '\x1B[32m   1025\x1B[39m popt, pcov, infodict, errmsg, ier = res\n' +
+      "\x1B[32m   1026\x1B[39m ysize = \x1B[38;5;28mlen\x1B[39m(infodict[\x1B[33m'\x1B[39m\x1B[33mfvec\x1B[39m\x1B[33m'\x1B[39m])\n",
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:426\x1B[39m, in \x1B[36mleastsq\x1B[39m\x1B[34m(func, x0, args, Dfun, full_output, col_deriv, ftol, xtol, gtol, maxfev, epsfcn, factor, diag)\x1B[39m\n' +
+      '\x1B[32m    424\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(args, \x1B[38;5;28mtuple\x1B[39m):\n' +
+      '\x1B[32m    425\x1B[39m     args = (args,)\n' +
+      "\x1B[32m--> \x1B[39m\x1B[32m426\x1B[39m shape, dtype = \x1B[30;43m_check_func\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43mleastsq\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43mfunc\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mfunc\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mx0\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43margs\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mn\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n" +
+      '\x1B[32m    427\x1B[39m m = shape[\x1B[32m0\x1B[39m]\n' +
+      '\x1B[32m    429\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m n > m:\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:24\x1B[39m, in \x1B[36m_check_func\x1B[39m\x1B[34m(checker, argname, thefunc, x0, args, numinputs, output_shape)\x1B[39m\n' +
+      '\x1B[32m     22\x1B[39m \x1B[38;5;28;01mdef\x1B[39;00m\x1B[38;5;250m \x1B[39m\x1B[34m_check_func\x1B[39m(checker, argname, thefunc, x0, args, numinputs,\n' +
+      '\x1B[32m     23\x1B[39m                 output_shape=\x1B[38;5;28;01mNone\x1B[39;00m):\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m24\x1B[39m     res = atleast_1d(\x1B[30;43mthefunc\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mx0\x1B[39;49m\x1B[30;43m[\x1B[39;49m\x1B[30;43m:\x1B[39;49m\x1B[30;43mnuminputs\x1B[39;49m\x1B[30;43m]\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m)\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m+\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43margs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\x1B[30;43m)\x1B[39;49m)\n' +
+      '\x1B[32m     25\x1B[39m     \x1B[38;5;28;01mif\x1B[39;00m (output_shape \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m) \x1B[38;5;129;01mand\x1B[39;00m (shape(res) != output_shape):\n' +
+      '\x1B[32m     26\x1B[39m         \x1B[38;5;28;01mif\x1B[39;00m (output_shape[\x1B[32m0\x1B[39m] != \x1B[32m1\x1B[39m):\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:523\x1B[39m, in \x1B[36m_lightweight_memoizer.<locals>._memoized_func\x1B[39m\x1B[34m(params)\x1B[39m\n' +
+      '\x1B[32m    520\x1B[39m \x1B[38;5;28;01melif\x1B[39;00m _memoized_func.last_params \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m:\n' +
+      '\x1B[32m    521\x1B[39m     _memoized_func.skip_lookup = \x1B[38;5;28;01mTrue\x1B[39;00m\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m523\x1B[39m val = \x1B[30;43mf\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mparams\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n' +
+      '\x1B[32m    525\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m _memoized_func.last_params \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m:\n' +
+      '\x1B[32m    526\x1B[39m     _memoized_func.last_params = np.copy(params)\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:540\x1B[39m, in \x1B[36m_wrap_func.<locals>.func_wrapped\x1B[39m\x1B[34m(params)\x1B[39m\n' +
+      '\x1B[32m    539\x1B[39m \x1B[38;5;28;01mdef\x1B[39;00m\x1B[38;5;250m \x1B[39m\x1B[34mfunc_wrapped\x1B[39m(params):\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m540\x1B[39m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[30;43mfunc\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mxdata\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mparams\x1B[39;49m\x1B[30;43m)\x1B[39;49m - ydata\n',
+    "\x1B[31mTypeError\x1B[39m: gaus() missing 1 required positional argument: 'std'"
+  ]
+}
+10:50:24.580 [warn] Cell completed with errors [Iu [Error]: x and y must have same first dimension, but have shapes (21,) and (9,)
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'ValueError',
+  evalue: 'x and y must have same first dimension, but have shapes (21,) and (9,)',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mValueError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[15]\x1B[39m\x1B[32m, line 42\x1B[39m\n' +
+      '\x1B[32m     38\x1B[39m     X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     39\x1B[39m \n' +
+      '\x1B[32m     40\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(X_range[X_mask], mean_amps, label = f"Z position: {z}", marker = \x1B[33m"o"\x1B[39m)\n' +
+      '\x1B[32m     41\x1B[39m     gaussian = [gaus(i, params[\x1B[32m0\x1B[39m][\x1B[32m0\x1B[39m], params[\x1B[32m0\x1B[39m][\x1B[32m1\x1B[39m], params[\x1B[32m0\x1B[39m][\x1B[32m2\x1B[39m], params[\x1B[32m0\x1B[39m][\x1B[32m3\x1B[39m]) \x1B[38;5;28;01mfor\x1B[39;00m i \x1B[38;5;28;01min\x1B[39;00m X_range[mask]]\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m42\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(X_range[X_mask], gaussian, label = f"Z position: {z}, params: {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m0\x1B[39m], \x1B[32m3\x1B[39m)}, {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m1\x1B[39m], \x1B[32m3\x1B[39m)}, {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m2\x1B[39m], \x1B[32m3\x1B[39m)}, {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m3\x1B[39m], \x1B[32m3\x1B[39m)}")\n' +
+      '\x1B[32m     43\x1B[39m     ax[\x1B[32m0\x1B[39m].set_xlabel(\x1B[33m"X position [mm]"\x1B[39m)\n' +
+      '\x1B[32m     44\x1B[39m     ax[\x1B[32m0\x1B[39m].set_ylabel(\x1B[33m"Mean amplitude"\x1B[39m)\n' +
+      '\x1B[32m     45\x1B[39m     \x1B[38;5;66;03m# ax[0].set_ylim(5, 30)\x1B[39;00m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_axes.py:1792\x1B[39m, in \x1B[36mAxes.plot\x1B[39m\x1B[34m(self, scalex, scaley, data, *args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   1549\x1B[39m \x1B[38;5;250m\x1B[39m\x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   1550\x1B[39m \x1B[33;03mPlot y versus x as lines and/or markers.\x1B[39;00m\n' +
+      '\x1B[32m   1551\x1B[39m \n' +
+      "\x1B[32m   (...)\x1B[39m\x1B[32m   1789\x1B[39m \x1B[33;03m(``'green'``) or hex strings (``'#008000'``).\x1B[39;00m\n" +
+      '\x1B[32m   1790\x1B[39m \x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   1791\x1B[39m kwargs = cbook.normalize_kwargs(kwargs, mlines.Line2D)\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m1792\x1B[39m lines = [*\x1B[38;5;28mself\x1B[39m._get_lines(\x1B[38;5;28mself\x1B[39m, *args, data=data, **kwargs)]\n' +
+      '\x1B[32m   1793\x1B[39m \x1B[38;5;28;01mfor\x1B[39;00m line \x1B[38;5;129;01min\x1B[39;00m lines:\n' +
+      '\x1B[32m   1794\x1B[39m     \x1B[38;5;28mself\x1B[39m.add_line(line)\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:331\x1B[39m, in \x1B[36m_process_plot_var_args.__call__\x1B[39m\x1B[34m(self, axes, data, return_kwargs, *args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m    329\x1B[39m     this += args[\x1B[32m0\x1B[39m],\n' +
+      '\x1B[32m    330\x1B[39m     args = args[\x1B[32m1\x1B[39m:]\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m331\x1B[39m \x1B[38;5;28;01myield from\x1B[39;00m \x1B[30;43mself\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43m_plot_args\x1B[39;49m\x1B[30;43m(\x1B[39;49m\n' +
+      '\x1B[32m    332\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43maxes\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mthis\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mambiguous_fmt_datakey\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mambiguous_fmt_datakey\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m    333\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43mreturn_kwargs\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mreturn_kwargs\x1B[39;49m\n' +
+      '\x1B[32m    334\x1B[39m \x1B[30;43m\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:509\x1B[39m, in \x1B[36m_process_plot_var_args._plot_args\x1B[39m\x1B[34m(self, axes, tup, kwargs, return_kwargs, ambiguous_fmt_datakey)\x1B[39m\n' +
+      '\x1B[32m    506\x1B[39m     axes.yaxis.update_units(y)\n' +
+      '\x1B[32m    508\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m x.shape[\x1B[32m0\x1B[39m] != y.shape[\x1B[32m0\x1B[39m]:\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m509\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mValueError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mx and y must have same first dimension, but \x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m    510\x1B[39m                      \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mhave shapes \x1B[39m\x1B[38;5;132;01m{\x1B[39;00mx.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m and \x1B[39m\x1B[38;5;132;01m{\x1B[39;00my.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n' +
+      '\x1B[32m    511\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m x.ndim > \x1B[32m2\x1B[39m \x1B[38;5;129;01mor\x1B[39;00m y.ndim > \x1B[32m2\x1B[39m:\n' +
+      '\x1B[32m    512\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mValueError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mx and y can be no greater than 2D, but have \x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m    513\x1B[39m                      \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mshapes \x1B[39m\x1B[38;5;132;01m{\x1B[39;00mx.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m and \x1B[39m\x1B[38;5;132;01m{\x1B[39;00my.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n',
+    '\x1B[31mValueError\x1B[39m: x and y must have same first dimension, but have shapes (21,) and (9,)'
+  ]
+}
+10:52:37.728 [warn] Cell completed with errors [Iu [Error]: Optimal parameters not found: Number of calls to function has reached maxfev = 1000.
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'RuntimeError',
+  evalue: 'Optimal parameters not found: Number of calls to function has reached maxfev = 1000.',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mRuntimeError\x1B[39m                              Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[18]\x1B[39m\x1B[32m, line 36\x1B[39m\n' +
+      '\x1B[32m     32\x1B[39m     \x1B[38;5;66;03m# print(X_range[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     33\x1B[39m     \x1B[38;5;66;03m# print(mean_amps[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     34\x1B[39m     \x1B[38;5;66;03m# mask = (mean_amps != 0) & (mean_amps > 40.8) & (mean_amps < 41.0)\x1B[39;00m\n' +
+      '\x1B[32m     35\x1B[39m     mask = (X_range>=\x1B[32m40.8\x1B[39m) & (X_range<=\x1B[32m41.0\x1B[39m)\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m36\x1B[39m     params = curve_fit(gaus, X_range[mask], mean_amps[mask], p0 = (np.max(mean_amps[mask]), np.min(mean_amps[mask]), np.mean(X_range[mask]), \x1B[32m10\x1B[39m))\n' +
+      '\x1B[32m     37\x1B[39m \n' +
+      '\x1B[32m     38\x1B[39m     X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     39\x1B[39m \n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:1029\x1B[39m, in \x1B[36mcurve_fit\x1B[39m\x1B[34m(f, xdata, ydata, p0, sigma, absolute_sigma, check_finite, bounds, method, jac, full_output, nan_policy, **kwargs)\x1B[39m\n' +
+      "\x1B[32m   1027\x1B[39m     cost = np.sum(infodict[\x1B[33m'\x1B[39m\x1B[33mfvec\x1B[39m\x1B[33m'\x1B[39m] ** \x1B[32m2\x1B[39m)\n" +
+      '\x1B[32m   1028\x1B[39m     \x1B[38;5;28;01mif\x1B[39;00m ier \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;129;01min\x1B[39;00m [\x1B[32m1\x1B[39m, \x1B[32m2\x1B[39m, \x1B[32m3\x1B[39m, \x1B[32m4\x1B[39m]:\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m1029\x1B[39m         \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mRuntimeError\x1B[39;00m(\x1B[33m"\x1B[39m\x1B[33mOptimal parameters not found: \x1B[39m\x1B[33m"\x1B[39m + errmsg)\n' +
+      '\x1B[32m   1030\x1B[39m \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[32m   1031\x1B[39m     \x1B[38;5;66;03m# Rename maxfev (leastsq) to max_nfev (least_squares), if specified.\x1B[39;00m\n' +
+      "\x1B[32m   1032\x1B[39m     \x1B[38;5;28;01mif\x1B[39;00m \x1B[33m'\x1B[39m\x1B[33mmax_nfev\x1B[39m\x1B[33m'\x1B[39m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;129;01min\x1B[39;00m kwargs:\n",
+    '\x1B[31mRuntimeError\x1B[39m: Optimal parameters not found: Number of calls to function has reached maxfev = 1000.'
+  ]
+}
+10:53:19.237 [warn] Cell completed with errors [Iu [Error]: gaus() missing 1 required positional argument: 'std'
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'TypeError',
+  evalue: "gaus() missing 1 required positional argument: 'std'",
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mTypeError\x1B[39m                                 Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[20]\x1B[39m\x1B[32m, line 36\x1B[39m\n' +
+      '\x1B[32m     32\x1B[39m     \x1B[38;5;66;03m# print(X_range[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     33\x1B[39m     \x1B[38;5;66;03m# print(mean_amps[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     34\x1B[39m     \x1B[38;5;66;03m# mask = (mean_amps != 0) & (mean_amps > 40.8) & (mean_amps < 41.0)\x1B[39;00m\n' +
+      '\x1B[32m     35\x1B[39m     mask = (X_range>=\x1B[32m40.8\x1B[39m) & (X_range<=\x1B[32m41.0\x1B[39m)\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m36\x1B[39m     params = curve_fit(gaus, X_range[mask], mean_amps[mask], p0 = (np.max(mean_amps[mask]), np.mean(X_range[mask]), \x1B[32m10\x1B[39m))\n' +
+      '\x1B[32m     37\x1B[39m \n' +
+      '\x1B[32m     38\x1B[39m     X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     39\x1B[39m \n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:1024\x1B[39m, in \x1B[36mcurve_fit\x1B[39m\x1B[34m(f, xdata, ydata, p0, sigma, absolute_sigma, check_finite, bounds, method, jac, full_output, nan_policy, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   1021\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m ydata.size != \x1B[32m1\x1B[39m \x1B[38;5;129;01mand\x1B[39;00m n > ydata.size:\n' +
+      '\x1B[32m   1022\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mTypeError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mThe number of func parameters=\x1B[39m\x1B[38;5;132;01m{\x1B[39;00mn\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m must not\x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m   1023\x1B[39m                     \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33m exceed the number of data points=\x1B[39m\x1B[38;5;132;01m{\x1B[39;00mydata.size\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m1024\x1B[39m res = \x1B[30;43mleastsq\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mfunc\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mp0\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mDfun\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mjac\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mfull_output\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43;01mTrue\x1B[39;49;00m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n' +
+      '\x1B[32m   1025\x1B[39m popt, pcov, infodict, errmsg, ier = res\n' +
+      "\x1B[32m   1026\x1B[39m ysize = \x1B[38;5;28mlen\x1B[39m(infodict[\x1B[33m'\x1B[39m\x1B[33mfvec\x1B[39m\x1B[33m'\x1B[39m])\n",
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:426\x1B[39m, in \x1B[36mleastsq\x1B[39m\x1B[34m(func, x0, args, Dfun, full_output, col_deriv, ftol, xtol, gtol, maxfev, epsfcn, factor, diag)\x1B[39m\n' +
+      '\x1B[32m    424\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(args, \x1B[38;5;28mtuple\x1B[39m):\n' +
+      '\x1B[32m    425\x1B[39m     args = (args,)\n' +
+      "\x1B[32m--> \x1B[39m\x1B[32m426\x1B[39m shape, dtype = \x1B[30;43m_check_func\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43mleastsq\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43mfunc\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mfunc\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mx0\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43margs\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mn\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n" +
+      '\x1B[32m    427\x1B[39m m = shape[\x1B[32m0\x1B[39m]\n' +
+      '\x1B[32m    429\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m n > m:\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:24\x1B[39m, in \x1B[36m_check_func\x1B[39m\x1B[34m(checker, argname, thefunc, x0, args, numinputs, output_shape)\x1B[39m\n' +
+      '\x1B[32m     22\x1B[39m \x1B[38;5;28;01mdef\x1B[39;00m\x1B[38;5;250m \x1B[39m\x1B[34m_check_func\x1B[39m(checker, argname, thefunc, x0, args, numinputs,\n' +
+      '\x1B[32m     23\x1B[39m                 output_shape=\x1B[38;5;28;01mNone\x1B[39;00m):\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m24\x1B[39m     res = atleast_1d(\x1B[30;43mthefunc\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mx0\x1B[39;49m\x1B[30;43m[\x1B[39;49m\x1B[30;43m:\x1B[39;49m\x1B[30;43mnuminputs\x1B[39;49m\x1B[30;43m]\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m)\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m+\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43margs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\x1B[30;43m)\x1B[39;49m)\n' +
+      '\x1B[32m     25\x1B[39m     \x1B[38;5;28;01mif\x1B[39;00m (output_shape \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m) \x1B[38;5;129;01mand\x1B[39;00m (shape(res) != output_shape):\n' +
+      '\x1B[32m     26\x1B[39m         \x1B[38;5;28;01mif\x1B[39;00m (output_shape[\x1B[32m0\x1B[39m] != \x1B[32m1\x1B[39m):\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:523\x1B[39m, in \x1B[36m_lightweight_memoizer.<locals>._memoized_func\x1B[39m\x1B[34m(params)\x1B[39m\n' +
+      '\x1B[32m    520\x1B[39m \x1B[38;5;28;01melif\x1B[39;00m _memoized_func.last_params \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m:\n' +
+      '\x1B[32m    521\x1B[39m     _memoized_func.skip_lookup = \x1B[38;5;28;01mTrue\x1B[39;00m\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m523\x1B[39m val = \x1B[30;43mf\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mparams\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n' +
+      '\x1B[32m    525\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m _memoized_func.last_params \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m:\n' +
+      '\x1B[32m    526\x1B[39m     _memoized_func.last_params = np.copy(params)\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:540\x1B[39m, in \x1B[36m_wrap_func.<locals>.func_wrapped\x1B[39m\x1B[34m(params)\x1B[39m\n' +
+      '\x1B[32m    539\x1B[39m \x1B[38;5;28;01mdef\x1B[39;00m\x1B[38;5;250m \x1B[39m\x1B[34mfunc_wrapped\x1B[39m(params):\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m540\x1B[39m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[30;43mfunc\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mxdata\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mparams\x1B[39;49m\x1B[30;43m)\x1B[39;49m - ydata\n',
+    "\x1B[31mTypeError\x1B[39m: gaus() missing 1 required positional argument: 'std'"
+  ]
+}
+10:53:31.383 [warn] Cell completed with errors [Iu [Error]: gaus() missing 1 required positional argument: 'std'
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'TypeError',
+  evalue: "gaus() missing 1 required positional argument: 'std'",
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mTypeError\x1B[39m                                 Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[21]\x1B[39m\x1B[32m, line 36\x1B[39m\n' +
+      '\x1B[32m     32\x1B[39m     \x1B[38;5;66;03m# print(X_range[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     33\x1B[39m     \x1B[38;5;66;03m# print(mean_amps[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     34\x1B[39m     \x1B[38;5;66;03m# mask = (mean_amps != 0) & (mean_amps > 40.8) & (mean_amps < 41.0)\x1B[39;00m\n' +
+      '\x1B[32m     35\x1B[39m     mask = (X_range>=\x1B[32m40.8\x1B[39m) & (X_range<=\x1B[32m41.0\x1B[39m)\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m36\x1B[39m     params = curve_fit(gaus, X_range[mask], mean_amps[mask], p0 = (np.max(mean_amps[mask]), np.mean(X_range[mask]), \x1B[32m10\x1B[39m))\n' +
+      '\x1B[32m     37\x1B[39m \n' +
+      '\x1B[32m     38\x1B[39m     X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     39\x1B[39m \n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:1024\x1B[39m, in \x1B[36mcurve_fit\x1B[39m\x1B[34m(f, xdata, ydata, p0, sigma, absolute_sigma, check_finite, bounds, method, jac, full_output, nan_policy, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   1021\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m ydata.size != \x1B[32m1\x1B[39m \x1B[38;5;129;01mand\x1B[39;00m n > ydata.size:\n' +
+      '\x1B[32m   1022\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mTypeError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mThe number of func parameters=\x1B[39m\x1B[38;5;132;01m{\x1B[39;00mn\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m must not\x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m   1023\x1B[39m                     \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33m exceed the number of data points=\x1B[39m\x1B[38;5;132;01m{\x1B[39;00mydata.size\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m1024\x1B[39m res = \x1B[30;43mleastsq\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mfunc\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mp0\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mDfun\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mjac\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mfull_output\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43;01mTrue\x1B[39;49;00m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n' +
+      '\x1B[32m   1025\x1B[39m popt, pcov, infodict, errmsg, ier = res\n' +
+      "\x1B[32m   1026\x1B[39m ysize = \x1B[38;5;28mlen\x1B[39m(infodict[\x1B[33m'\x1B[39m\x1B[33mfvec\x1B[39m\x1B[33m'\x1B[39m])\n",
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:426\x1B[39m, in \x1B[36mleastsq\x1B[39m\x1B[34m(func, x0, args, Dfun, full_output, col_deriv, ftol, xtol, gtol, maxfev, epsfcn, factor, diag)\x1B[39m\n' +
+      '\x1B[32m    424\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(args, \x1B[38;5;28mtuple\x1B[39m):\n' +
+      '\x1B[32m    425\x1B[39m     args = (args,)\n' +
+      "\x1B[32m--> \x1B[39m\x1B[32m426\x1B[39m shape, dtype = \x1B[30;43m_check_func\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43mleastsq\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43mfunc\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mfunc\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mx0\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43margs\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mn\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n" +
+      '\x1B[32m    427\x1B[39m m = shape[\x1B[32m0\x1B[39m]\n' +
+      '\x1B[32m    429\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m n > m:\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:24\x1B[39m, in \x1B[36m_check_func\x1B[39m\x1B[34m(checker, argname, thefunc, x0, args, numinputs, output_shape)\x1B[39m\n' +
+      '\x1B[32m     22\x1B[39m \x1B[38;5;28;01mdef\x1B[39;00m\x1B[38;5;250m \x1B[39m\x1B[34m_check_func\x1B[39m(checker, argname, thefunc, x0, args, numinputs,\n' +
+      '\x1B[32m     23\x1B[39m                 output_shape=\x1B[38;5;28;01mNone\x1B[39;00m):\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m24\x1B[39m     res = atleast_1d(\x1B[30;43mthefunc\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mx0\x1B[39;49m\x1B[30;43m[\x1B[39;49m\x1B[30;43m:\x1B[39;49m\x1B[30;43mnuminputs\x1B[39;49m\x1B[30;43m]\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m)\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m+\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43margs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\x1B[30;43m)\x1B[39;49m)\n' +
+      '\x1B[32m     25\x1B[39m     \x1B[38;5;28;01mif\x1B[39;00m (output_shape \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m) \x1B[38;5;129;01mand\x1B[39;00m (shape(res) != output_shape):\n' +
+      '\x1B[32m     26\x1B[39m         \x1B[38;5;28;01mif\x1B[39;00m (output_shape[\x1B[32m0\x1B[39m] != \x1B[32m1\x1B[39m):\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:523\x1B[39m, in \x1B[36m_lightweight_memoizer.<locals>._memoized_func\x1B[39m\x1B[34m(params)\x1B[39m\n' +
+      '\x1B[32m    520\x1B[39m \x1B[38;5;28;01melif\x1B[39;00m _memoized_func.last_params \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m:\n' +
+      '\x1B[32m    521\x1B[39m     _memoized_func.skip_lookup = \x1B[38;5;28;01mTrue\x1B[39;00m\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m523\x1B[39m val = \x1B[30;43mf\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mparams\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n' +
+      '\x1B[32m    525\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m _memoized_func.last_params \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m:\n' +
+      '\x1B[32m    526\x1B[39m     _memoized_func.last_params = np.copy(params)\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:540\x1B[39m, in \x1B[36m_wrap_func.<locals>.func_wrapped\x1B[39m\x1B[34m(params)\x1B[39m\n' +
+      '\x1B[32m    539\x1B[39m \x1B[38;5;28;01mdef\x1B[39;00m\x1B[38;5;250m \x1B[39m\x1B[34mfunc_wrapped\x1B[39m(params):\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m540\x1B[39m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[30;43mfunc\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mxdata\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mparams\x1B[39;49m\x1B[30;43m)\x1B[39;49m - ydata\n',
+    "\x1B[31mTypeError\x1B[39m: gaus() missing 1 required positional argument: 'std'"
+  ]
+}
+10:55:38.403 [warn] Cell completed with errors [Iu [Error]: gaus() missing 1 required positional argument: 'std'
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'TypeError',
+  evalue: "gaus() missing 1 required positional argument: 'std'",
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mTypeError\x1B[39m                                 Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[23]\x1B[39m\x1B[32m, line 36\x1B[39m\n' +
+      '\x1B[32m     32\x1B[39m     \x1B[38;5;66;03m# print(X_range[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     33\x1B[39m     \x1B[38;5;66;03m# print(mean_amps[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     34\x1B[39m     \x1B[38;5;66;03m# mask = (mean_amps != 0) & (mean_amps > 40.8) & (mean_amps < 41.0)\x1B[39;00m\n' +
+      '\x1B[32m     35\x1B[39m     mask = (X_range>=\x1B[32m40.8\x1B[39m) & (X_range<=\x1B[32m41.0\x1B[39m)\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m36\x1B[39m     params = curve_fit(gaus, X_range[mask], mean_amps[mask], p0 = (np.max(mean_amps[mask]), np.mean(X_range[mask]), \x1B[32m10\x1B[39m))\n' +
+      '\x1B[32m     37\x1B[39m \n' +
+      '\x1B[32m     38\x1B[39m     X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     39\x1B[39m \n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:1024\x1B[39m, in \x1B[36mcurve_fit\x1B[39m\x1B[34m(f, xdata, ydata, p0, sigma, absolute_sigma, check_finite, bounds, method, jac, full_output, nan_policy, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   1021\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m ydata.size != \x1B[32m1\x1B[39m \x1B[38;5;129;01mand\x1B[39;00m n > ydata.size:\n' +
+      '\x1B[32m   1022\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mTypeError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mThe number of func parameters=\x1B[39m\x1B[38;5;132;01m{\x1B[39;00mn\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m must not\x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m   1023\x1B[39m                     \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33m exceed the number of data points=\x1B[39m\x1B[38;5;132;01m{\x1B[39;00mydata.size\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m1024\x1B[39m res = \x1B[30;43mleastsq\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mfunc\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mp0\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mDfun\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mjac\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mfull_output\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43;01mTrue\x1B[39;49;00m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n' +
+      '\x1B[32m   1025\x1B[39m popt, pcov, infodict, errmsg, ier = res\n' +
+      "\x1B[32m   1026\x1B[39m ysize = \x1B[38;5;28mlen\x1B[39m(infodict[\x1B[33m'\x1B[39m\x1B[33mfvec\x1B[39m\x1B[33m'\x1B[39m])\n",
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:426\x1B[39m, in \x1B[36mleastsq\x1B[39m\x1B[34m(func, x0, args, Dfun, full_output, col_deriv, ftol, xtol, gtol, maxfev, epsfcn, factor, diag)\x1B[39m\n' +
+      '\x1B[32m    424\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(args, \x1B[38;5;28mtuple\x1B[39m):\n' +
+      '\x1B[32m    425\x1B[39m     args = (args,)\n' +
+      "\x1B[32m--> \x1B[39m\x1B[32m426\x1B[39m shape, dtype = \x1B[30;43m_check_func\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43mleastsq\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43mfunc\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mfunc\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mx0\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43margs\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mn\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n" +
+      '\x1B[32m    427\x1B[39m m = shape[\x1B[32m0\x1B[39m]\n' +
+      '\x1B[32m    429\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m n > m:\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:24\x1B[39m, in \x1B[36m_check_func\x1B[39m\x1B[34m(checker, argname, thefunc, x0, args, numinputs, output_shape)\x1B[39m\n' +
+      '\x1B[32m     22\x1B[39m \x1B[38;5;28;01mdef\x1B[39;00m\x1B[38;5;250m \x1B[39m\x1B[34m_check_func\x1B[39m(checker, argname, thefunc, x0, args, numinputs,\n' +
+      '\x1B[32m     23\x1B[39m                 output_shape=\x1B[38;5;28;01mNone\x1B[39;00m):\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m24\x1B[39m     res = atleast_1d(\x1B[30;43mthefunc\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mx0\x1B[39;49m\x1B[30;43m[\x1B[39;49m\x1B[30;43m:\x1B[39;49m\x1B[30;43mnuminputs\x1B[39;49m\x1B[30;43m]\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m)\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m+\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43margs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\x1B[30;43m)\x1B[39;49m)\n' +
+      '\x1B[32m     25\x1B[39m     \x1B[38;5;28;01mif\x1B[39;00m (output_shape \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m) \x1B[38;5;129;01mand\x1B[39;00m (shape(res) != output_shape):\n' +
+      '\x1B[32m     26\x1B[39m         \x1B[38;5;28;01mif\x1B[39;00m (output_shape[\x1B[32m0\x1B[39m] != \x1B[32m1\x1B[39m):\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:523\x1B[39m, in \x1B[36m_lightweight_memoizer.<locals>._memoized_func\x1B[39m\x1B[34m(params)\x1B[39m\n' +
+      '\x1B[32m    520\x1B[39m \x1B[38;5;28;01melif\x1B[39;00m _memoized_func.last_params \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m:\n' +
+      '\x1B[32m    521\x1B[39m     _memoized_func.skip_lookup = \x1B[38;5;28;01mTrue\x1B[39;00m\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m523\x1B[39m val = \x1B[30;43mf\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mparams\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n' +
+      '\x1B[32m    525\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m _memoized_func.last_params \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m:\n' +
+      '\x1B[32m    526\x1B[39m     _memoized_func.last_params = np.copy(params)\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:540\x1B[39m, in \x1B[36m_wrap_func.<locals>.func_wrapped\x1B[39m\x1B[34m(params)\x1B[39m\n' +
+      '\x1B[32m    539\x1B[39m \x1B[38;5;28;01mdef\x1B[39;00m\x1B[38;5;250m \x1B[39m\x1B[34mfunc_wrapped\x1B[39m(params):\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m540\x1B[39m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[30;43mfunc\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mxdata\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mparams\x1B[39;49m\x1B[30;43m)\x1B[39;49m - ydata\n',
+    "\x1B[31mTypeError\x1B[39m: gaus() missing 1 required positional argument: 'std'"
+  ]
+}
+10:57:06.079 [warn] Cell completed with errors [Iu [Error]: gaus() missing 1 required positional argument: 'std'
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'TypeError',
+  evalue: "gaus() missing 1 required positional argument: 'std'",
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mTypeError\x1B[39m                                 Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[24]\x1B[39m\x1B[32m, line 36\x1B[39m\n' +
+      '\x1B[32m     32\x1B[39m     \x1B[38;5;66;03m# print(X_range[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     33\x1B[39m     \x1B[38;5;66;03m# print(mean_amps[mean_amps != 0])\x1B[39;00m\n' +
+      '\x1B[32m     34\x1B[39m     \x1B[38;5;66;03m# mask = (mean_amps != 0) & (mean_amps > 40.8) & (mean_amps < 41.0)\x1B[39;00m\n' +
+      '\x1B[32m     35\x1B[39m     mask = (X_range>=\x1B[32m40.8\x1B[39m) & (X_range<=\x1B[32m41.0\x1B[39m)\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m36\x1B[39m     params = curve_fit(gaus, X_range[mask], mean_amps[mask], p0 = (np.max(mean_amps[mask]), np.mean(X_range[mask]), \x1B[32m10\x1B[39m))\n' +
+      '\x1B[32m     37\x1B[39m \n' +
+      '\x1B[32m     38\x1B[39m     X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     39\x1B[39m \n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:1024\x1B[39m, in \x1B[36mcurve_fit\x1B[39m\x1B[34m(f, xdata, ydata, p0, sigma, absolute_sigma, check_finite, bounds, method, jac, full_output, nan_policy, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   1021\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m ydata.size != \x1B[32m1\x1B[39m \x1B[38;5;129;01mand\x1B[39;00m n > ydata.size:\n' +
+      '\x1B[32m   1022\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mTypeError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mThe number of func parameters=\x1B[39m\x1B[38;5;132;01m{\x1B[39;00mn\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m must not\x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m   1023\x1B[39m                     \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33m exceed the number of data points=\x1B[39m\x1B[38;5;132;01m{\x1B[39;00mydata.size\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m1024\x1B[39m res = \x1B[30;43mleastsq\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mfunc\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mp0\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mDfun\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mjac\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mfull_output\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43;01mTrue\x1B[39;49;00m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n' +
+      '\x1B[32m   1025\x1B[39m popt, pcov, infodict, errmsg, ier = res\n' +
+      "\x1B[32m   1026\x1B[39m ysize = \x1B[38;5;28mlen\x1B[39m(infodict[\x1B[33m'\x1B[39m\x1B[33mfvec\x1B[39m\x1B[33m'\x1B[39m])\n",
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:426\x1B[39m, in \x1B[36mleastsq\x1B[39m\x1B[34m(func, x0, args, Dfun, full_output, col_deriv, ftol, xtol, gtol, maxfev, epsfcn, factor, diag)\x1B[39m\n' +
+      '\x1B[32m    424\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28misinstance\x1B[39m(args, \x1B[38;5;28mtuple\x1B[39m):\n' +
+      '\x1B[32m    425\x1B[39m     args = (args,)\n' +
+      "\x1B[32m--> \x1B[39m\x1B[32m426\x1B[39m shape, dtype = \x1B[30;43m_check_func\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43mleastsq\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43mfunc\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mfunc\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mx0\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43margs\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mn\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n" +
+      '\x1B[32m    427\x1B[39m m = shape[\x1B[32m0\x1B[39m]\n' +
+      '\x1B[32m    429\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m n > m:\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:24\x1B[39m, in \x1B[36m_check_func\x1B[39m\x1B[34m(checker, argname, thefunc, x0, args, numinputs, output_shape)\x1B[39m\n' +
+      '\x1B[32m     22\x1B[39m \x1B[38;5;28;01mdef\x1B[39;00m\x1B[38;5;250m \x1B[39m\x1B[34m_check_func\x1B[39m(checker, argname, thefunc, x0, args, numinputs,\n' +
+      '\x1B[32m     23\x1B[39m                 output_shape=\x1B[38;5;28;01mNone\x1B[39;00m):\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m24\x1B[39m     res = atleast_1d(\x1B[30;43mthefunc\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mx0\x1B[39;49m\x1B[30;43m[\x1B[39;49m\x1B[30;43m:\x1B[39;49m\x1B[30;43mnuminputs\x1B[39;49m\x1B[30;43m]\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m)\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m+\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43margs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\x1B[30;43m)\x1B[39;49m)\n' +
+      '\x1B[32m     25\x1B[39m     \x1B[38;5;28;01mif\x1B[39;00m (output_shape \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m) \x1B[38;5;129;01mand\x1B[39;00m (shape(res) != output_shape):\n' +
+      '\x1B[32m     26\x1B[39m         \x1B[38;5;28;01mif\x1B[39;00m (output_shape[\x1B[32m0\x1B[39m] != \x1B[32m1\x1B[39m):\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:523\x1B[39m, in \x1B[36m_lightweight_memoizer.<locals>._memoized_func\x1B[39m\x1B[34m(params)\x1B[39m\n' +
+      '\x1B[32m    520\x1B[39m \x1B[38;5;28;01melif\x1B[39;00m _memoized_func.last_params \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;129;01mnot\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m:\n' +
+      '\x1B[32m    521\x1B[39m     _memoized_func.skip_lookup = \x1B[38;5;28;01mTrue\x1B[39;00m\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m523\x1B[39m val = \x1B[30;43mf\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mparams\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n' +
+      '\x1B[32m    525\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m _memoized_func.last_params \x1B[38;5;129;01mis\x1B[39;00m \x1B[38;5;28;01mNone\x1B[39;00m:\n' +
+      '\x1B[32m    526\x1B[39m     _memoized_func.last_params = np.copy(params)\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/scipy/optimize/_minpack_py.py:540\x1B[39m, in \x1B[36m_wrap_func.<locals>.func_wrapped\x1B[39m\x1B[34m(params)\x1B[39m\n' +
+      '\x1B[32m    539\x1B[39m \x1B[38;5;28;01mdef\x1B[39;00m\x1B[38;5;250m \x1B[39m\x1B[34mfunc_wrapped\x1B[39m(params):\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m540\x1B[39m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[30;43mfunc\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mxdata\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mparams\x1B[39;49m\x1B[30;43m)\x1B[39;49m - ydata\n',
+    "\x1B[31mTypeError\x1B[39m: gaus() missing 1 required positional argument: 'std'"
+  ]
+}
+10:57:32.769 [warn] Cell completed with errors [Iu [Error]: index 3 is out of bounds for axis 0 with size 3
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'IndexError',
+  evalue: 'index 3 is out of bounds for axis 0 with size 3',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mIndexError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[27]\x1B[39m\x1B[32m, line 42\x1B[39m\n' +
+      '\x1B[32m     38\x1B[39m     X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     39\x1B[39m \n' +
+      '\x1B[32m     40\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(X_range[X_mask], mean_amps, label = f"Z position: {z}", marker = \x1B[33m"o"\x1B[39m)\n' +
+      '\x1B[32m     41\x1B[39m     gaussian = [gaus(i, params[\x1B[32m0\x1B[39m][\x1B[32m0\x1B[39m], params[\x1B[32m0\x1B[39m][\x1B[32m1\x1B[39m], params[\x1B[32m0\x1B[39m][\x1B[32m2\x1B[39m])+np.min(mean_amps[mask]) \x1B[38;5;28;01mfor\x1B[39;00m i \x1B[38;5;28;01min\x1B[39;00m X_range[mask]]\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m42\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(X_range[mask], gaussian, label = f"Z position: {z}, params: {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m0\x1B[39m], \x1B[32m3\x1B[39m)}, {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m1\x1B[39m], \x1B[32m3\x1B[39m)}, {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m2\x1B[39m], \x1B[32m3\x1B[39m)}, {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m3\x1B[39m], \x1B[32m3\x1B[39m)}")\n' +
+      '\x1B[32m     43\x1B[39m     ax[\x1B[32m0\x1B[39m].set_xlabel(\x1B[33m"X position [mm]"\x1B[39m)\n' +
+      '\x1B[32m     44\x1B[39m     ax[\x1B[32m0\x1B[39m].set_ylabel(\x1B[33m"Mean amplitude"\x1B[39m)\n' +
+      '\x1B[32m     45\x1B[39m     \x1B[38;5;66;03m# ax[0].set_ylim(5, 30)\x1B[39;00m\n',
+    '\x1B[31mIndexError\x1B[39m: index 3 is out of bounds for axis 0 with size 3'
+  ]
+}
+10:57:55.136 [warn] Cell completed with errors [Iu [Error]: x and y must have same first dimension, but have shapes (9,) and (21,)
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'ValueError',
+  evalue: 'x and y must have same first dimension, but have shapes (9,) and (21,)',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mValueError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[28]\x1B[39m\x1B[32m, line 40\x1B[39m\n' +
+      '\x1B[32m     36\x1B[39m     params = curve_fit(gaus, X_range[mask], mean_amps[mask], p0 = (np.max(mean_amps[mask]), np.mean(X_range[mask]), \x1B[32m10\x1B[39m))\n' +
+      '\x1B[32m     37\x1B[39m \n' +
+      '\x1B[32m     38\x1B[39m     X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     39\x1B[39m \n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m40\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(X_range[mask], mean_amps, label = f"Z position: {z}", marker = \x1B[33m"o"\x1B[39m)\n' +
+      '\x1B[32m     41\x1B[39m     gaussian = [gaus(i, params[\x1B[32m0\x1B[39m][\x1B[32m0\x1B[39m], params[\x1B[32m0\x1B[39m][\x1B[32m1\x1B[39m], params[\x1B[32m0\x1B[39m][\x1B[32m2\x1B[39m])+np.min(mean_amps[mask]) \x1B[38;5;28;01mfor\x1B[39;00m i \x1B[38;5;28;01min\x1B[39;00m X_range[mask]]\n' +
+      '\x1B[32m     42\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(X_range[mask], gaussian, label = f"Z position: {z}, params: {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m0\x1B[39m], \x1B[32m3\x1B[39m)}, {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m1\x1B[39m], \x1B[32m3\x1B[39m)}, {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m2\x1B[39m], \x1B[32m3\x1B[39m)}, {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m3\x1B[39m], \x1B[32m3\x1B[39m)}")\n' +
+      '\x1B[32m     43\x1B[39m     ax[\x1B[32m0\x1B[39m].set_xlabel(\x1B[33m"X position [mm]"\x1B[39m)\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_axes.py:1792\x1B[39m, in \x1B[36mAxes.plot\x1B[39m\x1B[34m(self, scalex, scaley, data, *args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   1549\x1B[39m \x1B[38;5;250m\x1B[39m\x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   1550\x1B[39m \x1B[33;03mPlot y versus x as lines and/or markers.\x1B[39;00m\n' +
+      '\x1B[32m   1551\x1B[39m \n' +
+      "\x1B[32m   (...)\x1B[39m\x1B[32m   1789\x1B[39m \x1B[33;03m(``'green'``) or hex strings (``'#008000'``).\x1B[39;00m\n" +
+      '\x1B[32m   1790\x1B[39m \x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   1791\x1B[39m kwargs = cbook.normalize_kwargs(kwargs, mlines.Line2D)\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m1792\x1B[39m lines = [*\x1B[38;5;28mself\x1B[39m._get_lines(\x1B[38;5;28mself\x1B[39m, *args, data=data, **kwargs)]\n' +
+      '\x1B[32m   1793\x1B[39m \x1B[38;5;28;01mfor\x1B[39;00m line \x1B[38;5;129;01min\x1B[39;00m lines:\n' +
+      '\x1B[32m   1794\x1B[39m     \x1B[38;5;28mself\x1B[39m.add_line(line)\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:331\x1B[39m, in \x1B[36m_process_plot_var_args.__call__\x1B[39m\x1B[34m(self, axes, data, return_kwargs, *args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m    329\x1B[39m     this += args[\x1B[32m0\x1B[39m],\n' +
+      '\x1B[32m    330\x1B[39m     args = args[\x1B[32m1\x1B[39m:]\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m331\x1B[39m \x1B[38;5;28;01myield from\x1B[39;00m \x1B[30;43mself\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43m_plot_args\x1B[39;49m\x1B[30;43m(\x1B[39;49m\n' +
+      '\x1B[32m    332\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43maxes\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mthis\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mambiguous_fmt_datakey\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mambiguous_fmt_datakey\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m    333\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43mreturn_kwargs\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mreturn_kwargs\x1B[39;49m\n' +
+      '\x1B[32m    334\x1B[39m \x1B[30;43m\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:509\x1B[39m, in \x1B[36m_process_plot_var_args._plot_args\x1B[39m\x1B[34m(self, axes, tup, kwargs, return_kwargs, ambiguous_fmt_datakey)\x1B[39m\n' +
+      '\x1B[32m    506\x1B[39m     axes.yaxis.update_units(y)\n' +
+      '\x1B[32m    508\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m x.shape[\x1B[32m0\x1B[39m] != y.shape[\x1B[32m0\x1B[39m]:\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m509\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mValueError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mx and y must have same first dimension, but \x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m    510\x1B[39m                      \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mhave shapes \x1B[39m\x1B[38;5;132;01m{\x1B[39;00mx.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m and \x1B[39m\x1B[38;5;132;01m{\x1B[39;00my.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n' +
+      '\x1B[32m    511\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m x.ndim > \x1B[32m2\x1B[39m \x1B[38;5;129;01mor\x1B[39;00m y.ndim > \x1B[32m2\x1B[39m:\n' +
+      '\x1B[32m    512\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mValueError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mx and y can be no greater than 2D, but have \x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m    513\x1B[39m                      \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mshapes \x1B[39m\x1B[38;5;132;01m{\x1B[39;00mx.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m and \x1B[39m\x1B[38;5;132;01m{\x1B[39;00my.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n',
+    '\x1B[31mValueError\x1B[39m: x and y must have same first dimension, but have shapes (9,) and (21,)'
+  ]
+}
+10:58:03.744 [warn] Cell completed with errors [Iu [Error]: index 3 is out of bounds for axis 0 with size 3
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'IndexError',
+  evalue: 'index 3 is out of bounds for axis 0 with size 3',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mIndexError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[29]\x1B[39m\x1B[32m, line 42\x1B[39m\n' +
+      '\x1B[32m     38\x1B[39m     X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     39\x1B[39m \n' +
+      '\x1B[32m     40\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(X_range[mask], mean_amps[mask], label = f"Z position: {z}", marker = \x1B[33m"o"\x1B[39m)\n' +
+      '\x1B[32m     41\x1B[39m     gaussian = [gaus(i, params[\x1B[32m0\x1B[39m][\x1B[32m0\x1B[39m], params[\x1B[32m0\x1B[39m][\x1B[32m1\x1B[39m], params[\x1B[32m0\x1B[39m][\x1B[32m2\x1B[39m])+np.min(mean_amps[mask]) \x1B[38;5;28;01mfor\x1B[39;00m i \x1B[38;5;28;01min\x1B[39;00m X_range[mask]]\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m42\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(X_range[mask], gaussian, label = f"Z position: {z}, params: {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m0\x1B[39m], \x1B[32m3\x1B[39m)}, {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m1\x1B[39m], \x1B[32m3\x1B[39m)}, {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m2\x1B[39m], \x1B[32m3\x1B[39m)}, {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m3\x1B[39m], \x1B[32m3\x1B[39m)}")\n' +
+      '\x1B[32m     43\x1B[39m     ax[\x1B[32m0\x1B[39m].set_xlabel(\x1B[33m"X position [mm]"\x1B[39m)\n' +
+      '\x1B[32m     44\x1B[39m     ax[\x1B[32m0\x1B[39m].set_ylabel(\x1B[33m"Mean amplitude"\x1B[39m)\n' +
+      '\x1B[32m     45\x1B[39m     \x1B[38;5;66;03m# ax[0].set_ylim(5, 30)\x1B[39;00m\n',
+    '\x1B[31mIndexError\x1B[39m: index 3 is out of bounds for axis 0 with size 3'
+  ]
+}
+10:58:35.156 [warn] Cell completed with errors [Iu [Error]: index 3 is out of bounds for axis 0 with size 3
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'IndexError',
+  evalue: 'index 3 is out of bounds for axis 0 with size 3',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mIndexError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[30]\x1B[39m\x1B[32m, line 42\x1B[39m\n' +
+      '\x1B[32m     38\x1B[39m     X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     39\x1B[39m \n' +
+      '\x1B[32m     40\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(X_range, mean_amps, label = f"Z position: {z}", marker = \x1B[33m"o"\x1B[39m)\n' +
+      '\x1B[32m     41\x1B[39m     gaussian = [gaus(i, params[\x1B[32m0\x1B[39m][\x1B[32m0\x1B[39m], params[\x1B[32m0\x1B[39m][\x1B[32m1\x1B[39m], params[\x1B[32m0\x1B[39m][\x1B[32m2\x1B[39m])+np.min(mean_amps[mask]) \x1B[38;5;28;01mfor\x1B[39;00m i \x1B[38;5;28;01min\x1B[39;00m X_range[mask]]\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m42\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(X_range[mask], gaussian, label = f"Z position: {z}, params: {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m0\x1B[39m], \x1B[32m3\x1B[39m)}, {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m1\x1B[39m], \x1B[32m3\x1B[39m)}, {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m2\x1B[39m], \x1B[32m3\x1B[39m)}, {np.round(params[\x1B[32m0\x1B[39m][\x1B[32m3\x1B[39m], \x1B[32m3\x1B[39m)}")\n' +
+      '\x1B[32m     43\x1B[39m     ax[\x1B[32m0\x1B[39m].set_xlabel(\x1B[33m"X position [mm]"\x1B[39m)\n' +
+      '\x1B[32m     44\x1B[39m     ax[\x1B[32m0\x1B[39m].set_ylabel(\x1B[33m"Mean amplitude"\x1B[39m)\n' +
+      '\x1B[32m     45\x1B[39m     \x1B[38;5;66;03m# ax[0].set_ylim(5, 30)\x1B[39;00m\n',
+    '\x1B[31mIndexError\x1B[39m: index 3 is out of bounds for axis 0 with size 3'
+  ]
+}
+14:30:30.896 [info] Starting Kernel (Python Path: /home/daq/my_venv/bin/python, Venv, 3.14.4) for '/home/daq/3D_sensors/investigations/DJ_LGAD_IR_LaserTest/TuneScan.ipynb' (disableUI=false)
+14:30:31.292 [info] Process Execution: /home/daq/my_venv/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+14:30:31.326 [info] Process Execution: /home/daq/my_venv/bin/python -m ipykernel_launcher --f=/run/user/0/jupyter/runtime/kernel-v34c87d53ec6d99430f7874a9180782e67aebde76e.json
+    > cwd: /home/daq/3D_sensors/investigations/DJ_LGAD_IR_LaserTest
+14:30:31.473 [info] Process Execution: /home/daq/my_venv/bin/python -m pip list
+14:30:36.195 [info] Kernel successfully started
+14:32:08.112 [warn] Cell completed with errors [Iu [Error]: float() argument must be a string or a real number, not 'list'
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'TypeError',
+  evalue: "float() argument must be a string or a real number, not 'list'",
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mTypeError\x1B[39m                                 Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[4]\x1B[39m\x1B[32m, line 23\x1B[39m\n' +
+      '\x1B[32m     19\x1B[39m     print(filename)\n' +
+      '\x1B[32m     20\x1B[39m     x_pos = float(filename.split(\x1B[33m"Xpos"\x1B[39m)[\x1B[32m1\x1B[39m].split(\x1B[33m"_"\x1B[39m)[\x1B[32m0\x1B[39m])\n' +
+      '\x1B[32m     21\x1B[39m     y_pos = float(filename.split(\x1B[33m"Ypos"\x1B[39m)[\x1B[32m1\x1B[39m].split(\x1B[33m"00000.<username>"\x1B[39m)[\x1B[32m0\x1B[39m])\n' +
+      '\x1B[32m     22\x1B[39m     z_pos = float(filename.split(\x1B[33m"Zpos"\x1B[39m)[\x1B[32m1\x1B[39m].split(\x1B[33m"_"\x1B[39m)[\x1B[32m0\x1B[39m])\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m23\x1B[39m     laser_tune = float(filename.split())\n' +
+      '\x1B[32m     24\x1B[39m     map_plot_x.append(x_pos)\n' +
+      '\x1B[32m     25\x1B[39m     map_plot_y.append(y_pos)\n' +
+      '\x1B[32m     26\x1B[39m     map_plot_z.append(z_pos)\n',
+    "\x1B[31mTypeError\x1B[39m: float() argument must be a string or a real number, not 'list'"
+  ]
+}
+14:33:04.682 [warn] Cell completed with errors [Iu [Error]: could not convert string to float: 'TuneScan_NEv1000_BV115000mV'
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'ValueError',
+  evalue: "could not convert string to float: 'TuneScan_NEv1000_BV115000mV'",
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mValueError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[5]\x1B[39m\x1B[32m, line 23\x1B[39m\n' +
+      '\x1B[32m     19\x1B[39m     print(filename)\n' +
+      '\x1B[32m     20\x1B[39m     x_pos = float(filename.split(\x1B[33m"Xpos"\x1B[39m)[\x1B[32m1\x1B[39m].split(\x1B[33m"_"\x1B[39m)[\x1B[32m0\x1B[39m])\n' +
+      '\x1B[32m     21\x1B[39m     y_pos = float(filename.split(\x1B[33m"Ypos"\x1B[39m)[\x1B[32m1\x1B[39m].split(\x1B[33m"00000.<username>"\x1B[39m)[\x1B[32m0\x1B[39m])\n' +
+      '\x1B[32m     22\x1B[39m     z_pos = float(filename.split(\x1B[33m"Zpos"\x1B[39m)[\x1B[32m1\x1B[39m].split(\x1B[33m"_"\x1B[39m)[\x1B[32m0\x1B[39m])\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m23\x1B[39m     lt = float(filename.split(\x1B[33m"_Laser"\x1B[39m)[\x1B[32m1\x1B[39m].split(\x1B[33m"pc_"\x1B[39m)[\x1B[32m0\x1B[39m])\n' +
+      '\x1B[32m     24\x1B[39m     map_plot_x.append(x_pos)\n' +
+      '\x1B[32m     25\x1B[39m     map_plot_y.append(y_pos)\n' +
+      '\x1B[32m     26\x1B[39m     map_plot_z.append(z_pos)\n',
+    "\x1B[31mValueError\x1B[39m: could not convert string to float: 'TuneScan_NEv1000_BV115000mV'"
+  ]
+}
+14:33:21.793 [warn] Cell completed with errors [Iu [Error]: list index out of range
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'IndexError',
+  evalue: 'list index out of range',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mIndexError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[6]\x1B[39m\x1B[32m, line 23\x1B[39m\n' +
+      '\x1B[32m     19\x1B[39m     print(filename)\n' +
+      '\x1B[32m     20\x1B[39m     x_pos = float(filename.split(\x1B[33m"Xpos"\x1B[39m)[\x1B[32m1\x1B[39m].split(\x1B[33m"_"\x1B[39m)[\x1B[32m0\x1B[39m])\n' +
+      '\x1B[32m     21\x1B[39m     y_pos = float(filename.split(\x1B[33m"Ypos"\x1B[39m)[\x1B[32m1\x1B[39m].split(\x1B[33m"00000.<username>"\x1B[39m)[\x1B[32m0\x1B[39m])\n' +
+      '\x1B[32m     22\x1B[39m     z_pos = float(filename.split(\x1B[33m"Zpos"\x1B[39m)[\x1B[32m1\x1B[39m].split(\x1B[33m"_"\x1B[39m)[\x1B[32m0\x1B[39m])\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m23\x1B[39m     lt = float(filename.split(\x1B[33m"mv_Laser"\x1B[39m)[\x1B[32m1\x1B[39m].split(\x1B[33m"pc_"\x1B[39m)[\x1B[32m0\x1B[39m])\n' +
+      '\x1B[32m     24\x1B[39m     map_plot_x.append(x_pos)\n' +
+      '\x1B[32m     25\x1B[39m     map_plot_y.append(y_pos)\n' +
+      '\x1B[32m     26\x1B[39m     map_plot_z.append(z_pos)\n',
+    '\x1B[31mIndexError\x1B[39m: list index out of range'
+  ]
+}
+14:33:31.195 [warn] Cell completed with errors [Iu [Error]: f-string: valid expression required before '}' (643478154.py, line 13)
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'SyntaxError',
+  evalue: "f-string: valid expression required before '}' (643478154.py, line 13)",
+  traceback: [
+    '  \x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[8]\x1B[39m\x1B[32m, line 13\x1B[39m\n' +
+      '\x1B[31m    \x1B[39m\x1B[31ml = f"pos_{map_plot_z[f_i]}_{map_plot_x[f_i]}_{map_plot_y[f_i]}_{}"\x1B[39m\n' +
+      '                                                                     ^\n' +
+      "\x1B[31mSyntaxError\x1B[39m\x1B[31m:\x1B[39m f-string: valid expression required before '}'\n"
+  ]
+}
+14:36:13.184 [warn] Cell completed with errors [Iu [Error]: zero-size array to reduction operation maximum which has no identity
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'ValueError',
+  evalue: 'zero-size array to reduction operation maximum which has no identity',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mValueError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[10]\x1B[39m\x1B[32m, line 27\x1B[39m\n' +
+      '\x1B[32m     23\x1B[39m         n_events = np.array(n_events)\n' +
+      '\x1B[32m     24\x1B[39m \n' +
+      '\x1B[32m     25\x1B[39m         mask = (X_range>=\x1B[32m40.77\x1B[39m) & (X_range<=\x1B[32m41.03\x1B[39m) & (mean_amps!=\x1B[32m0\x1B[39m)\n' +
+      '\x1B[32m     26\x1B[39m         print(np.std(X_range[mask]))\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m27\x1B[39m         params = curve_fit(gaus, X_range[mask], mean_amps[mask], p0 = (np.max(mean_amps[mask]), np.mean(X_range[mask]), \x1B[32m10\x1B[39m))\n' +
+      '\x1B[32m     28\x1B[39m \n' +
+      '\x1B[32m     29\x1B[39m         X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     30\x1B[39m \n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:3161\x1B[39m, in \x1B[36mmax\x1B[39m\x1B[34m(a, axis, out, keepdims, initial, where)\x1B[39m\n' +
+      '\x1B[32m   3049\x1B[39m \x1B[38;5;129m@array_function_dispatch\x1B[39m(_max_dispatcher)\n' +
+      "\x1B[32m   3050\x1B[39m \x1B[38;5;129m@set_module\x1B[39m(\x1B[33m'\x1B[39m\x1B[33mnumpy\x1B[39m\x1B[33m'\x1B[39m)\n" +
+      '\x1B[32m   3051\x1B[39m \x1B[38;5;28;01mdef\x1B[39;00m\x1B[38;5;250m \x1B[39m\x1B[34mmax\x1B[39m(a, axis=\x1B[38;5;28;01mNone\x1B[39;00m, out=\x1B[38;5;28;01mNone\x1B[39;00m, keepdims=np._NoValue, initial=np._NoValue,\n' +
+      '\x1B[32m   3052\x1B[39m          where=np._NoValue):\n' +
+      '\x1B[32m   3053\x1B[39m \x1B[38;5;250m    \x1B[39m\x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   3054\x1B[39m \x1B[33;03m    Return the maximum of an array or maximum along an axis.\x1B[39;00m\n' +
+      '\x1B[32m   3055\x1B[39m \n' +
+      '\x1B[32m   (...)\x1B[39m\x1B[32m   3159\x1B[39m \x1B[33;03m    5\x1B[39;00m\n' +
+      '\x1B[32m   3160\x1B[39m \x1B[33;03m    """\x1B[39;00m\n' +
+      "\x1B[32m-> \x1B[39m\x1B[32m3161\x1B[39m     \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[30;43m_wrapreduction\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43ma\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mnp\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mmaximum\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43mmax\x1B[39;49m\x1B[30;43m'\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43maxis\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43;01mNone\x1B[39;49;00m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mout\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n" +
+      '\x1B[32m   3162\x1B[39m \x1B[30;43m                          \x1B[39;49m\x1B[30;43mkeepdims\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mkeepdims\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43minitial\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43minitial\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mwhere\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mwhere\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/numpy/_core/fromnumeric.py:83\x1B[39m, in \x1B[36m_wrapreduction\x1B[39m\x1B[34m(obj, ufunc, method, axis, dtype, out, **kwargs)\x1B[39m\n' +
+      '\x1B[32m     80\x1B[39m         \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[32m     81\x1B[39m             \x1B[38;5;28;01mreturn\x1B[39;00m reduction(axis=axis, out=out, **passkwargs)\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m83\x1B[39m \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[30;43mufunc\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mreduce\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mobj\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43maxis\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mdtype\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mout\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mpasskwargs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[31mValueError\x1B[39m: zero-size array to reduction operation maximum which has no identity'
+  ]
+}
+14:37:06.386 [warn] Cell completed with errors [Iu [Error]: x and y must have same first dimension, but have shapes (6,) and (1,)
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'ValueError',
+  evalue: 'x and y must have same first dimension, but have shapes (6,) and (1,)',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mValueError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[12]\x1B[39m\x1B[32m, line 31\x1B[39m\n' +
+      '\x1B[32m     27\x1B[39m         \x1B[38;5;66;03m# params = curve_fit(gaus, X_range[mask], mean_amps[mask], p0 = (np.max(mean_amps[mask]), np.mean(X_range[mask]), 10))\x1B[39;00m\n' +
+      '\x1B[32m     28\x1B[39m \n' +
+      '\x1B[32m     29\x1B[39m         X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     30\x1B[39m \n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m31\x1B[39m         ax[\x1B[32m0\x1B[39m].plot(laser_tune, mean_amps, label = f"Z position: {z}", marker = \x1B[33m"o"\x1B[39m)\n' +
+      '\x1B[32m     32\x1B[39m         ax[\x1B[32m0\x1B[39m].set_xlabel(\x1B[33m"X position [mm]"\x1B[39m)\n' +
+      '\x1B[32m     33\x1B[39m         ax[\x1B[32m0\x1B[39m].set_ylabel(\x1B[33m"Mean amplitude"\x1B[39m)\n' +
+      '\x1B[32m     34\x1B[39m \n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_axes.py:1792\x1B[39m, in \x1B[36mAxes.plot\x1B[39m\x1B[34m(self, scalex, scaley, data, *args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   1549\x1B[39m \x1B[38;5;250m\x1B[39m\x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   1550\x1B[39m \x1B[33;03mPlot y versus x as lines and/or markers.\x1B[39;00m\n' +
+      '\x1B[32m   1551\x1B[39m \n' +
+      "\x1B[32m   (...)\x1B[39m\x1B[32m   1789\x1B[39m \x1B[33;03m(``'green'``) or hex strings (``'#008000'``).\x1B[39;00m\n" +
+      '\x1B[32m   1790\x1B[39m \x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   1791\x1B[39m kwargs = cbook.normalize_kwargs(kwargs, mlines.Line2D)\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m1792\x1B[39m lines = [*\x1B[38;5;28mself\x1B[39m._get_lines(\x1B[38;5;28mself\x1B[39m, *args, data=data, **kwargs)]\n' +
+      '\x1B[32m   1793\x1B[39m \x1B[38;5;28;01mfor\x1B[39;00m line \x1B[38;5;129;01min\x1B[39;00m lines:\n' +
+      '\x1B[32m   1794\x1B[39m     \x1B[38;5;28mself\x1B[39m.add_line(line)\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:331\x1B[39m, in \x1B[36m_process_plot_var_args.__call__\x1B[39m\x1B[34m(self, axes, data, return_kwargs, *args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m    329\x1B[39m     this += args[\x1B[32m0\x1B[39m],\n' +
+      '\x1B[32m    330\x1B[39m     args = args[\x1B[32m1\x1B[39m:]\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m331\x1B[39m \x1B[38;5;28;01myield from\x1B[39;00m \x1B[30;43mself\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43m_plot_args\x1B[39;49m\x1B[30;43m(\x1B[39;49m\n' +
+      '\x1B[32m    332\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43maxes\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mthis\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mambiguous_fmt_datakey\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mambiguous_fmt_datakey\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m    333\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43mreturn_kwargs\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mreturn_kwargs\x1B[39;49m\n' +
+      '\x1B[32m    334\x1B[39m \x1B[30;43m\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:509\x1B[39m, in \x1B[36m_process_plot_var_args._plot_args\x1B[39m\x1B[34m(self, axes, tup, kwargs, return_kwargs, ambiguous_fmt_datakey)\x1B[39m\n' +
+      '\x1B[32m    506\x1B[39m     axes.yaxis.update_units(y)\n' +
+      '\x1B[32m    508\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m x.shape[\x1B[32m0\x1B[39m] != y.shape[\x1B[32m0\x1B[39m]:\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m509\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mValueError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mx and y must have same first dimension, but \x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m    510\x1B[39m                      \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mhave shapes \x1B[39m\x1B[38;5;132;01m{\x1B[39;00mx.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m and \x1B[39m\x1B[38;5;132;01m{\x1B[39;00my.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n' +
+      '\x1B[32m    511\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m x.ndim > \x1B[32m2\x1B[39m \x1B[38;5;129;01mor\x1B[39;00m y.ndim > \x1B[32m2\x1B[39m:\n' +
+      '\x1B[32m    512\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mValueError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mx and y can be no greater than 2D, but have \x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m    513\x1B[39m                      \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mshapes \x1B[39m\x1B[38;5;132;01m{\x1B[39;00mx.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m and \x1B[39m\x1B[38;5;132;01m{\x1B[39;00my.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n',
+    '\x1B[31mValueError\x1B[39m: x and y must have same first dimension, but have shapes (6,) and (1,)'
+  ]
+}
+14:37:23.271 [warn] Cell completed with errors [Iu [Error]: x and y must have same first dimension, but have shapes (6,) and (1,)
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'ValueError',
+  evalue: 'x and y must have same first dimension, but have shapes (6,) and (1,)',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mValueError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[13]\x1B[39m\x1B[32m, line 31\x1B[39m\n' +
+      '\x1B[32m     27\x1B[39m     \x1B[38;5;66;03m# params = curve_fit(gaus, X_range[mask], mean_amps[mask], p0 = (np.max(mean_amps[mask]), np.mean(X_range[mask]), 10))\x1B[39;00m\n' +
+      '\x1B[32m     28\x1B[39m \n' +
+      '\x1B[32m     29\x1B[39m     X_mask = (X_range >= \x1B[32m0\x1B[39m) \x1B[38;5;66;03m# (X_range >= 40.8) # & (X_range < 40.86)\x1B[39;00m\n' +
+      '\x1B[32m     30\x1B[39m \n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m31\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(laser_tune, mean_amps, label = f"Z position: {z}", marker = \x1B[33m"o"\x1B[39m)\n' +
+      '\x1B[32m     32\x1B[39m     ax[\x1B[32m0\x1B[39m].set_xlabel(\x1B[33m"X position [mm]"\x1B[39m)\n' +
+      '\x1B[32m     33\x1B[39m     ax[\x1B[32m0\x1B[39m].set_ylabel(\x1B[33m"Mean amplitude"\x1B[39m)\n' +
+      '\x1B[32m     34\x1B[39m \n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_axes.py:1792\x1B[39m, in \x1B[36mAxes.plot\x1B[39m\x1B[34m(self, scalex, scaley, data, *args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   1549\x1B[39m \x1B[38;5;250m\x1B[39m\x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   1550\x1B[39m \x1B[33;03mPlot y versus x as lines and/or markers.\x1B[39;00m\n' +
+      '\x1B[32m   1551\x1B[39m \n' +
+      "\x1B[32m   (...)\x1B[39m\x1B[32m   1789\x1B[39m \x1B[33;03m(``'green'``) or hex strings (``'#008000'``).\x1B[39;00m\n" +
+      '\x1B[32m   1790\x1B[39m \x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   1791\x1B[39m kwargs = cbook.normalize_kwargs(kwargs, mlines.Line2D)\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m1792\x1B[39m lines = [*\x1B[38;5;28mself\x1B[39m._get_lines(\x1B[38;5;28mself\x1B[39m, *args, data=data, **kwargs)]\n' +
+      '\x1B[32m   1793\x1B[39m \x1B[38;5;28;01mfor\x1B[39;00m line \x1B[38;5;129;01min\x1B[39;00m lines:\n' +
+      '\x1B[32m   1794\x1B[39m     \x1B[38;5;28mself\x1B[39m.add_line(line)\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:331\x1B[39m, in \x1B[36m_process_plot_var_args.__call__\x1B[39m\x1B[34m(self, axes, data, return_kwargs, *args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m    329\x1B[39m     this += args[\x1B[32m0\x1B[39m],\n' +
+      '\x1B[32m    330\x1B[39m     args = args[\x1B[32m1\x1B[39m:]\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m331\x1B[39m \x1B[38;5;28;01myield from\x1B[39;00m \x1B[30;43mself\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43m_plot_args\x1B[39;49m\x1B[30;43m(\x1B[39;49m\n' +
+      '\x1B[32m    332\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43maxes\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mthis\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mambiguous_fmt_datakey\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mambiguous_fmt_datakey\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m    333\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43mreturn_kwargs\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mreturn_kwargs\x1B[39;49m\n' +
+      '\x1B[32m    334\x1B[39m \x1B[30;43m\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:509\x1B[39m, in \x1B[36m_process_plot_var_args._plot_args\x1B[39m\x1B[34m(self, axes, tup, kwargs, return_kwargs, ambiguous_fmt_datakey)\x1B[39m\n' +
+      '\x1B[32m    506\x1B[39m     axes.yaxis.update_units(y)\n' +
+      '\x1B[32m    508\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m x.shape[\x1B[32m0\x1B[39m] != y.shape[\x1B[32m0\x1B[39m]:\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m509\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mValueError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mx and y must have same first dimension, but \x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m    510\x1B[39m                      \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mhave shapes \x1B[39m\x1B[38;5;132;01m{\x1B[39;00mx.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m and \x1B[39m\x1B[38;5;132;01m{\x1B[39;00my.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n' +
+      '\x1B[32m    511\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m x.ndim > \x1B[32m2\x1B[39m \x1B[38;5;129;01mor\x1B[39;00m y.ndim > \x1B[32m2\x1B[39m:\n' +
+      '\x1B[32m    512\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mValueError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mx and y can be no greater than 2D, but have \x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m    513\x1B[39m                      \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mshapes \x1B[39m\x1B[38;5;132;01m{\x1B[39;00mx.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m and \x1B[39m\x1B[38;5;132;01m{\x1B[39;00my.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n',
+    '\x1B[31mValueError\x1B[39m: x and y must have same first dimension, but have shapes (6,) and (1,)'
+  ]
+}
+14:38:21.412 [warn] Cell completed with errors [Iu [Error]: x and y must have same first dimension, but have shapes (6,) and (1,)
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'ValueError',
+  evalue: 'x and y must have same first dimension, but have shapes (6,) and (1,)',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mValueError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[14]\x1B[39m\x1B[32m, line 28\x1B[39m\n' +
+      '\x1B[32m     24\x1B[39m     n_events = np.array(n_events)\n' +
+      '\x1B[32m     25\x1B[39m \n' +
+      '\x1B[32m     26\x1B[39m     \x1B[38;5;66;03m# params = curve_fit(gaus, X_range[mask], mean_amps[mask], p0 = (np.max(mean_amps[mask]), np.mean(X_range[mask]), 10))\x1B[39;00m\n' +
+      '\x1B[32m     27\x1B[39m \n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m28\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(laser_tune, mean_amps, label = f"Z position: {z}", marker = \x1B[33m"o"\x1B[39m)\n' +
+      '\x1B[32m     29\x1B[39m     ax[\x1B[32m0\x1B[39m].set_xlabel(\x1B[33m"X position [mm]"\x1B[39m)\n' +
+      '\x1B[32m     30\x1B[39m     ax[\x1B[32m0\x1B[39m].set_ylabel(\x1B[33m"Mean amplitude"\x1B[39m)\n' +
+      '\x1B[32m     31\x1B[39m \n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_axes.py:1792\x1B[39m, in \x1B[36mAxes.plot\x1B[39m\x1B[34m(self, scalex, scaley, data, *args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   1549\x1B[39m \x1B[38;5;250m\x1B[39m\x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   1550\x1B[39m \x1B[33;03mPlot y versus x as lines and/or markers.\x1B[39;00m\n' +
+      '\x1B[32m   1551\x1B[39m \n' +
+      "\x1B[32m   (...)\x1B[39m\x1B[32m   1789\x1B[39m \x1B[33;03m(``'green'``) or hex strings (``'#008000'``).\x1B[39;00m\n" +
+      '\x1B[32m   1790\x1B[39m \x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   1791\x1B[39m kwargs = cbook.normalize_kwargs(kwargs, mlines.Line2D)\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m1792\x1B[39m lines = [*\x1B[38;5;28mself\x1B[39m._get_lines(\x1B[38;5;28mself\x1B[39m, *args, data=data, **kwargs)]\n' +
+      '\x1B[32m   1793\x1B[39m \x1B[38;5;28;01mfor\x1B[39;00m line \x1B[38;5;129;01min\x1B[39;00m lines:\n' +
+      '\x1B[32m   1794\x1B[39m     \x1B[38;5;28mself\x1B[39m.add_line(line)\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:331\x1B[39m, in \x1B[36m_process_plot_var_args.__call__\x1B[39m\x1B[34m(self, axes, data, return_kwargs, *args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m    329\x1B[39m     this += args[\x1B[32m0\x1B[39m],\n' +
+      '\x1B[32m    330\x1B[39m     args = args[\x1B[32m1\x1B[39m:]\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m331\x1B[39m \x1B[38;5;28;01myield from\x1B[39;00m \x1B[30;43mself\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43m_plot_args\x1B[39;49m\x1B[30;43m(\x1B[39;49m\n' +
+      '\x1B[32m    332\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43maxes\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mthis\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mambiguous_fmt_datakey\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mambiguous_fmt_datakey\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m    333\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43mreturn_kwargs\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mreturn_kwargs\x1B[39;49m\n' +
+      '\x1B[32m    334\x1B[39m \x1B[30;43m\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:509\x1B[39m, in \x1B[36m_process_plot_var_args._plot_args\x1B[39m\x1B[34m(self, axes, tup, kwargs, return_kwargs, ambiguous_fmt_datakey)\x1B[39m\n' +
+      '\x1B[32m    506\x1B[39m     axes.yaxis.update_units(y)\n' +
+      '\x1B[32m    508\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m x.shape[\x1B[32m0\x1B[39m] != y.shape[\x1B[32m0\x1B[39m]:\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m509\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mValueError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mx and y must have same first dimension, but \x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m    510\x1B[39m                      \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mhave shapes \x1B[39m\x1B[38;5;132;01m{\x1B[39;00mx.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m and \x1B[39m\x1B[38;5;132;01m{\x1B[39;00my.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n' +
+      '\x1B[32m    511\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m x.ndim > \x1B[32m2\x1B[39m \x1B[38;5;129;01mor\x1B[39;00m y.ndim > \x1B[32m2\x1B[39m:\n' +
+      '\x1B[32m    512\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mValueError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mx and y can be no greater than 2D, but have \x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m    513\x1B[39m                      \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mshapes \x1B[39m\x1B[38;5;132;01m{\x1B[39;00mx.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m and \x1B[39m\x1B[38;5;132;01m{\x1B[39;00my.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n',
+    '\x1B[31mValueError\x1B[39m: x and y must have same first dimension, but have shapes (6,) and (1,)'
+  ]
+}
+14:38:40.840 [warn] Cell completed with errors [Iu [Error]: x and y must have same first dimension, but have shapes (6,) and (1,)
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'ValueError',
+  evalue: 'x and y must have same first dimension, but have shapes (6,) and (1,)',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mValueError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[15]\x1B[39m\x1B[32m, line 29\x1B[39m\n' +
+      '\x1B[32m     25\x1B[39m     n_events = np.array(n_events)\n' +
+      '\x1B[32m     26\x1B[39m \n' +
+      '\x1B[32m     27\x1B[39m     \x1B[38;5;66;03m# params = curve_fit(gaus, X_range[mask], mean_amps[mask], p0 = (np.max(mean_amps[mask]), np.mean(X_range[mask]), 10))\x1B[39;00m\n' +
+      '\x1B[32m     28\x1B[39m \n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m29\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(laser_tune, mean_amps, label = f"Z position: {z}", marker = \x1B[33m"o"\x1B[39m)\n' +
+      '\x1B[32m     30\x1B[39m     ax[\x1B[32m0\x1B[39m].set_xlabel(\x1B[33m"X position [mm]"\x1B[39m)\n' +
+      '\x1B[32m     31\x1B[39m     ax[\x1B[32m0\x1B[39m].set_ylabel(\x1B[33m"Mean amplitude"\x1B[39m)\n' +
+      '\x1B[32m     32\x1B[39m \n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_axes.py:1792\x1B[39m, in \x1B[36mAxes.plot\x1B[39m\x1B[34m(self, scalex, scaley, data, *args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   1549\x1B[39m \x1B[38;5;250m\x1B[39m\x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   1550\x1B[39m \x1B[33;03mPlot y versus x as lines and/or markers.\x1B[39;00m\n' +
+      '\x1B[32m   1551\x1B[39m \n' +
+      "\x1B[32m   (...)\x1B[39m\x1B[32m   1789\x1B[39m \x1B[33;03m(``'green'``) or hex strings (``'#008000'``).\x1B[39;00m\n" +
+      '\x1B[32m   1790\x1B[39m \x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   1791\x1B[39m kwargs = cbook.normalize_kwargs(kwargs, mlines.Line2D)\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m1792\x1B[39m lines = [*\x1B[38;5;28mself\x1B[39m._get_lines(\x1B[38;5;28mself\x1B[39m, *args, data=data, **kwargs)]\n' +
+      '\x1B[32m   1793\x1B[39m \x1B[38;5;28;01mfor\x1B[39;00m line \x1B[38;5;129;01min\x1B[39;00m lines:\n' +
+      '\x1B[32m   1794\x1B[39m     \x1B[38;5;28mself\x1B[39m.add_line(line)\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:331\x1B[39m, in \x1B[36m_process_plot_var_args.__call__\x1B[39m\x1B[34m(self, axes, data, return_kwargs, *args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m    329\x1B[39m     this += args[\x1B[32m0\x1B[39m],\n' +
+      '\x1B[32m    330\x1B[39m     args = args[\x1B[32m1\x1B[39m:]\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m331\x1B[39m \x1B[38;5;28;01myield from\x1B[39;00m \x1B[30;43mself\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43m_plot_args\x1B[39;49m\x1B[30;43m(\x1B[39;49m\n' +
+      '\x1B[32m    332\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43maxes\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mthis\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mambiguous_fmt_datakey\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mambiguous_fmt_datakey\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m    333\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43mreturn_kwargs\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mreturn_kwargs\x1B[39;49m\n' +
+      '\x1B[32m    334\x1B[39m \x1B[30;43m\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:509\x1B[39m, in \x1B[36m_process_plot_var_args._plot_args\x1B[39m\x1B[34m(self, axes, tup, kwargs, return_kwargs, ambiguous_fmt_datakey)\x1B[39m\n' +
+      '\x1B[32m    506\x1B[39m     axes.yaxis.update_units(y)\n' +
+      '\x1B[32m    508\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m x.shape[\x1B[32m0\x1B[39m] != y.shape[\x1B[32m0\x1B[39m]:\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m509\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mValueError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mx and y must have same first dimension, but \x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m    510\x1B[39m                      \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mhave shapes \x1B[39m\x1B[38;5;132;01m{\x1B[39;00mx.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m and \x1B[39m\x1B[38;5;132;01m{\x1B[39;00my.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n' +
+      '\x1B[32m    511\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m x.ndim > \x1B[32m2\x1B[39m \x1B[38;5;129;01mor\x1B[39;00m y.ndim > \x1B[32m2\x1B[39m:\n' +
+      '\x1B[32m    512\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mValueError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mx and y can be no greater than 2D, but have \x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m    513\x1B[39m                      \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mshapes \x1B[39m\x1B[38;5;132;01m{\x1B[39;00mx.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m and \x1B[39m\x1B[38;5;132;01m{\x1B[39;00my.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n',
+    '\x1B[31mValueError\x1B[39m: x and y must have same first dimension, but have shapes (6,) and (1,)'
+  ]
+}
+14:39:07.735 [warn] Cell completed with errors [Iu [Error]: x and y must have same first dimension, but have shapes (6,) and (1,)
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'ValueError',
+  evalue: 'x and y must have same first dimension, but have shapes (6,) and (1,)',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mValueError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[16]\x1B[39m\x1B[32m, line 28\x1B[39m\n' +
+      '\x1B[32m     24\x1B[39m     n_events = np.array(n_events)\n' +
+      '\x1B[32m     25\x1B[39m \n' +
+      '\x1B[32m     26\x1B[39m     \x1B[38;5;66;03m# params = curve_fit(gaus, X_range[mask], mean_amps[mask], p0 = (np.max(mean_amps[mask]), np.mean(X_range[mask]), 10))\x1B[39;00m\n' +
+      '\x1B[32m     27\x1B[39m \n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m28\x1B[39m     ax[\x1B[32m0\x1B[39m].plot(laser_tune, mean_amps, label = f"Z position: {z}", marker = \x1B[33m"o"\x1B[39m)\n' +
+      '\x1B[32m     29\x1B[39m     ax[\x1B[32m0\x1B[39m].set_xlabel(\x1B[33m"X position [mm]"\x1B[39m)\n' +
+      '\x1B[32m     30\x1B[39m     ax[\x1B[32m0\x1B[39m].set_ylabel(\x1B[33m"Mean amplitude"\x1B[39m)\n' +
+      '\x1B[32m     31\x1B[39m \n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_axes.py:1792\x1B[39m, in \x1B[36mAxes.plot\x1B[39m\x1B[34m(self, scalex, scaley, data, *args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   1549\x1B[39m \x1B[38;5;250m\x1B[39m\x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   1550\x1B[39m \x1B[33;03mPlot y versus x as lines and/or markers.\x1B[39;00m\n' +
+      '\x1B[32m   1551\x1B[39m \n' +
+      "\x1B[32m   (...)\x1B[39m\x1B[32m   1789\x1B[39m \x1B[33;03m(``'green'``) or hex strings (``'#008000'``).\x1B[39;00m\n" +
+      '\x1B[32m   1790\x1B[39m \x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   1791\x1B[39m kwargs = cbook.normalize_kwargs(kwargs, mlines.Line2D)\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m1792\x1B[39m lines = [*\x1B[38;5;28mself\x1B[39m._get_lines(\x1B[38;5;28mself\x1B[39m, *args, data=data, **kwargs)]\n' +
+      '\x1B[32m   1793\x1B[39m \x1B[38;5;28;01mfor\x1B[39;00m line \x1B[38;5;129;01min\x1B[39;00m lines:\n' +
+      '\x1B[32m   1794\x1B[39m     \x1B[38;5;28mself\x1B[39m.add_line(line)\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:331\x1B[39m, in \x1B[36m_process_plot_var_args.__call__\x1B[39m\x1B[34m(self, axes, data, return_kwargs, *args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m    329\x1B[39m     this += args[\x1B[32m0\x1B[39m],\n' +
+      '\x1B[32m    330\x1B[39m     args = args[\x1B[32m1\x1B[39m:]\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m331\x1B[39m \x1B[38;5;28;01myield from\x1B[39;00m \x1B[30;43mself\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43m_plot_args\x1B[39;49m\x1B[30;43m(\x1B[39;49m\n' +
+      '\x1B[32m    332\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43maxes\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mthis\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mambiguous_fmt_datakey\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mambiguous_fmt_datakey\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m    333\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43mreturn_kwargs\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mreturn_kwargs\x1B[39;49m\n' +
+      '\x1B[32m    334\x1B[39m \x1B[30;43m\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:509\x1B[39m, in \x1B[36m_process_plot_var_args._plot_args\x1B[39m\x1B[34m(self, axes, tup, kwargs, return_kwargs, ambiguous_fmt_datakey)\x1B[39m\n' +
+      '\x1B[32m    506\x1B[39m     axes.yaxis.update_units(y)\n' +
+      '\x1B[32m    508\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m x.shape[\x1B[32m0\x1B[39m] != y.shape[\x1B[32m0\x1B[39m]:\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m509\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mValueError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mx and y must have same first dimension, but \x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m    510\x1B[39m                      \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mhave shapes \x1B[39m\x1B[38;5;132;01m{\x1B[39;00mx.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m and \x1B[39m\x1B[38;5;132;01m{\x1B[39;00my.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n' +
+      '\x1B[32m    511\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m x.ndim > \x1B[32m2\x1B[39m \x1B[38;5;129;01mor\x1B[39;00m y.ndim > \x1B[32m2\x1B[39m:\n' +
+      '\x1B[32m    512\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mValueError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mx and y can be no greater than 2D, but have \x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m    513\x1B[39m                      \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mshapes \x1B[39m\x1B[38;5;132;01m{\x1B[39;00mx.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m and \x1B[39m\x1B[38;5;132;01m{\x1B[39;00my.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n',
+    '\x1B[31mValueError\x1B[39m: x and y must have same first dimension, but have shapes (6,) and (1,)'
+  ]
+}
+14:39:26.378 [warn] Cell completed with errors [Iu [Error]: x and y must have same first dimension, but have shapes (6,) and (1,)
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'ValueError',
+  evalue: 'x and y must have same first dimension, but have shapes (6,) and (1,)',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mValueError\x1B[39m                                Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[17]\x1B[39m\x1B[32m, line 28\x1B[39m\n' +
+      '\x1B[32m     24\x1B[39m n_events = np.array(n_events)\n' +
+      '\x1B[32m     25\x1B[39m \n' +
+      '\x1B[32m     26\x1B[39m \x1B[38;5;66;03m# params = curve_fit(gaus, X_range[mask], mean_amps[mask], p0 = (np.max(mean_amps[mask]), np.mean(X_range[mask]), 10))\x1B[39;00m\n' +
+      '\x1B[32m     27\x1B[39m \n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m28\x1B[39m ax[\x1B[32m0\x1B[39m].plot(laser_tune, mean_amps, label = f"Z position: {z}", marker = \x1B[33m"o"\x1B[39m)\n' +
+      '\x1B[32m     29\x1B[39m ax[\x1B[32m0\x1B[39m].set_xlabel(\x1B[33m"X position [mm]"\x1B[39m)\n' +
+      '\x1B[32m     30\x1B[39m ax[\x1B[32m0\x1B[39m].set_ylabel(\x1B[33m"Mean amplitude"\x1B[39m)\n' +
+      '\x1B[32m     31\x1B[39m \n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_axes.py:1792\x1B[39m, in \x1B[36mAxes.plot\x1B[39m\x1B[34m(self, scalex, scaley, data, *args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   1549\x1B[39m \x1B[38;5;250m\x1B[39m\x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   1550\x1B[39m \x1B[33;03mPlot y versus x as lines and/or markers.\x1B[39;00m\n' +
+      '\x1B[32m   1551\x1B[39m \n' +
+      "\x1B[32m   (...)\x1B[39m\x1B[32m   1789\x1B[39m \x1B[33;03m(``'green'``) or hex strings (``'#008000'``).\x1B[39;00m\n" +
+      '\x1B[32m   1790\x1B[39m \x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m   1791\x1B[39m kwargs = cbook.normalize_kwargs(kwargs, mlines.Line2D)\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m1792\x1B[39m lines = [*\x1B[38;5;28mself\x1B[39m._get_lines(\x1B[38;5;28mself\x1B[39m, *args, data=data, **kwargs)]\n' +
+      '\x1B[32m   1793\x1B[39m \x1B[38;5;28;01mfor\x1B[39;00m line \x1B[38;5;129;01min\x1B[39;00m lines:\n' +
+      '\x1B[32m   1794\x1B[39m     \x1B[38;5;28mself\x1B[39m.add_line(line)\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:331\x1B[39m, in \x1B[36m_process_plot_var_args.__call__\x1B[39m\x1B[34m(self, axes, data, return_kwargs, *args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m    329\x1B[39m     this += args[\x1B[32m0\x1B[39m],\n' +
+      '\x1B[32m    330\x1B[39m     args = args[\x1B[32m1\x1B[39m:]\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m331\x1B[39m \x1B[38;5;28;01myield from\x1B[39;00m \x1B[30;43mself\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43m_plot_args\x1B[39;49m\x1B[30;43m(\x1B[39;49m\n' +
+      '\x1B[32m    332\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43maxes\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mthis\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mambiguous_fmt_datakey\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mambiguous_fmt_datakey\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m    333\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43mreturn_kwargs\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mreturn_kwargs\x1B[39;49m\n' +
+      '\x1B[32m    334\x1B[39m \x1B[30;43m\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/axes/_base.py:509\x1B[39m, in \x1B[36m_process_plot_var_args._plot_args\x1B[39m\x1B[34m(self, axes, tup, kwargs, return_kwargs, ambiguous_fmt_datakey)\x1B[39m\n' +
+      '\x1B[32m    506\x1B[39m     axes.yaxis.update_units(y)\n' +
+      '\x1B[32m    508\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m x.shape[\x1B[32m0\x1B[39m] != y.shape[\x1B[32m0\x1B[39m]:\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m509\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mValueError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mx and y must have same first dimension, but \x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m    510\x1B[39m                      \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mhave shapes \x1B[39m\x1B[38;5;132;01m{\x1B[39;00mx.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m and \x1B[39m\x1B[38;5;132;01m{\x1B[39;00my.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n' +
+      '\x1B[32m    511\x1B[39m \x1B[38;5;28;01mif\x1B[39;00m x.ndim > \x1B[32m2\x1B[39m \x1B[38;5;129;01mor\x1B[39;00m y.ndim > \x1B[32m2\x1B[39m:\n' +
+      '\x1B[32m    512\x1B[39m     \x1B[38;5;28;01mraise\x1B[39;00m \x1B[38;5;167;01mValueError\x1B[39;00m(\x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mx and y can be no greater than 2D, but have \x1B[39m\x1B[33m"\x1B[39m\n' +
+      '\x1B[32m    513\x1B[39m                      \x1B[33mf\x1B[39m\x1B[33m"\x1B[39m\x1B[33mshapes \x1B[39m\x1B[38;5;132;01m{\x1B[39;00mx.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m and \x1B[39m\x1B[38;5;132;01m{\x1B[39;00my.shape\x1B[38;5;132;01m}\x1B[39;00m\x1B[33m"\x1B[39m)\n',
+    '\x1B[31mValueError\x1B[39m: x and y must have same first dimension, but have shapes (6,) and (1,)'
+  ]
+}
+14:39:41.548 [warn] Cell completed with errors [Iu [Error]: 'continue' not properly in loop (2401160310.py, line 34)
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'SyntaxError',
+  evalue: "'continue' not properly in loop (2401160310.py, line 34)",
+  traceback: [
+    '  \x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[18]\x1B[39m\x1B[32m, line 34\x1B[39m\n' +
+      '\x1B[31m    \x1B[39m\x1B[31mif (np.sum(mask) == 0): continue\x1B[39m\n' +
+      '                            ^\n' +
+      "\x1B[31mSyntaxError\x1B[39m\x1B[31m:\x1B[39m 'continue' not properly in loop\n"
+  ]
+}
