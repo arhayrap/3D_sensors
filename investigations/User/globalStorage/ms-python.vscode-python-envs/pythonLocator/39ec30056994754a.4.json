@@ -1,0 +1,39 @@
+{
+  "environment": {
+    "executable": "/home/daq/my_venv/bin/python",
+    "prefix": "/home/daq/my_venv",
+    "version": "3.14.4.final.0",
+    "is64Bit": true,
+    "symlinks": [
+      "/home/daq/my_venv/bin/python",
+      "/home/daq/my_venv/bin/python3",
+      "/home/daq/my_venv/bin/python3.14"
+    ]
+  },
+  "symlinks": [
+    [
+      "/home/daq/my_venv/bin/python",
+      {
+        "secs_since_epoch": 1787222518,
+        "nanos_since_epoch": 0
+      },
+      null
+    ],
+    [
+      "/home/daq/my_venv/bin/python3",
+      {
+        "secs_since_epoch": 1787222518,
+        "nanos_since_epoch": 0
+      },
+      null
+    ],
+    [
+      "/home/daq/my_venv/bin/python3.14",
+      {
+        "secs_since_epoch": 1787222518,
+        "nanos_since_epoch": 0
+      },
+      null
+    ]
+  ]
+}

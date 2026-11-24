@@ -1,0 +1,86 @@
+2026-11-23 11:00:34.741 [info] Client: Pylance client (2026.4.1) started with python extension (2026.10.0)
+2026-11-23 11:00:35.500 [info] (757211): Server root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist
+2026-11-23 11:00:36.003 [info] (757211): Pylance language server 2026.4.1 (pyright version 1.1.414, commit 0653de23) starting
+2026-11-23 11:00:36.630 [info] (757211): Starting service instance "investigations" for workspace "/home/daq/3D_sensors/investigations"
+2026-11-23 11:00:40.676 [info] (757211): Loading background bundle file:///root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/copilot-background.bundle.js into file:///home/daq/3D_sensors/investigations...
+2026-11-23 11:00:40.887 [info] (757211): PQ(investigations): Priority queue background worker(2) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist
+2026-11-23 11:00:40.889 [info] (757211): PQ(investigations): Priority queue background worker(2) started
+2026-11-23 11:00:40.923 [info] (757211): Starting Mcp server id:38243 ...
+2026-11-23 11:00:41.319 [info] (757211): FG(investigations): Setting environmentName for service "investigations": "Python 3.14.4"
+2026-11-23 11:00:41.324 [info] (757211): FG(investigations): Setting pythonPath for service "investigations": "/usr/bin/python3"
+2026-11-23 11:00:41.347 [info] (757211): FG(investigations): No include entries specified; assuming /home/daq/3D_sensors/investigations
+2026-11-23 11:00:41.363 [info] (757211): FG(investigations): Auto-excluding **/node_modules
+2026-11-23 11:00:41.363 [info] (757211): FG(investigations): Auto-excluding **/__pycache__
+2026-11-23 11:00:41.363 [info] (757211): FG(investigations): Auto-excluding **/.*
+2026-11-23 11:00:41.363 [info] (757211): FG(investigations): Auto-excluding **/__editable__.*
+2026-11-23 11:00:41.363 [info] (757211): FG(investigations): Assuming Python version 3.14.4.final.0
+2026-11-23 11:00:41.673 [info] (757211): FG(investigations): Found 3 source files
+2026-11-23 11:00:41.888 [info] (757211): Settings have not changed. Skipping update.
+2026-11-23 11:00:41.943 [info] (757211): Settings have not changed. Skipping update.
+2026-11-23 11:00:41.981 [info] (757211): Settings have not changed. Skipping update.
+2026-11-23 11:00:43.626 [info] (757211): [Editable Installs] Starting dynamic pth file resolution for Python: /usr/bin/python3
+2026-11-23 11:00:43.697 [info] (757211): [Editable Installs] Sandbox created successfully for Python /usr/bin/python3
+2026-11-23 11:00:43.797 [info] (757211): [Editable Installs] Searching for pth files in site-packages directories: 
+2026-11-23 11:00:43.856 [info] (757211): [Editable Installs] No .pth files found
+2026-11-23 11:00:43.870 [info] (757211): [Editable Installs] Completed pth file resolution. Successfully resolved 0 editable package(s).
+2026-11-23 11:00:45.140 [info] (757211): FG(investigations): IDX(investigations): Indexer background runner(3) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist (index)
+2026-11-23 11:00:45.141 [info] (757211): FG(investigations): IDX(investigations): Indexing(3) started
+2026-11-23 11:00:46.039 [info] (757211): FG(investigations): IDX(investigations): scanned(3) 113 files over 1 exec env
+2026-11-23 11:00:46.384 [info] (757211): FG(investigations): IDX(investigations): indexed(3) 113 files over 1 exec env
+2026-11-23 11:00:46.415 [info] (757211): FG(investigations): IDX(investigations): Indexing finished(3).
+2026-11-23 11:00:59.599 [info] (757211): Starting service instance "investigations" for workspace "/home/daq/3D_sensors/investigations"
+2026-11-23 11:00:59.662 [info] (757211): Loading background bundle file:///root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/copilot-background.bundle.js into file:///home/daq/3D_sensors/investigations...
+2026-11-23 11:01:03.372 [info] (757211): FG(investigations): Setting environmentName for service "investigations": "Python 3.14.4"
+2026-11-23 11:01:04.169 [info] (757211): FG(investigations): Setting pythonPath for service "investigations": "/home/daq/my_venv/bin/python"
+2026-11-23 11:01:04.800 [info] (757211): FG(investigations): No include entries specified; assuming /home/daq/3D_sensors/investigations
+2026-11-23 11:01:05.342 [info] (757211): FG(investigations): Auto-excluding **/node_modules
+2026-11-23 11:01:05.376 [info] (757211): FG(investigations): Auto-excluding **/__pycache__
+2026-11-23 11:01:05.393 [info] (757211): FG(investigations): Auto-excluding **/.*
+2026-11-23 11:01:05.398 [info] (757211): FG(investigations): Auto-excluding **/__editable__.*
+2026-11-23 11:01:05.419 [info] (757211): FG(investigations): Assuming Python version 3.14.4.final.0
+2026-11-23 11:01:05.489 [info] (757211): FG(investigations): Found 3 source files
+2026-11-23 11:01:05.691 [info] (757211): PQ(investigations): Priority queue background worker(5) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist
+2026-11-23 11:01:05.695 [info] (757211): PQ(investigations): Priority queue background worker(5) started
+2026-11-23 11:01:05.706 [info] (757211): [Editable Installs] Starting dynamic pth file resolution for Python: /home/daq/my_venv/bin/python
+2026-11-23 11:01:06.094 [info] (757211): [Editable Installs] Sandbox created successfully for Python /home/daq/my_venv/bin/python
+2026-11-23 11:01:06.103 [info] (757211): [Editable Installs] Searching for pth files in site-packages directories: /home/daq/my_venv/lib/python3.14/site-packages
+2026-11-23 11:01:06.105 [info] (757211): [Editable Installs] No .pth files found
+2026-11-23 11:01:06.106 [info] (757211): [Editable Installs] Completed pth file resolution. Successfully resolved 0 editable package(s).
+2026-11-23 11:01:07.563 [info] (757211): FG(investigations): IDX(investigations): Indexer background runner(6) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist (index)
+2026-11-23 11:01:07.566 [info] (757211): FG(investigations): IDX(investigations): Indexing(6) started
+2026-11-23 11:01:11.200 [info] (757211): BG(investigations): Long operation: SemanticTokens range 0:0 - 13:54 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W0sZmlsZQ%3D%3D (3972ms)
+2026-11-23 11:01:11.445 [info] (757211): FG(investigations): IDX(investigations): Long operation: scan packages file:///home/daq/3D_sensors/investigations (3460ms)
+2026-11-23 11:01:11.445 [info] (757211): FG(investigations): IDX(investigations): scanned(6) 197 files over 1 exec env
+2026-11-23 11:01:14.117 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W0sZmlsZQ%3D%3D (2830ms)
+2026-11-23 11:01:18.770 [info] (757211): BG(investigations): Long operation: SemanticTokens range 0:0 - 20:13 at file:///home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb.py#W3sZmlsZQ%3D%3D (3279ms)
+2026-11-23 11:01:23.310 [info] (757211): FG(investigations): IDX(investigations): Long operation: index execution environment file:///home/daq/3D_sensors/investigations (10943ms)
+2026-11-23 11:01:23.313 [info] (757211): FG(investigations): IDX(investigations): Long operation: index packages file:///home/daq/3D_sensors/investigations (11076ms)
+2026-11-23 11:01:23.313 [info] (757211): FG(investigations): IDX(investigations): indexed(6) 197 files over 1 exec env
+2026-11-23 11:01:23.366 [info] (757211): FG(investigations): IDX(investigations): Indexing finished(6).
+2026-11-23 12:28:06.827 [info] (757211): BG(investigations): Long operation: SemanticTokens range 0:0 - 13:49 at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W0sZmlsZQ%3D%3D (2700ms)
+2026-11-23 12:28:14.517 [info] (757211): BG(investigations): Long operation: checking: vscode-notebook-cell:/home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb#W3sZmlsZQ%3D%3D (2811ms)
+2026-11-23 12:28:14.517 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2811ms)
+2026-11-23 12:28:14.635 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W0sZmlsZQ%3D%3D (2930ms)
+2026-11-23 12:28:47.333 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2874ms)
+2026-11-23 12:29:43.463 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2897ms)
+2026-11-23 12:29:45.731 [info] (757211): BG(investigations): Long operation: SemanticTokens range 0:0 - 90:33 at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2248ms)
+2026-11-23 12:31:13.887 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2407ms)
+2026-11-23 12:31:21.281 [info] (757211): BG(investigations): Long operation: checking: vscode-notebook-cell:/home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb#W3sZmlsZQ%3D%3D (2242ms)
+2026-11-23 12:31:21.281 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2242ms)
+2026-11-23 12:31:21.281 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W1sZmlsZQ%3D%3D (2242ms)
+2026-11-23 12:31:25.664 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795458623102 at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3411ms)
+2026-11-23 12:31:29.630 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3528ms)
+2026-11-23 12:33:01.951 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795458689568 at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2498ms)
+2026-11-23 12:33:05.193 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795458689568 at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3110ms)
+2026-11-23 12:37:17.385 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2065ms)
+2026-11-23 14:02:41.184 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795464138718 at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4857ms)
+2026-11-23 14:06:10.026 [info] (757211): BG(investigations): Long operation: analyzing: file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W2sZmlsZQ%3D%3D (2016ms)
+2026-11-23 14:06:14.374 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795464163212 at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (4249ms)
+2026-11-23 14:06:19.280 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795464370124 at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2826ms)
+2026-11-23 14:06:23.196 [info] (757211): BG(investigations): Long operation: SemanticTokens delta previousResultId:1795464370124 at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3672ms)
+2026-11-23 14:11:09.251 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3284ms)
+2026-11-23 15:01:16.535 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (2612ms)
+2026-11-23 15:02:10.697 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3020ms)
+2026-11-23 15:02:13.923 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (3214ms)
+2026-11-23 16:03:21.891 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (7607ms)
+2026-11-23 16:03:28.972 [info] (757211): BG(investigations): Long operation: SemanticTokens full at file:///home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb.py#W3sZmlsZQ%3D%3D (7052ms)

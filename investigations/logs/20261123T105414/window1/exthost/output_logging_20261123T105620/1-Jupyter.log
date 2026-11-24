@@ -1,0 +1,122 @@
+Visual Studio Code (1.145.0, undefined, desktop)
+Jupyter Extension Version: 2025.9.1.
+Python Extension Version: 2026.10.0.
+Python Environment Extension Version: 1.44.0.
+Pylance Extension Version: 2026.4.1.
+Platform: linux (x64).
+Home = /root
+Temp Storage folder /home/daq/3D_sensors/investigations/User/globalStorage/ms-toolsai.jupyter/version-2025.9.1
+Workspace folder /home/daq/3D_sensors/investigations
+10:58:33.407 [warn] Python Environment not created, either user cancelled the creation or there was an error in the Python Extension
+10:58:33.619 [info] Starting Kernel (Python Path: /usr/bin/python3, Unknown, 3.14.4) for '/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb' (disableUI=false)
+10:58:34.436 [warn] Failed to get activated env vars for /usr/bin/python3 in 289ms
+10:58:34.453 [info] Process Execution: /usr/bin/python3 -c "import site;print("USER_BASE_VALUE");print(site.USER_BASE);print("USER_BASE_VALUE");"
+10:58:34.462 [warn] Failed to get activated env vars for /usr/bin/python3 in 268ms
+10:58:34.502 [info] Process Execution: /usr/bin/python3 -m pip list
+10:58:34.518 [info] Process Execution: /usr/bin/python3 -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+10:58:34.538 [info] Process Execution: /usr/bin/python3 -m ipykernel_launcher --f=/run/user/0/jupyter/runtime/kernel-v3ed2f471b4af49ad9574696a42b4117b459eab896.json
+    > cwd: /home/daq/3D_sensors/investigations/ZScan_IR
+10:58:34.572 [error] Disposing kernel process due to an error Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+    > Kernel Id = .jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6./usr/bin/python3./usr/bin/python3.-m#ipykernel_launcher
+    > Interpreter Id = /usr/bin/python3
+    > at ChildProcess.<anonymous> (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:304:45805)
+    > stdErr = /usr/bin/python3: No module named ipykernel_launcher
+10:58:34.575 [error] Failed to connect raw kernel session: Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+10:58:34.575 [error] Failed to connect raw kernel session: Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+10:58:34.576 [warn] Failed to shutdown kernel, .jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6./usr/bin/python3./usr/bin/python3.-m#ipykernel_launcher [TypeError: Cannot read properties of undefined (reading 'dispose')
+	at JT.shutdown (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:309:13632)
+	at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+	at async qT.shutdown (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:309:22453)]
+10:58:34.577 [warn] Error occurred while trying to start the kernel, options.disableUI=false Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+    > Kernel Id = .jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6./usr/bin/python3./usr/bin/python3.-m#ipykernel_launcher
+    > Interpreter Id = /usr/bin/python3
+    > at ChildProcess.<anonymous> (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:304:45805)
+    > stdErr = /usr/bin/python3: No module named ipykernel_launcher
+10:58:34.578 [warn] Kernel Error, context = start Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+    > Kernel Id = .jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6./usr/bin/python3./usr/bin/python3.-m#ipykernel_launcher
+    > Interpreter Id = /usr/bin/python3
+    > at ChildProcess.<anonymous> (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:304:45805)
+    > stdErr = /usr/bin/python3: No module named ipykernel_launcher
+10:58:34.743 [info] Process Execution: /usr/bin/python3 -c "import ipykernel;print('6af208d0-cb9c-427f-b937-ff563e17efdf')"
+10:58:35.322 [info] Check & install missing Kernel dependencies for /usr/bin/python3, ui.disabled=false for resource '/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb'
+10:58:35.412 [info] Process Execution: /usr/bin/python3 -c "import ipykernel;print('6af208d0-cb9c-427f-b937-ff563e17efdf')"
+10:58:41.477 [info] Process Execution: /usr/bin/python3 -c "import pip;print('6af208d0-cb9c-427f-b937-ff563e17efdf')"
+10:58:45.321 [info] Process Execution: /usr/bin/python3 -c "import pip;print('6af208d0-cb9c-427f-b937-ff563e17efdf')"
+10:58:45.480 [info] Process Execution: /usr/bin/python3 -m pip install -U --user ipykernel
+10:58:46.257 [error] Failed to install ipykernel error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to
+    install.
+    
+    If you wish to install a non-Debian-packaged Python package,
+    create a virtual environment using python3 -m venv path/to/venv.
+    Then use path/to/venv/bin/python and path/to/venv/bin/pip. Make
+    sure you have python3-full installed.
+    
+    If you wish to install a non-Debian packaged Python application,
+    it may be easiest to use pipx install xyz, which will manage a
+    virtual environment for you. Make sure you have pipx installed.
+    
+    See /usr/share/doc/python3.14/README.venv for more information.
+
+note: If you believe this is a mistake, please contact your Python installation or OS distribution provider. You can override this, at the risk of breaking your Python installation or OS, by passing --break-system-packages.
+hint: See PEP 668 for the detailed specification.
+
+10:58:46.258 [info] Dispose Kernel '/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb' associated with '/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb'
+10:58:46.260 [error] Error in notebook cell execution Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+    > Kernel Id = .jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6./usr/bin/python3./usr/bin/python3.-m#ipykernel_launcher
+    > Interpreter Id = /usr/bin/python3
+    > at ChildProcess.<anonymous> (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:304:45805)
+    > stdErr = /usr/bin/python3: No module named ipykernel_launcher
+10:58:46.261 [error] Error in execution (get message for cell) Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+    > Kernel Id = .jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6./usr/bin/python3./usr/bin/python3.-m#ipykernel_launcher
+    > Interpreter Id = /usr/bin/python3
+    > at ChildProcess.<anonymous> (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:304:45805)
+    > stdErr = /usr/bin/python3: No module named ipykernel_launcher
+10:58:46.371 [info] Process Execution: /usr/bin/python3 -c "import ipykernel;print('6af208d0-cb9c-427f-b937-ff563e17efdf')"
+10:59:16.251 [info] Starting Kernel (Python Path: /usr/bin/python3, Unknown, 3.14.4) for '/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb' (disableUI=false)
+10:59:16.473 [info] Process Execution: /usr/bin/python3 -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+10:59:16.511 [info] Process Execution: /usr/bin/python3 -m ipykernel_launcher --f=/run/user/0/jupyter/runtime/kernel-v3a50aecb5e1029241fc2675626926e450c8693bce.json
+    > cwd: /home/daq/3D_sensors/investigations/ZScan_IR
+10:59:16.546 [error] Disposing kernel process due to an error Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+    > Kernel Id = .jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6./usr/bin/python3./usr/bin/python3.-m#ipykernel_launcher
+    > Interpreter Id = /usr/bin/python3
+    > at ChildProcess.<anonymous> (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:304:45805)
+    > stdErr = /usr/bin/python3: No module named ipykernel_launcher
+10:59:16.547 [error] Failed to connect raw kernel session: Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+10:59:16.548 [error] Failed to connect raw kernel session: Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+10:59:16.548 [warn] Failed to shutdown kernel, .jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6./usr/bin/python3./usr/bin/python3.-m#ipykernel_launcher [TypeError: Cannot read properties of undefined (reading 'dispose')
+	at JT.shutdown (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:309:13632)
+	at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+	at async qT.shutdown (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:309:22453)]
+10:59:16.548 [warn] Error occurred while trying to start the kernel, options.disableUI=false Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+    > Kernel Id = .jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6./usr/bin/python3./usr/bin/python3.-m#ipykernel_launcher
+    > Interpreter Id = /usr/bin/python3
+    > at ChildProcess.<anonymous> (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:304:45805)
+    > stdErr = /usr/bin/python3: No module named ipykernel_launcher
+10:59:16.548 [warn] Kernel Error, context = start Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+    > Kernel Id = .jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6./usr/bin/python3./usr/bin/python3.-m#ipykernel_launcher
+    > Interpreter Id = /usr/bin/python3
+    > at ChildProcess.<anonymous> (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:304:45805)
+    > stdErr = /usr/bin/python3: No module named ipykernel_launcher
+10:59:16.670 [info] Process Execution: /usr/bin/python3 -c "import ipykernel;print('6af208d0-cb9c-427f-b937-ff563e17efdf')"
+10:59:16.865 [info] Check & install missing Kernel dependencies for /usr/bin/python3, ui.disabled=false for resource '/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb'
+10:59:16.965 [info] Process Execution: /usr/bin/python3 -c "import ipykernel;print('6af208d0-cb9c-427f-b937-ff563e17efdf')"
+10:59:17.261 [info] Process Execution: /usr/bin/python3 -c "import pip;print('6af208d0-cb9c-427f-b937-ff563e17efdf')"
+10:59:19.250 [info] Dispose Kernel '/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb' associated with '/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb'
+10:59:19.252 [error] Error in notebook cell execution Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+    > Kernel Id = .jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6./usr/bin/python3./usr/bin/python3.-m#ipykernel_launcher
+    > Interpreter Id = /usr/bin/python3
+    > at ChildProcess.<anonymous> (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:304:45805)
+    > stdErr = /usr/bin/python3: No module named ipykernel_launcher
+10:59:19.252 [error] Error in execution (get message for cell) Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+    > Kernel Id = .jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6./usr/bin/python3./usr/bin/python3.-m#ipykernel_launcher
+    > Interpreter Id = /usr/bin/python3
+    > at ChildProcess.<anonymous> (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:304:45805)
+    > stdErr = /usr/bin/python3: No module named ipykernel_launcher
+10:59:21.511 [info] Process Execution: /usr/bin/python3 -c "import ipykernel;print('6af208d0-cb9c-427f-b937-ff563e17efdf')"
+10:59:59.435 [warn] Python Environment not created, either user cancelled the creation or there was an error in the Python Extension
+11:00:10.001 [info] Dispose Kernel '/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb' associated with '/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb'
+11:00:10.001 [info] Dispose Kernel '/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb' associated with '/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb'

@@ -1,0 +1,34 @@
+2026-11-23 10:57:37.849 [info] Client: Pylance client (2026.4.1) started with python extension (2026.10.0)
+2026-11-23 10:57:38.666 [info] (754313): Server root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist
+2026-11-23 10:57:38.666 [info] (754313): Pylance language server 2026.4.1 (pyright version 1.1.414, commit 0653de23) starting
+2026-11-23 10:57:38.678 [info] (754313): Starting service instance "investigations" for workspace "/home/daq/3D_sensors/investigations"
+2026-11-23 10:57:40.381 [info] (754313): Loading background bundle file:///root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/copilot-background.bundle.js into file:///home/daq/3D_sensors/investigations...
+2026-11-23 10:57:40.608 [info] (754313): Starting Mcp server id:37187 ...
+2026-11-23 10:57:42.371 [info] (754313): FG(investigations): Setting environmentName for service "investigations": "Python 3.14.4"
+2026-11-23 10:57:42.372 [info] (754313): FG(investigations): Setting pythonPath for service "investigations": "/usr/bin/python3"
+2026-11-23 10:57:42.372 [info] (754313): FG(investigations): No include entries specified; assuming /home/daq/3D_sensors/investigations
+2026-11-23 10:57:42.372 [info] (754313): FG(investigations): Auto-excluding **/node_modules
+2026-11-23 10:57:42.372 [info] (754313): FG(investigations): Auto-excluding **/__pycache__
+2026-11-23 10:57:42.373 [info] (754313): FG(investigations): Auto-excluding **/.*
+2026-11-23 10:57:42.373 [info] (754313): FG(investigations): Auto-excluding **/__editable__.*
+2026-11-23 10:57:42.437 [info] (754313): FG(investigations): Assuming Python version 3.14.4.final.0
+2026-11-23 10:57:42.639 [info] (754313): FG(investigations): Found 3 source files
+2026-11-23 10:57:42.906 [info] (754313): PQ(investigations): Priority queue background worker(2) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist
+2026-11-23 10:57:42.907 [info] (754313): PQ(investigations): Priority queue background worker(2) started
+2026-11-23 10:57:42.907 [info] (754313): Settings have not changed. Skipping update.
+2026-11-23 10:57:42.917 [info] (754313): Settings have not changed. Skipping update.
+2026-11-23 10:57:42.941 [info] (754313): Settings have not changed. Skipping update.
+2026-11-23 10:57:42.945 [info] (754313): Settings have not changed. Skipping update.
+2026-11-23 10:57:42.948 [info] (754313): Settings have not changed. Skipping update.
+2026-11-23 10:57:43.650 [info] (754313): [Editable Installs] Starting dynamic pth file resolution for Python: /usr/bin/python3
+2026-11-23 10:57:44.915 [info] (754313): FG(investigations): IDX(investigations): Indexer background runner(3) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist (index)
+2026-11-23 10:57:44.920 [info] (754313): FG(investigations): IDX(investigations): Indexing(3) started
+2026-11-23 10:57:46.178 [info] (754313): FG(investigations): IDX(investigations): scanned(3) 113 files over 1 exec env
+2026-11-23 10:57:49.534 [info] (754313): FG(investigations): IDX(investigations): Long operation: index execution environment file:///home/daq/3D_sensors/investigations (3081ms)
+2026-11-23 10:57:49.567 [info] (754313): FG(investigations): IDX(investigations): Long operation: index packages file:///home/daq/3D_sensors/investigations (3139ms)
+2026-11-23 10:57:49.567 [info] (754313): FG(investigations): IDX(investigations): indexed(3) 113 files over 1 exec env
+2026-11-23 10:57:49.651 [info] (754313): FG(investigations): IDX(investigations): Indexing finished(3).
+2026-11-23 10:57:59.644 [info] (754313): [Editable Installs] Sandbox created successfully for Python /usr/bin/python3
+2026-11-23 10:57:59.742 [info] (754313): [Editable Installs] Searching for pth files in site-packages directories: 
+2026-11-23 10:57:59.745 [info] (754313): [Editable Installs] No .pth files found
+2026-11-23 10:57:59.746 [info] (754313): [Editable Installs] Completed pth file resolution. Successfully resolved 0 editable package(s).

@@ -1,0 +1,33 @@
+2026-11-23 10:57:35.875 [info] Experiment 'pythonSurveyNotificationcf' is active
+2026-11-23 10:57:35.876 [info] Environment discovery is managed by the Python Environments extension (ms-python.vscode-python-envs). Check the "Python Environments" output channel for environment-specific logs.
+2026-11-23 10:57:36.039 [info] [test-by-project] Activating project-based testing mode
+2026-11-23 10:57:36.039 [info] [test-by-project] Discovering projects for workspace: /home/daq/3D_sensors/investigations
+2026-11-23 10:57:36.040 [info] Native locator: Refresh started
+2026-11-23 10:57:36.040 [info] [test-by-project] Found 1 total Python projects from API
+2026-11-23 10:57:36.040 [info] [test-by-project] Filtered to 1 projects in workspace
+2026-11-23 10:57:36.040 [info] [test-by-project] Creating adapter for: investigations at file:///home/daq/3D_sensors/investigations
+2026-11-23 10:57:36.126 [info] > pyenv which python
+2026-11-23 10:57:36.126 [info] cwd: .
+2026-11-23 10:57:37.050 [info] [test-by-project] No Python environment resolved yet for project file:///home/daq/3D_sensors/investigations; deferring until one is assigned
+2026-11-23 10:57:37.050 [info] [test-by-project] All adapters failed, falling back to default project
+2026-11-23 10:57:37.050 [info] [test-by-project] Creating default project for: /home/daq/3D_sensors/investigations
+2026-11-23 10:57:37.152 [info] [test-by-project] Registered 1 project(s) for /home/daq/3D_sensors/investigations
+2026-11-23 10:57:37.153 [info] [test-by-project] Activated 1 project(s) for /home/daq/3D_sensors/investigations
+2026-11-23 10:57:37.153 [info] [test-by-project] Subscribed to Python project changes
+2026-11-23 10:57:37.153 [info] [test-by-project] Subscribed to Python environment changes
+2026-11-23 10:57:37.490 [info] No Python environment is set for this resource. Check the "Python Environments" output channel for details, or select an interpreter.
+2026-11-23 10:57:38.083 [info] No Python environment is set for this resource. Check the "Python Environments" output channel for details, or select an interpreter.
+2026-11-23 10:57:38.730 [info] Starting Pylance language server.
+2026-11-23 10:57:39.128 [info] Native locator: Refresh finished in 3087 ms
+2026-11-23 10:57:39.132 [info] Active interpreter [/home/daq/3D_sensors/investigations]:  /usr/bin/python3
+2026-11-23 10:57:39.142 [info] Active interpreter [global]:  /usr/bin/python3
+2026-11-23 10:57:40.031 [info] [test-by-project] Environment change detected; re-discovering projects for /home/daq/3D_sensors/investigations
+2026-11-23 10:58:07.798 [info] > conda info --json
+2026-11-23 10:58:12.833 [info] Native locator: Refresh started
+2026-11-23 10:58:12.833 [info] Native locator: Refresh started
+2026-11-23 10:58:13.133 [info] Native locator: Refresh finished in 301 ms
+2026-11-23 10:58:22.440 [info] Native locator: Refresh started
+2026-11-23 10:58:22.662 [info] Native locator: Refresh finished in 224 ms
+2026-11-23 10:58:33.762 [info] Active interpreter [/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb]:  /usr/bin/python3
+2026-11-23 10:59:35.276 [info] Native locator: Refresh started
+2026-11-23 10:59:35.497 [info] Native locator: Refresh finished in 221 ms

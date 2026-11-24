@@ -1,0 +1,36 @@
+2026-11-23 11:00:32.383 [info] Experiment 'pythonSurveyNotificationcf' is active
+2026-11-23 11:00:32.383 [info] Environment discovery is managed by the Python Environments extension (ms-python.vscode-python-envs). Check the "Python Environments" output channel for environment-specific logs.
+2026-11-23 11:00:32.470 [info] [test-by-project] Activating project-based testing mode
+2026-11-23 11:00:32.470 [info] [test-by-project] Discovering projects for workspace: /home/daq/3D_sensors/investigations
+2026-11-23 11:00:32.470 [info] Native locator: Refresh started
+2026-11-23 11:00:32.470 [info] [test-by-project] Found 1 total Python projects from API
+2026-11-23 11:00:32.470 [info] [test-by-project] Filtered to 1 projects in workspace
+2026-11-23 11:00:32.470 [info] [test-by-project] Creating adapter for: investigations at file:///home/daq/3D_sensors/investigations
+2026-11-23 11:00:32.522 [info] Native locator: Refresh started
+2026-11-23 11:00:32.558 [info] > conda info --json
+2026-11-23 11:00:32.643 [info] Active interpreter [/home/daq/3D_sensors/investigations]:  /usr/bin/python3
+2026-11-23 11:00:32.794 [info] > pyenv which python
+2026-11-23 11:00:32.794 [info] cwd: .
+2026-11-23 11:00:33.042 [info] [test-by-project] Registered 1 project(s) for /home/daq/3D_sensors/investigations
+2026-11-23 11:00:33.050 [info] [test-by-project] Activated 1 project(s) for /home/daq/3D_sensors/investigations
+2026-11-23 11:00:33.050 [info] [test-by-project] Subscribed to Python project changes
+2026-11-23 11:00:33.050 [info] [test-by-project] Subscribed to Python environment changes
+2026-11-23 11:00:33.055 [info] Active interpreter [global]:  /usr/bin/python3
+2026-11-23 11:00:34.296 [info] Native locator: Refresh finished in 1815 ms
+2026-11-23 11:00:35.175 [info] [test-by-project] Environment change detected; re-discovering projects for /home/daq/3D_sensors/investigations
+2026-11-23 11:00:37.246 [info] Starting Pylance language server.
+2026-11-23 11:00:58.185 [info] Native locator: Refresh started
+2026-11-23 11:00:58.185 [info] Native locator: Refresh started
+2026-11-23 11:00:58.474 [info] Native locator: Refresh finished in 292 ms
+2026-11-23 11:00:59.520 [info] Active interpreter [/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb]:  /home/daq/my_venv/bin/python
+2026-11-23 11:00:59.661 [info] > . /home/daq/my_venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2026.10.0-linux-x64/python_files/printEnvVariables.py
+2026-11-23 11:00:59.661 [info] shell: bash
+2026-11-23 11:00:59.774 [info] > . /home/daq/my_venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2026.10.0-linux-x64/python_files/printEnvVariables.py
+2026-11-23 11:00:59.774 [info] shell: bash
+2026-11-23 12:28:01.473 [info] Active interpreter [/home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb]:  /home/daq/my_venv/bin/python
+2026-11-23 12:28:01.805 [info] > . /home/daq/my_venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2026.10.0-linux-x64/python_files/printEnvVariables.py
+2026-11-23 12:28:01.806 [info] shell: bash
+2026-11-23 12:28:01.870 [info] > . /home/daq/my_venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2026.10.0-linux-x64/python_files/printEnvVariables.py
+2026-11-23 12:28:01.870 [info] shell: bash
+2026-11-23 12:28:01.951 [info] > . /home/daq/my_venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2026.10.0-linux-x64/python_files/printEnvVariables.py
+2026-11-23 12:28:01.952 [info] shell: bash

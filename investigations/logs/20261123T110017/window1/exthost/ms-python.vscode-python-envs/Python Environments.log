@@ -1,0 +1,181 @@
+2026-11-23 11:00:32.324 [info] Python-envs extension version: 1.44.0
+2026-11-23 11:00:32.324 [info] 
+=== Python Envs Configuration Levels ===
+2026-11-23 11:00:32.324 [info] {
+  "section": "Python Envs Configuration Levels",
+  "defaultEnvManager": {
+    "workspaceFolderValue": "undefined",
+    "workspaceValue": "undefined",
+    "globalValue": "undefined",
+    "defaultValue": "ms-python.python:venv"
+  },
+  "defaultPackageManager": {
+    "workspaceFolderValue": "undefined",
+    "workspaceValue": "undefined",
+    "globalValue": "undefined",
+    "defaultValue": "ms-python.python:pip"
+  }
+}
+2026-11-23 11:00:32.324 [info] Python API: Projects changed. Added: 1, Removed: 0
+2026-11-23 11:00:32.324 [info] [pet] Starting Python Locator /root/.vscode/extensions/ms-python.vscode-python-envs-1.44.0-linux-x64/python-env-tools/bin/pet server
+2026-11-23 11:00:32.324 [info] Registering conda manager (environments will be discovered lazily)
+2026-11-23 11:00:32.324 [info] Registering pyenv manager (environments will be discovered lazily)
+2026-11-23 11:00:32.324 [info] Registering pipenv manager (environments will be discovered lazily)
+2026-11-23 11:00:32.324 [info] Registering poetry manager (environments will be discovered lazily)
+2026-11-23 11:00:32.324 [info] [interpreterSelection] Applying initial environment selection for 1 workspace folder(s)
+2026-11-23 11:00:32.324 [info] [pet] configure: Sending configuration update: {"workspaceDirectories":["/home/daq/3D_sensors/investigations"],"environmentDirectories":["/home/daq/3D_sensors/investigations/.venv","/home/daq/3D_sensors/investigations/*/.venv"],"pipenvExecutable":"pipenv","poetryExecutable":"poetry","cacheDirectory":"/home/daq/3D_sensors/investigations/User/globalStorage/ms-python.vscode-python-envs/pythonLocator"}
+2026-11-23 11:00:32.324 [error] [pet] Failed to find handler for method: $/cancelRequest
+2026-11-23 11:00:32.369 [info] Discovered env: /usr/bin/python3
+2026-11-23 11:00:32.379 [info] Discovered env: /home/daq/my_venv/bin/python
+2026-11-23 11:00:32.575 [info] Refreshing Pyenv Environments
+2026-11-23 11:00:32.575 [info] Refreshing pyenv environments
+2026-11-23 11:00:32.575 [info] Refreshing Pipenv Environments
+2026-11-23 11:00:32.575 [info] Refreshing pipenv environments
+2026-11-23 11:00:32.575 [info] Refreshing Poetry Environments
+2026-11-23 11:00:32.575 [info] Refreshing poetry environments
+2026-11-23 11:00:32.575 [info] Refreshing Conda Environments
+2026-11-23 11:00:32.575 [info] Refreshing conda environments (hardRefresh=true)
+2026-11-23 11:00:32.624 [info] Resolved environment during PET refresh: /home/daq/my_venv/bin/python
+2026-11-23 11:00:33.021 [info] Found venv environment: my_venv (3.14.4)
+2026-11-23 11:00:33.024 [info] Found venv environment: my_venv (3.14.4)
+2026-11-23 11:00:33.035 [info] [SYS_SET] scope=/home/daq/3D_sensors/investigations, project=/home/daq/3D_sensors/investigations, normalizedKey=/home/daq/3D_sensors/investigations, env=Python 3.14.4-olk1692cual
+2026-11-23 11:00:33.169 [info] Unable to determine Conda version: Conda not found
+2026-11-23 11:00:33.192 [info] Pipenv not found via settings, cache, or PATH
+2026-11-23 11:00:33.245 [info] Pipenv not found via settings, cache, or PATH
+2026-11-23 11:00:33.245 [info] Found 0 pipenv environments
+2026-11-23 11:00:33.246 [warning] No conda manager found in native finder data
+2026-11-23 11:00:33.246 [warning] No conda manager found in native finder data
+2026-11-23 11:00:33.441 [info] Poetry executable not found
+2026-11-23 11:00:33.508 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:33.882 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:33.897 [info] Python API: Changed environment from undefined to Python 3.14.4 for: /home/daq/3D_sensors/investigations
+2026-11-23 11:00:33.898 [info] Internal: Changed environment from undefined to Python 3.14.4 for: /home/daq/3D_sensors/investigations
+2026-11-23 11:00:33.898 [info] [interpreterSelection] investigations: Python 3.14.4 (source: autoDiscovery)
+2026-11-23 11:00:33.898 [info] [interpreterSelection] Workspace env resolved, deferring global scope to background
+2026-11-23 11:00:34.005 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.078 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.083 [info] Python API: Changed environment from undefined to Python 3.14.4 for: global
+2026-11-23 11:00:34.083 [info] Internal: Changed environment from undefined to Python 3.14.4 for: global
+2026-11-23 11:00:34.083 [info] [interpreterSelection] global: Python 3.14.4 (source: autoDiscovery)
+2026-11-23 11:00:34.094 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.117 [info] Pipenv not found via settings, cache, or PATH
+2026-11-23 11:00:34.119 [info] Refreshing pipenv environments
+2026-11-23 11:00:34.120 [info] Refreshing conda environments (hardRefresh=false)
+2026-11-23 11:00:34.124 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.128 [info] Refreshing pyenv environments
+2026-11-23 11:00:34.128 [info] Refreshing poetry environments
+2026-11-23 11:00:34.224 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.231 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.238 [info] Pipenv not found via settings, cache, or PATH
+2026-11-23 11:00:34.238 [info] Found 0 pipenv environments
+2026-11-23 11:00:34.239 [warning] No conda manager found in native finder data
+2026-11-23 11:00:34.239 [warning] No conda manager found in native finder data
+2026-11-23 11:00:34.245 [info] Poetry executable not found
+2026-11-23 11:00:34.251 [info] Pipenv not found via settings, cache, or PATH
+2026-11-23 11:00:34.257 [info] Conda not found, conda features will be inactive.
+2026-11-23 11:00:34.262 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.266 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.297 [info] Environment discovery complete: 2 environments found (Global: 1, venv: 1)
+2026-11-23 11:00:34.329 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.333 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.338 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.354 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.381 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.386 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.390 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.393 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.400 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.407 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.422 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.426 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.697 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.756 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.815 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.875 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:34.926 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:35.036 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:35.170 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:35.494 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:35.997 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:36.628 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:37.205 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:39.133 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:39.641 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:39.667 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:40.001 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:40.052 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:40.314 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:40.499 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:40.677 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:40.721 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:40.737 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:40.788 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:40.926 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:40.946 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:40.966 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:41.005 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.208 [info] Refreshing Pyenv Environments
+2026-11-23 11:00:58.208 [info] Refreshing pyenv environments
+2026-11-23 11:00:58.208 [info] Refreshing Pipenv Environments
+2026-11-23 11:00:58.208 [info] Refreshing pipenv environments
+2026-11-23 11:00:58.208 [info] Refreshing Poetry Environments
+2026-11-23 11:00:58.208 [info] Refreshing poetry environments
+2026-11-23 11:00:58.209 [info] Refreshing Conda Environments
+2026-11-23 11:00:58.209 [info] Refreshing conda environments (hardRefresh=true)
+2026-11-23 11:00:58.247 [info] Discovered env: /home/daq/my_venv/bin/python
+2026-11-23 11:00:58.259 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.279 [info] Resolved environment during PET refresh: /home/daq/my_venv/bin/python
+2026-11-23 11:00:58.300 [info] Discovered env: /usr/bin/python3
+2026-11-23 11:00:58.304 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.380 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.392 [info] Found venv environment: my_venv (3.14.4)
+2026-11-23 11:00:58.447 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.451 [info] Pipenv not found via settings, cache, or PATH
+2026-11-23 11:00:58.451 [info] Found 0 pipenv environments
+2026-11-23 11:00:58.454 [warning] No conda manager found in native finder data
+2026-11-23 11:00:58.454 [warning] No conda manager found in native finder data
+2026-11-23 11:00:58.457 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.470 [info] Poetry executable not found
+2026-11-23 11:00:58.475 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.482 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.491 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.496 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.499 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.504 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.508 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.513 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.519 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.523 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.529 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.532 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.536 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.542 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.547 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.557 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.562 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.567 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.572 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.578 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.584 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.586 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.592 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.594 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:00:58.604 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:08:26.234 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:08:26.267 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:08:26.301 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:08:26.333 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:08:26.344 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 11:08:26.357 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 12:27:43.103 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 12:27:43.150 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 12:27:43.176 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 12:27:43.190 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 12:27:43.234 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 12:27:43.256 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 12:27:55.729 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 12:27:55.745 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 12:27:55.772 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 12:27:55.788 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 12:27:55.804 [info] Resolved Python Environment /usr/bin/python3
+2026-11-23 12:27:55.844 [info] Resolved Python Environment /usr/bin/python3

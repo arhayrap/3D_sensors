@@ -1,0 +1,248 @@
+Visual Studio Code (1.145.0, undefined, desktop)
+Jupyter Extension Version: 2025.9.1.
+Python Extension Version: 2026.10.0.
+Python Environment Extension Version: 1.44.0.
+Pylance Extension Version: 2026.4.1.
+Platform: linux (x64).
+Home = /root
+Temp Storage folder /home/daq/3D_sensors/investigations/User/globalStorage/ms-toolsai.jupyter/version-2025.9.1
+Workspace folder /home/daq/3D_sensors/investigations
+11:00:33.219 [info] Starting Kernel (Python Path: /usr/bin/python3, Unknown, 3.14.4) for '/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb' (disableUI=true)
+11:00:40.971 [warn] Failed to get activated env vars for /usr/bin/python3 in 6213ms
+11:00:40.975 [warn] Failed to get activated env vars for /usr/bin/python3 in 6086ms
+11:00:40.990 [info] Process Execution: /usr/bin/python3 -c "import site;print("USER_BASE_VALUE");print(site.USER_BASE);print("USER_BASE_VALUE");"
+11:00:41.034 [info] Process Execution: /usr/bin/python3 -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+11:00:41.044 [info] Process Execution: /usr/bin/python3 -m pip list
+11:00:41.062 [info] Process Execution: /usr/bin/python3 -m ipykernel_launcher --f=/run/user/0/jupyter/runtime/kernel-v38c1f61d704047c8cb149d4fe8607ea2cf7d89124.json
+    > cwd: /home/daq/3D_sensors/investigations/ZScan_IR
+11:00:41.120 [error] Disposing kernel process due to an error Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+    > Kernel Id = .jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6./usr/bin/python3./usr/bin/python3.-m#ipykernel_launcher
+    > Interpreter Id = /usr/bin/python3
+    > at ChildProcess.<anonymous> (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:304:45805)
+    > stdErr = /usr/bin/python3: No module named ipykernel_launcher
+11:00:41.125 [error] Failed to connect raw kernel session: Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+11:00:41.126 [error] Failed to connect raw kernel session: Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+11:00:41.126 [warn] Failed to shutdown kernel, .jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6./usr/bin/python3./usr/bin/python3.-m#ipykernel_launcher [TypeError: Cannot read properties of undefined (reading 'dispose')
+	at JT.shutdown (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:309:13632)
+	at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+	at async qT.shutdown (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:309:22453)]
+11:00:41.128 [warn] Error occurred while trying to start the kernel, options.disableUI=true Error: The kernel died. Error: /usr/bin/python3: No module named ipykernel_launcher... View Jupyter [log](command:jupyter.viewOutput) for further details.
+    > Kernel Id = .jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6./usr/bin/python3./usr/bin/python3.-m#ipykernel_launcher
+    > Interpreter Id = /usr/bin/python3
+    > at ChildProcess.<anonymous> (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:304:45805)
+    > stdErr = /usr/bin/python3: No module named ipykernel_launcher
+11:00:59.476 [info] Disposing kernel .jvsc74a57bd031f2aee4e71d21fbe5cf8b01ff0e069b9275f58929596ceb00d14d90e3e16cd6./usr/bin/python3./usr/bin/python3.-m#ipykernel_launcher for notebook /home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb due to selection of another kernel or closing of the notebook
+11:00:59.476 [info] Dispose Kernel '/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb' associated with '/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb'
+11:00:59.520 [info] Starting Kernel (Python Path: /home/daq/my_venv/bin/python, Venv, 3.14.4) for '/home/daq/3D_sensors/investigations/ZScan_IR/EclipseOnTheEdge10db.ipynb' (disableUI=true)
+11:00:59.834 [info] Process Execution: /home/daq/my_venv/bin/python -m pip list
+11:01:00.238 [info] Process Execution: /home/daq/my_venv/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+11:01:00.254 [info] Process Execution: /home/daq/my_venv/bin/python -m ipykernel_launcher --f=/run/user/0/jupyter/runtime/kernel-v3fac7d1a2ef3eea69f9070c955ee87e7da86844fd.json
+    > cwd: /home/daq/3D_sensors/investigations/ZScan_IR
+11:01:05.614 [info] Kernel successfully started
+11:01:05.650 [info] Process Execution: /home/daq/my_venv/bin/python ~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/pythonFiles/printJupyterDataDir.py
+11:01:23.490 [warn] Cell completed with errors [Iu [Error]: sigmoid() takes 4 positional arguments but 5 were given
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'TypeError',
+  evalue: 'sigmoid() takes 4 positional arguments but 5 were given',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mTypeError\x1B[39m                                 Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[5]\x1B[39m\x1B[32m, line 2\x1B[39m\n' +
+      '\x1B[32m      1\x1B[39m x_arr = np.linspace(\x1B[32m41.4\x1B[39m, \x1B[32m41.7\x1B[39m, \x1B[32m100\x1B[39m)\n' +
+      '\x1B[32m----> \x1B[39m\x1B[32m2\x1B[39m y_arr = sigmoid(x_arr, \x1B[32m40\x1B[39m, \x1B[32m7\x1B[39m, \x1B[32m41.55\x1B[39m, \x1B[32m15\x1B[39m)\n' +
+      '\x1B[32m      3\x1B[39m \n' +
+      '\x1B[32m      4\x1B[39m plt.plot(x_arr, y_arr)\n' +
+      '\x1B[32m      5\x1B[39m plt.show()\n',
+    '\x1B[31mTypeError\x1B[39m: sigmoid() takes 4 positional arguments but 5 were given'
+  ]
+}
+12:28:01.381 [info] Starting Kernel (Python Path: /home/daq/my_venv/bin/python, Venv, 3.14.4) for '/home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb' (disableUI=false)
+12:28:02.127 [info] Process Execution: /home/daq/my_venv/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+12:28:02.176 [info] Process Execution: /home/daq/my_venv/bin/python -m ipykernel_launcher --f=/run/user/0/jupyter/runtime/kernel-v36950982b5be3aac34830d2f6d6d30df0bed9a90f.json
+    > cwd: /home/daq/3D_sensors/investigations/IR_YAxisScan
+12:28:02.286 [info] Process Execution: /home/daq/my_venv/bin/python -m pip list
+12:28:06.815 [info] Kernel successfully started
+12:29:48.776 [warn] Cell completed with errors [Iu [Error]: [Errno 2] No such file or directory: './TimestampFits/pos_42.4_40.9_105.0_ch0.png'
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'FileNotFoundError',
+  evalue: "[Errno 2] No such file or directory: './TimestampFits/pos_42.4_40.9_105.0_ch0.png'",
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mFileNotFoundError\x1B[39m                         Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[6]\x1B[39m\x1B[32m, line 70\x1B[39m, in \x1B[36mfit_gaus\x1B[39m\x1B[34m(hist, tag, output_folder, value_tag, plot_fits)\x1B[39m\n' +
+      '\x1B[32m     68\x1B[39m             plt.legend()\n' +
+      '\x1B[32m     69\x1B[39m             \x1B[38;5;66;03m# plt.show()\x1B[39;00m\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m70\x1B[39m             fig.savefig(f"./{output_folder}/{tag}.png")\n' +
+      '\x1B[32m     71\x1B[39m             \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[32m0\x1B[39m, \x1B[32m0\x1B[39m, \x1B[32m0\x1B[39m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/figure.py:3515\x1B[39m, in \x1B[36mFigure.savefig\x1B[39m\x1B[34m(self, fname, transparent, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   3514\x1B[39m         _recursively_make_axes_transparent(stack, ax)\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m3515\x1B[39m \x1B[30;43mself\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mcanvas\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mprint_figure\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mfname\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/backend_bases.py:2289\x1B[39m, in \x1B[36mFigureCanvasBase.print_figure\x1B[39m\x1B[34m(self, filename, dpi, facecolor, edgecolor, orientation, format, bbox_inches, pad_inches, bbox_extra_artists, backend, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   2288\x1B[39m     \x1B[38;5;28;01mwith\x1B[39;00m cbook._setattr_cm(\x1B[38;5;28mself\x1B[39m.figure, dpi=dpi):\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m2289\x1B[39m         result = \x1B[30;43mprint_method\x1B[39;49m\x1B[30;43m(\x1B[39;49m\n' +
+      '\x1B[32m   2290\x1B[39m \x1B[30;43m            \x1B[39;49m\x1B[30;43mfilename\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m   2291\x1B[39m \x1B[30;43m            \x1B[39;49m\x1B[30;43mfacecolor\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mfacecolor\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m   2292\x1B[39m \x1B[30;43m            \x1B[39;49m\x1B[30;43medgecolor\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43medgecolor\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m   2293\x1B[39m \x1B[30;43m            \x1B[39;49m\x1B[30;43morientation\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43morientation\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m   2294\x1B[39m \x1B[30;43m            \x1B[39;49m\x1B[30;43mbbox_inches_restore\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43m_bbox_inches_restore\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m   2295\x1B[39m \x1B[30;43m            \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n' +
+      '\x1B[32m   2296\x1B[39m \x1B[38;5;28;01mfinally\x1B[39;00m:\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/backend_bases.py:2146\x1B[39m, in \x1B[36mFigureCanvasBase._switch_canvas_and_return_print_method.<locals>.<lambda>\x1B[39m\x1B[34m(*args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   2145\x1B[39m     skip = optional_kws - {*inspect.signature(meth).parameters}\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m2146\x1B[39m     print_method = functools.wraps(meth)(\x1B[38;5;28;01mlambda\x1B[39;00m *args, **kwargs: \x1B[30;43mmeth\x1B[39;49m\x1B[30;43m(\x1B[39;49m\n' +
+      '\x1B[32m   2147\x1B[39m \x1B[30;43m        \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43margs\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m{\x1B[39;49m\x1B[30;43mk\x1B[39;49m\x1B[30;43m:\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mv\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43;01mfor\x1B[39;49;00m\x1B[30;43m \x1B[39;49m\x1B[30;43mk\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mv\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43;01min\x1B[39;49;00m\x1B[30;43m \x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mitems\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m)\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43;01mif\x1B[39;49;00m\x1B[30;43m \x1B[39;49m\x1B[30;43mk\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43;01mnot\x1B[39;49;00m\x1B[30;43m \x1B[39;49m\x1B[30;43;01min\x1B[39;49;00m\x1B[30;43m \x1B[39;49m\x1B[30;43mskip\x1B[39;49m\x1B[30;43m}\x1B[39;49m\x1B[30;43m)\x1B[39;49m)\n' +
+      '\x1B[32m   2148\x1B[39m \x1B[38;5;28;01melse\x1B[39;00m:  \x1B[38;5;66;03m# Let third-parties do as they see fit.\x1B[39;00m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/backends/backend_agg.py:537\x1B[39m, in \x1B[36mFigureCanvasAgg.print_png\x1B[39m\x1B[34m(self, filename_or_obj, metadata, pil_kwargs)\x1B[39m\n' +
+      '\x1B[32m    491\x1B[39m \x1B[38;5;250m\x1B[39m\x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m    492\x1B[39m \x1B[33;03mWrite the figure to a PNG file.\x1B[39;00m\n' +
+      '\x1B[32m    493\x1B[39m \n' +
+      "\x1B[32m   (...)\x1B[39m\x1B[32m    535\x1B[39m \x1B[33;03m    *metadata*, including the default 'Software' key.\x1B[39;00m\n" +
+      '\x1B[32m    536\x1B[39m \x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m537\x1B[39m \x1B[30;43mself\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43m_print_pil\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mfilename_or_obj\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m"\x1B[39;49m\x1B[30;43mpng\x1B[39;49m\x1B[30;43m"\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mpil_kwargs\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mmetadata\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/backends/backend_agg.py:486\x1B[39m, in \x1B[36mFigureCanvasAgg._print_pil\x1B[39m\x1B[34m(self, filename_or_obj, fmt, pil_kwargs, metadata)\x1B[39m\n' +
+      '\x1B[32m    485\x1B[39m FigureCanvasAgg.draw(\x1B[38;5;28mself\x1B[39m)\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m486\x1B[39m \x1B[30;43mmpl\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mimage\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mimsave\x1B[39;49m\x1B[30;43m(\x1B[39;49m\n' +
+      '\x1B[32m    487\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43mfilename_or_obj\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mself\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mbuffer_rgba\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m)\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mformat\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mfmt\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43morigin\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43m"\x1B[39;49m\x1B[30;43mupper\x1B[39;49m\x1B[30;43m"\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m    488\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43mdpi\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mself\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mfigure\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mdpi\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mmetadata\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mmetadata\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mpil_kwargs\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mpil_kwargs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/image.py:1729\x1B[39m, in \x1B[36mimsave\x1B[39m\x1B[34m(fname, arr, vmin, vmax, cmap, format, origin, dpi, metadata, pil_kwargs)\x1B[39m\n' +
+      '\x1B[32m   1728\x1B[39m pil_kwargs.setdefault(\x1B[33m"\x1B[39m\x1B[33mdpi\x1B[39m\x1B[33m"\x1B[39m, (dpi, dpi))\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m1729\x1B[39m \x1B[30;43mimage\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43msave\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mfname\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mpil_kwargs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/PIL/Image.py:2707\x1B[39m, in \x1B[36mImage.save\x1B[39m\x1B[34m(self, fp, format, **params)\x1B[39m\n' +
+      '\x1B[32m   2706\x1B[39m     \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m2707\x1B[39m         fp = \x1B[30;43mbuiltins\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mopen\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mfilename\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m"\x1B[39;49m\x1B[30;43mw+b\x1B[39;49m\x1B[30;43m"\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n' +
+      '\x1B[32m   2708\x1B[39m \x1B[38;5;28;01melse\x1B[39;00m:\n',
+    "\x1B[31mFileNotFoundError\x1B[39m: [Errno 2] No such file or directory: './TimestampFits/pos_42.4_40.9_105.0_ch0.png'",
+    '\nDuring handling of the above exception, another exception occurred:\n',
+    '\x1B[31mFileNotFoundError\x1B[39m                         Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[6]\x1B[39m\x1B[32m, line 123\x1B[39m\n' +
+      '\x1B[32m    119\x1B[39m             \x1B[38;5;66;03m# print(l)\x1B[39;00m\n' +
+      '\x1B[32m    120\x1B[39m             \x1B[38;5;66;03m# print("len(amp[l][:,0]): ", len(timestamps[l][:,0]))\x1B[39;00m\n' +
+      '\x1B[32m    121\x1B[39m \n' +
+      '\x1B[32m    122\x1B[39m             \x1B[38;5;28;01mif\x1B[39;00m (np.sum(timestamps[l][:,\x1B[32m1\x1B[39m]>\x1B[32m0\x1B[39m) > \x1B[32m0\x1B[39m):\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m123\x1B[39m                 fit_time_A, fit_time_mean, fit_time_sigma = fit_gaus(timestamps[l][:,\x1B[32m0\x1B[39m], l+\x1B[33m"_ch0"\x1B[39m, \x1B[33m"TimestampFits"\x1B[39m, \x1B[33m"Timestamp [ns]"\x1B[39m, \x1B[38;5;28;01mTrue\x1B[39;00m)\n' +
+      '\x1B[32m    124\x1B[39m                 mean_time_0    .append(fit_time_mean)\n' +
+      '\x1B[32m    125\x1B[39m                 mean_time_0_err.append(fit_time_sigma)\n' +
+      '\x1B[32m    126\x1B[39m \n',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[6]\x1B[39m\x1B[32m, line 70\x1B[39m, in \x1B[36mfit_gaus\x1B[39m\x1B[34m(hist, tag, output_folder, value_tag, plot_fits)\x1B[39m\n' +
+      '\x1B[32m     66\x1B[39m             ax.set_xlabel(value_tag)\n' +
+      '\x1B[32m     67\x1B[39m             ax.set_ylabel(\x1B[33m"Number of events"\x1B[39m)\n' +
+      '\x1B[32m     68\x1B[39m             plt.legend()\n' +
+      '\x1B[32m     69\x1B[39m             \x1B[38;5;66;03m# plt.show()\x1B[39;00m\n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m70\x1B[39m             fig.savefig(f"./{output_folder}/{tag}.png")\n' +
+      '\x1B[32m     71\x1B[39m             \x1B[38;5;28;01mreturn\x1B[39;00m \x1B[32m0\x1B[39m, \x1B[32m0\x1B[39m, \x1B[32m0\x1B[39m\n' +
+      '\x1B[32m     72\x1B[39m \n' +
+      '\x1B[32m     73\x1B[39m     \x1B[38;5;66;03m# params = curve_fit(gaus, x[0:nbins], y[0:nbins], p0=( np.max(y), np.mean(x), std ), bounds = bounds) # , p0=( np.mean(y), mean, np.std(hist[mask]) ) )\x1B[39;00m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/figure.py:3515\x1B[39m, in \x1B[36mFigure.savefig\x1B[39m\x1B[34m(self, fname, transparent, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   3513\x1B[39m     \x1B[38;5;28;01mfor\x1B[39;00m ax \x1B[38;5;129;01min\x1B[39;00m \x1B[38;5;28mself\x1B[39m.axes:\n' +
+      '\x1B[32m   3514\x1B[39m         _recursively_make_axes_transparent(stack, ax)\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m3515\x1B[39m \x1B[30;43mself\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mcanvas\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mprint_figure\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mfname\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/backend_bases.py:2289\x1B[39m, in \x1B[36mFigureCanvasBase.print_figure\x1B[39m\x1B[34m(self, filename, dpi, facecolor, edgecolor, orientation, format, bbox_inches, pad_inches, bbox_extra_artists, backend, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   2285\x1B[39m \x1B[38;5;28;01mtry\x1B[39;00m:\n' +
+      '\x1B[32m   2286\x1B[39m     \x1B[38;5;66;03m# _get_renderer may change the figure dpi (as vector formats\x1B[39;00m\n' +
+      '\x1B[32m   2287\x1B[39m     \x1B[38;5;66;03m# force the figure dpi to 72), so we need to set it again here.\x1B[39;00m\n' +
+      '\x1B[32m   2288\x1B[39m     \x1B[38;5;28;01mwith\x1B[39;00m cbook._setattr_cm(\x1B[38;5;28mself\x1B[39m.figure, dpi=dpi):\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m2289\x1B[39m         result = \x1B[30;43mprint_method\x1B[39;49m\x1B[30;43m(\x1B[39;49m\n' +
+      '\x1B[32m   2290\x1B[39m \x1B[30;43m            \x1B[39;49m\x1B[30;43mfilename\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m   2291\x1B[39m \x1B[30;43m            \x1B[39;49m\x1B[30;43mfacecolor\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mfacecolor\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m   2292\x1B[39m \x1B[30;43m            \x1B[39;49m\x1B[30;43medgecolor\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43medgecolor\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m   2293\x1B[39m \x1B[30;43m            \x1B[39;49m\x1B[30;43morientation\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43morientation\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m   2294\x1B[39m \x1B[30;43m            \x1B[39;49m\x1B[30;43mbbox_inches_restore\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43m_bbox_inches_restore\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m   2295\x1B[39m \x1B[30;43m            \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n' +
+      '\x1B[32m   2296\x1B[39m \x1B[38;5;28;01mfinally\x1B[39;00m:\n' +
+      '\x1B[32m   2297\x1B[39m     \x1B[38;5;28;01mif\x1B[39;00m bbox_inches \x1B[38;5;129;01mand\x1B[39;00m restore_bbox:\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/backend_bases.py:2146\x1B[39m, in \x1B[36mFigureCanvasBase._switch_canvas_and_return_print_method.<locals>.<lambda>\x1B[39m\x1B[34m(*args, **kwargs)\x1B[39m\n' +
+      '\x1B[32m   2142\x1B[39m     optional_kws = {  \x1B[38;5;66;03m# Passed by print_figure for other renderers.\x1B[39;00m\n' +
+      '\x1B[32m   2143\x1B[39m         \x1B[33m"\x1B[39m\x1B[33mdpi\x1B[39m\x1B[33m"\x1B[39m, \x1B[33m"\x1B[39m\x1B[33mfacecolor\x1B[39m\x1B[33m"\x1B[39m, \x1B[33m"\x1B[39m\x1B[33medgecolor\x1B[39m\x1B[33m"\x1B[39m, \x1B[33m"\x1B[39m\x1B[33morientation\x1B[39m\x1B[33m"\x1B[39m,\n' +
+      '\x1B[32m   2144\x1B[39m         \x1B[33m"\x1B[39m\x1B[33mbbox_inches_restore\x1B[39m\x1B[33m"\x1B[39m}\n' +
+      '\x1B[32m   2145\x1B[39m     skip = optional_kws - {*inspect.signature(meth).parameters}\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m2146\x1B[39m     print_method = functools.wraps(meth)(\x1B[38;5;28;01mlambda\x1B[39;00m *args, **kwargs: \x1B[30;43mmeth\x1B[39;49m\x1B[30;43m(\x1B[39;49m\n' +
+      '\x1B[32m   2147\x1B[39m \x1B[30;43m        \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43margs\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m{\x1B[39;49m\x1B[30;43mk\x1B[39;49m\x1B[30;43m:\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mv\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43;01mfor\x1B[39;49;00m\x1B[30;43m \x1B[39;49m\x1B[30;43mk\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mv\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43;01min\x1B[39;49;00m\x1B[30;43m \x1B[39;49m\x1B[30;43mkwargs\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mitems\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m)\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43;01mif\x1B[39;49;00m\x1B[30;43m \x1B[39;49m\x1B[30;43mk\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43;01mnot\x1B[39;49;00m\x1B[30;43m \x1B[39;49m\x1B[30;43;01min\x1B[39;49;00m\x1B[30;43m \x1B[39;49m\x1B[30;43mskip\x1B[39;49m\x1B[30;43m}\x1B[39;49m\x1B[30;43m)\x1B[39;49m)\n' +
+      '\x1B[32m   2148\x1B[39m \x1B[38;5;28;01melse\x1B[39;00m:  \x1B[38;5;66;03m# Let third-parties do as they see fit.\x1B[39;00m\n' +
+      '\x1B[32m   2149\x1B[39m     print_method = meth\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/backends/backend_agg.py:537\x1B[39m, in \x1B[36mFigureCanvasAgg.print_png\x1B[39m\x1B[34m(self, filename_or_obj, metadata, pil_kwargs)\x1B[39m\n' +
+      '\x1B[32m    490\x1B[39m \x1B[38;5;28;01mdef\x1B[39;00m\x1B[38;5;250m \x1B[39m\x1B[34mprint_png\x1B[39m(\x1B[38;5;28mself\x1B[39m, filename_or_obj, *, metadata=\x1B[38;5;28;01mNone\x1B[39;00m, pil_kwargs=\x1B[38;5;28;01mNone\x1B[39;00m):\n' +
+      '\x1B[32m    491\x1B[39m \x1B[38;5;250m    \x1B[39m\x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m    492\x1B[39m \x1B[33;03m    Write the figure to a PNG file.\x1B[39;00m\n' +
+      '\x1B[32m    493\x1B[39m \n' +
+      "\x1B[32m   (...)\x1B[39m\x1B[32m    535\x1B[39m \x1B[33;03m        *metadata*, including the default 'Software' key.\x1B[39;00m\n" +
+      '\x1B[32m    536\x1B[39m \x1B[33;03m    """\x1B[39;00m\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m537\x1B[39m     \x1B[30;43mself\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43m_print_pil\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mfilename_or_obj\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m"\x1B[39;49m\x1B[30;43mpng\x1B[39;49m\x1B[30;43m"\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mpil_kwargs\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mmetadata\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/backends/backend_agg.py:486\x1B[39m, in \x1B[36mFigureCanvasAgg._print_pil\x1B[39m\x1B[34m(self, filename_or_obj, fmt, pil_kwargs, metadata)\x1B[39m\n' +
+      '\x1B[32m    481\x1B[39m \x1B[38;5;250m\x1B[39m\x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m    482\x1B[39m \x1B[33;03mDraw the canvas, then save it using `.image.imsave` (to which\x1B[39;00m\n' +
+      '\x1B[32m    483\x1B[39m \x1B[33;03m*pil_kwargs* and *metadata* are forwarded).\x1B[39;00m\n' +
+      '\x1B[32m    484\x1B[39m \x1B[33;03m"""\x1B[39;00m\n' +
+      '\x1B[32m    485\x1B[39m FigureCanvasAgg.draw(\x1B[38;5;28mself\x1B[39m)\n' +
+      '\x1B[32m--> \x1B[39m\x1B[32m486\x1B[39m \x1B[30;43mmpl\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mimage\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mimsave\x1B[39;49m\x1B[30;43m(\x1B[39;49m\n' +
+      '\x1B[32m    487\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43mfilename_or_obj\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mself\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mbuffer_rgba\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43m)\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mformat\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mfmt\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43morigin\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43m"\x1B[39;49m\x1B[30;43mupper\x1B[39;49m\x1B[30;43m"\x1B[39;49m\x1B[30;43m,\x1B[39;49m\n' +
+      '\x1B[32m    488\x1B[39m \x1B[30;43m    \x1B[39;49m\x1B[30;43mdpi\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mself\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mfigure\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mdpi\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mmetadata\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mmetadata\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43mpil_kwargs\x1B[39;49m\x1B[30;43m=\x1B[39;49m\x1B[30;43mpil_kwargs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/matplotlib/image.py:1729\x1B[39m, in \x1B[36mimsave\x1B[39m\x1B[34m(fname, arr, vmin, vmax, cmap, format, origin, dpi, metadata, pil_kwargs)\x1B[39m\n' +
+      '\x1B[32m   1727\x1B[39m pil_kwargs.setdefault(\x1B[33m"\x1B[39m\x1B[33mformat\x1B[39m\x1B[33m"\x1B[39m, \x1B[38;5;28mformat\x1B[39m)\n' +
+      '\x1B[32m   1728\x1B[39m pil_kwargs.setdefault(\x1B[33m"\x1B[39m\x1B[33mdpi\x1B[39m\x1B[33m"\x1B[39m, (dpi, dpi))\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m1729\x1B[39m \x1B[30;43mimage\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43msave\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mfname\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43m*\x1B[39;49m\x1B[30;43mpil_kwargs\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n',
+    '\x1B[36mFile \x1B[39m\x1B[32m/home/daq/my_venv/lib/python3.14/site-packages/PIL/Image.py:2707\x1B[39m, in \x1B[36mImage.save\x1B[39m\x1B[34m(self, fp, format, **params)\x1B[39m\n' +
+      '\x1B[32m   2705\x1B[39m         fp = builtins.open(filename, \x1B[33m"\x1B[39m\x1B[33mr+b\x1B[39m\x1B[33m"\x1B[39m)\n' +
+      '\x1B[32m   2706\x1B[39m     \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[32m-> \x1B[39m\x1B[32m2707\x1B[39m         fp = \x1B[30;43mbuiltins\x1B[39;49m\x1B[30;43m.\x1B[39;49m\x1B[30;43mopen\x1B[39;49m\x1B[30;43m(\x1B[39;49m\x1B[30;43mfilename\x1B[39;49m\x1B[30;43m,\x1B[39;49m\x1B[30;43m \x1B[39;49m\x1B[30;43m"\x1B[39;49m\x1B[30;43mw+b\x1B[39;49m\x1B[30;43m"\x1B[39;49m\x1B[30;43m)\x1B[39;49m\n' +
+      '\x1B[32m   2708\x1B[39m \x1B[38;5;28;01melse\x1B[39;00m:\n' +
+      '\x1B[32m   2709\x1B[39m     fp = cast(\x1B[33m"\x1B[39m\x1B[33mIO[bytes]\x1B[39m\x1B[33m"\x1B[39m, fp)\n',
+    "\x1B[31mFileNotFoundError\x1B[39m: [Errno 2] No such file or directory: './TimestampFits/pos_42.4_40.9_105.0_ch0.png'"
+  ]
+}
+12:31:18.566 [info] Interrupt kernel execution
+12:31:18.567 [info] Interrupt requested /home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb
+12:31:18.568 [info] Interrupt kernel execution
+12:31:18.568 [info] Interrupting kernel: python3144jvsc74a57bd091a68fcde2d23bab329ef993d55130d0e12dab49717beab3f66c1e87a3c49194
+12:31:18.568 [info] Interrupting kernel via SIGINT
+12:31:28.693 [info] Interrupt requested & sent for /home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb in notebookEditor.
+12:31:30.330 [info] Restart requested /home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb
+12:31:30.497 [info] Process Execution: /home/daq/my_venv/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+12:31:30.863 [info] Process Execution: /home/daq/my_venv/bin/python -m ipykernel_launcher --f=/run/user/0/jupyter/runtime/kernel-v3fe0fbe60b11a9be3c90798461ad188e6088e6cd4.json
+    > cwd: /home/daq/3D_sensors/investigations/IR_YAxisScan
+12:31:31.920 [info] Restarted 63bf2a56-9fde-4f71-8f85-ed35cb10daaa
+12:32:57.369 [info] Interrupt kernel execution
+12:32:57.371 [info] Interrupt requested /home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb
+12:32:57.375 [info] Interrupt kernel execution
+12:32:57.375 [info] Interrupting kernel: python3144jvsc74a57bd091a68fcde2d23bab329ef993d55130d0e12dab49717beab3f66c1e87a3c49194
+12:32:57.375 [info] Interrupting kernel via SIGINT
+12:32:59.819 [warn] Cell completed with errors (cancelled)
+12:32:59.823 [warn] Cancel all remaining cells due to cancellation or failure in execution
+12:32:59.827 [info] Interrupt requested & sent for /home/daq/3D_sensors/investigations/IR_YAxisScan/YScanAnalysis.ipynb in notebookEditor.
+13:54:02.293 [warn] Cell completed with errors [Iu [Error]: only integer scalar arrays can be converted to a scalar index
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'TypeError',
+  evalue: 'only integer scalar arrays can be converted to a scalar index',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mTypeError\x1B[39m                                 Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[12]\x1B[39m\x1B[32m, line 27\x1B[39m\n' +
+      '\x1B[32m     23\x1B[39m \n' +
+      '\x1B[32m     24\x1B[39m MT = mean_time_3\n' +
+      '\x1B[32m     25\x1B[39m MT_err = mean_time_3_err\n' +
+      '\x1B[32m     26\x1B[39m \n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m27\x1B[39m t0 = MT[mask][\x1B[32m0\x1B[39m]\n' +
+      '\x1B[32m     28\x1B[39m t0_err = MT_err[mask][\x1B[32m0\x1B[39m]\n' +
+      '\x1B[32m     29\x1B[39m dt = []\n' +
+      '\x1B[32m     30\x1B[39m dt_err = []\n',
+    '\x1B[31mTypeError\x1B[39m: only integer scalar arrays can be converted to a scalar index'
+  ]
+}
+13:54:59.374 [warn] Cell completed with errors [Iu [Error]: only integer scalar arrays can be converted to a scalar index
+	at n.execute (~/.vscode/extensions/ms-toolsai.jupyter-2025.9.1-linux-x64/dist/extension.node.js:302:4958)] {
+  ename: 'TypeError',
+  evalue: 'only integer scalar arrays can be converted to a scalar index',
+  traceback: [
+    '\x1B[31m---------------------------------------------------------------------------\x1B[39m',
+    '\x1B[31mTypeError\x1B[39m                                 Traceback (most recent call last)',
+    '\x1B[36mCell\x1B[39m\x1B[36m \x1B[39m\x1B[32mIn[13]\x1B[39m\x1B[32m, line 27\x1B[39m\n' +
+      '\x1B[32m     23\x1B[39m \n' +
+      '\x1B[32m     24\x1B[39m MT = mean_time_3\n' +
+      '\x1B[32m     25\x1B[39m MT_err = mean_time_3_err\n' +
+      '\x1B[32m     26\x1B[39m \n' +
+      '\x1B[32m---> \x1B[39m\x1B[32m27\x1B[39m t0 = MT[mask][\x1B[32m0\x1B[39m]\n' +
+      '\x1B[32m     28\x1B[39m t0_err = MT_err[mask][\x1B[32m0\x1B[39m]\n' +
+      '\x1B[32m     29\x1B[39m dt = []\n' +
+      '\x1B[32m     30\x1B[39m dt_err = []\n',
+    '\x1B[31mTypeError\x1B[39m: only integer scalar arrays can be converted to a scalar index'
+  ]
+}
