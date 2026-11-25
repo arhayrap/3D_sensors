@@ -619,3 +619,10 @@
 	at handleMessage (/root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/vendor.bundle.js:15:1121299)
 	at Immediate.<anonymous> (/root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/vendor.bundle.js:15:1120770)
 	at process.processImmediate (node:internal/timers:574:21)
+2026-11-25 15:54:00.672 [error] [ms-python.vscode-pylance] provider FAILED
+2026-11-25 15:54:00.693 [error] Error: Request textDocument/codeAction failed with message: request cancelled
+	at handleResponse (/root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/vendor.bundle.js:16:418)
+	at handleMessage (/root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/vendor.bundle.js:15:1121299)
+	at Immediate.<anonymous> (/root/.vscode/extensions/ms-python.vscode-pylance-2026.4.1/dist/vendor.bundle.js:15:1120770)
+	at process.processImmediate (node:internal/timers:574:21)
+2026-11-25 16:15:12.288 [warning] onWillSaveNotebookDocument-listener from extension {"value":"vscode.ipynb","_lower":"vscode.ipynb"} ignored due to invalid data

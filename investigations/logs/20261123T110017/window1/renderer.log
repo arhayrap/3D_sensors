@@ -3246,3 +3246,506 @@
 2026-11-24 16:50:23.165 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
 2026-11-24 16:50:23.190 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
 2026-11-24 16:50:23.194 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 13:04:50.442 [warning] [CloudSandboxApi] No 'github' session with scopes [read:user, user:email, repo, workflow]
+2026-11-25 13:04:50.442 [warning] [CloudSandboxAgentHost] Discovery failed: Connecting to a cloud sandbox requires a signed-in GitHub account.
+2026-11-25 13:04:50.473 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 13:04:50.480 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 13:04:50.500 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 13:04:50.529 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 13:04:50.561 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 13:04:50.582 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 13:04:50.605 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 13:04:50.619 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 13:04:50.628 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 13:04:50.640 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 13:04:50.655 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 13:04:50.679 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 13:04:54.127 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at bre.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62110)
+    at n7e._doRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:69317)
+    at n7e.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:68713)
+    at new s7e (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:78678)
+    at s._createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:2000)
+    at s.createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:1440)
+    at yre.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:132607)
+    at oJi.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:361:2164)
+    at a_i.insertItemInDOM (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:23870)
+    at h (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22160)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22429
+    at zJt.transact (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:5970)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22332)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2203:21877)
+    at a_i.onScroll (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:29080)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A._deliverQueue (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3758)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:4093)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:36792)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at yN._setState (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:23224)
+    at yN.setScrollPositionNow (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21617)
+    at yN.setScrollPositionSmooth (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21708)
+    at Kz._onMouseWheel (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:43046)
+    at HTMLDivElement.i (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:41572)
+2026-11-25 13:04:54.195 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at bre.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62110)
+    at n7e._doRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:69317)
+    at n7e.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:68713)
+    at new s7e (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:78678)
+    at s._createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:2000)
+    at s.createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:1440)
+    at yre.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:132607)
+    at oJi.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:361:2164)
+    at a_i.insertItemInDOM (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:23870)
+    at h (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22160)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22429
+    at zJt.transact (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:5970)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22332)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2203:21877)
+    at a_i.onScroll (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:29080)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A._deliverQueue (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3758)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:4093)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:36792)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at yN._setState (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:23224)
+    at yN.setScrollPositionNow (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21617)
+    at yN.setScrollPositionSmooth (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21708)
+    at Kz._onMouseWheel (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:43046)
+    at HTMLDivElement.i (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:41572)
+2026-11-25 13:04:54.218 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at Fko._event (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Fko._updateParentChangeListener (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2014:21039)
+    at new Fko (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2014:20663)
+    at Fko.createScoped (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2014:18405)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:64778)
+    at bre.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62110)
+    at n7e._doRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:69317)
+    at n7e.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:68713)
+    at new s7e (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:78678)
+    at s._createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:2000)
+    at s.createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:1440)
+    at yre.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:132607)
+    at oJi.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:361:2164)
+    at a_i.insertItemInDOM (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:23870)
+    at h (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22160)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22429
+    at zJt.transact (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:5970)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22332)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2203:21877)
+    at a_i.onScroll (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:29080)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A._deliverQueue (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3758)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:4093)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:36792)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at yN._setState (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:23224)
+    at yN.setScrollPositionNow (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21617)
+    at yN.setScrollPositionSmooth (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21708)
+    at Kz._onMouseWheel (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:43046)
+    at HTMLDivElement.i (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:41572)
+2026-11-25 14:46:17.090 [warning] [CloudSandboxApi] No 'github' session with scopes [read:user, user:email, repo, workflow]
+2026-11-25 14:46:17.160 [warning] [CloudSandboxAgentHost] Discovery failed: Connecting to a cloud sandbox requires a signed-in GitHub account.
+2026-11-25 14:46:17.161 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 14:46:17.161 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 14:46:17.162 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 14:46:17.162 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 14:46:17.163 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 14:46:17.163 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 14:46:17.164 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 14:46:17.164 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 14:46:17.165 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 14:46:17.165 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 14:46:17.166 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 14:46:17.166 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 14:46:21.765 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at bre.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62110)
+    at n7e._doRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:69317)
+    at n7e.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:68713)
+    at new s7e (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:78678)
+    at s._createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:2000)
+    at s.createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:1440)
+    at yre.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:132607)
+    at oJi.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:361:2164)
+    at a_i.insertItemInDOM (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:23870)
+    at h (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22160)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22429
+    at zJt.transact (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:5970)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22332)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2203:21877)
+    at a_i.onScroll (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:29080)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A._deliverQueue (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3758)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:4093)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:36792)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at yN._setState (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:23224)
+    at yN.setScrollPositionNow (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21617)
+    at yN.setScrollPositionSmooth (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21708)
+    at Kz._onMouseWheel (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:43046)
+    at HTMLDivElement.i (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:41572)
+2026-11-25 15:30:08.466 [warning] [CloudSandboxApi] No 'github' session with scopes [read:user, user:email, repo, workflow]
+2026-11-25 15:30:08.467 [warning] [CloudSandboxAgentHost] Discovery failed: Connecting to a cloud sandbox requires a signed-in GitHub account.
+2026-11-25 15:30:08.470 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 15:30:08.471 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 15:30:08.486 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 15:30:08.487 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 15:30:08.520 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 15:30:08.521 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 15:30:08.552 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 15:30:08.552 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 15:30:08.571 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 15:30:08.587 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 15:30:08.603 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 15:30:08.605 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 15:42:14.559 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 15:42:14.560 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 15:42:14.616 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 15:42:14.616 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 15:42:14.619 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 15:42:14.620 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 15:42:14.634 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 15:42:14.635 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 15:42:14.643 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 15:42:14.648 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 15:42:14.660 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 15:42:14.669 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 15:45:33.999 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at bre.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62110)
+    at n7e._doRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:69317)
+    at n7e.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:68713)
+    at new s7e (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:78678)
+    at s._createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:2000)
+    at s.createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:1440)
+    at yre.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:132607)
+    at oJi.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:361:2164)
+    at a_i.insertItemInDOM (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:23870)
+    at h (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22160)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22429
+    at zJt.transact (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:5970)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22332)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2203:21877)
+    at a_i.onScroll (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:29080)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A._deliverQueue (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3758)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:4093)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:36792)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at yN._setState (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:23224)
+    at yN.setScrollPositionNow (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21617)
+    at yN.setScrollPositionSmooth (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21708)
+    at Kz._onMouseWheel (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:43046)
+    at HTMLDivElement.i (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:41572)
+2026-11-25 15:45:59.847 [warning] [CloudSandboxApi] No 'github' session with scopes [read:user, user:email, repo, workflow]
+2026-11-25 15:45:59.848 [warning] [CloudSandboxAgentHost] Discovery failed: Connecting to a cloud sandbox requires a signed-in GitHub account.
+2026-11-25 15:50:58.638 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at bre.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62110)
+    at n7e._doRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:69317)
+    at n7e.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:68713)
+    at new s7e (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:78678)
+    at s._createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:2000)
+    at s.createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:1440)
+    at yre.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:132607)
+    at oJi.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:361:2164)
+    at a_i.insertItemInDOM (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:23870)
+    at h (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22160)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22429
+    at zJt.transact (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:5970)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22332)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2203:21877)
+    at a_i.onScroll (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:29080)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A._deliverQueue (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3758)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:4093)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:36792)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at yN._setState (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:23224)
+    at yN.setScrollPositionNow (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21617)
+    at yN.setScrollPositionSmooth (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21708)
+    at Kz._onMouseWheel (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:43046)
+    at HTMLDivElement.i (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:41572)
+2026-11-25 15:56:13.674 [error] [Extension Host] (node:756910) TimeoutNegativeWarning: -1 is a negative number.
+Timeout duration was set to 1.
+2026-11-25 15:57:32.305 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at bre.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62110)
+    at n7e._doRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:69317)
+    at n7e.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:68713)
+    at new s7e (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:78678)
+    at s._createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:2000)
+    at s.createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:1440)
+    at yre.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:132607)
+    at oJi.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:361:2164)
+    at a_i.insertItemInDOM (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:23870)
+    at h (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22160)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22429
+    at zJt.transact (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:5970)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22332)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2203:21877)
+    at a_i.onScroll (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:29080)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A._deliverQueue (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3758)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:4093)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:36792)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at yN._setState (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:23224)
+    at yN.setScrollPositionNow (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21617)
+    at yN.setScrollPositionSmooth (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21708)
+    at Kz._onMouseWheel (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:43046)
+    at HTMLDivElement.i (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:41572)
+2026-11-25 16:01:19.591 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at bre.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62110)
+    at n7e._doRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:69317)
+    at n7e.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:68713)
+    at new s7e (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:78678)
+    at s._createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:2000)
+    at s.createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:1440)
+    at yre.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:132607)
+    at oJi.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:361:2164)
+    at a_i.insertItemInDOM (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:23870)
+    at h (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22160)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22429
+    at zJt.transact (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:5970)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22332)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2203:21877)
+    at a_i.onScroll (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:29080)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A._deliverQueue (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3758)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:4093)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:36792)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at yN._setState (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:23224)
+    at yN.setScrollPositionNow (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21617)
+    at yN.setScrollPositionSmooth (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21708)
+    at Kz._onMouseWheel (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:43046)
+    at HTMLDivElement.i (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:41572)
+2026-11-25 16:07:17.445 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at bre.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62110)
+    at n7e._doRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:69317)
+    at n7e.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:68713)
+    at new s7e (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:78678)
+    at s._createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:2000)
+    at s.createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:1440)
+    at yre.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:132607)
+    at oJi.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:361:2164)
+    at a_i.insertItemInDOM (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:23870)
+    at h (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22160)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22429
+    at zJt.transact (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:5970)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22332)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2203:21877)
+    at a_i.onScroll (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:29080)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A._deliverQueue (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3758)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:4093)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:36792)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at yN._setState (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:23224)
+    at yN.setScrollPositionNow (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21617)
+    at yN.setScrollPositionSmooth (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21708)
+    at Kz._onMouseWheel (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:43046)
+    at HTMLDivElement.i (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:41572)
+2026-11-25 16:10:07.024 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at bre.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62110)
+    at n7e._doRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:69317)
+    at n7e.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:68713)
+    at new s7e (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:78678)
+    at s._createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:2000)
+    at s.createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:1440)
+    at yre.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:132607)
+    at oJi.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:361:2164)
+    at a_i.insertItemInDOM (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:23870)
+    at h (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22160)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22429
+    at zJt.transact (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:5970)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22332)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2203:21877)
+    at a_i.onScroll (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:29080)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A._deliverQueue (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3758)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:4093)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:36792)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at yN._setState (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:23224)
+    at yN.setScrollPositionNow (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21617)
+    at yN.setScrollPositionSmooth (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21708)
+    at Kz._onMouseWheel (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:43046)
+    at HTMLDivElement.i (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:41572)
+2026-11-25 16:14:35.458 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at bre.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62110)
+    at n7e._doRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:69317)
+    at n7e.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:68713)
+    at new s7e (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:78678)
+    at s._createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:2000)
+    at s.createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:1440)
+    at yre.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:132607)
+    at oJi.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:361:2164)
+    at a_i.insertItemInDOM (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:23870)
+    at h (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22160)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22429
+    at zJt.transact (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:5970)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22332)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2203:21877)
+    at a_i.onScroll (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:29080)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A._deliverQueue (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3758)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:4093)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:36792)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at yN._setState (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:23224)
+    at yN.setScrollPositionNow (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21617)
+    at yN.setScrollPositionSmooth (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21708)
+    at Kz._onMouseWheel (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:43046)
+    at HTMLDivElement.i (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:41572)
+2026-11-25 16:18:31.833 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at bre.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62110)
+    at n7e._doRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:69317)
+    at n7e.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:68713)
+    at new s7e (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:78678)
+    at s._createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:2000)
+    at s.createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:1440)
+    at yre.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:132607)
+    at oJi.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:361:2164)
+    at a_i.insertItemInDOM (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:23870)
+    at h (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22160)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22429
+    at zJt.transact (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:5970)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22332)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2203:21877)
+    at a_i.onScroll (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:29080)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A._deliverQueue (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3758)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:4093)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:36792)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at yN._setState (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:23224)
+    at yN.setScrollPositionNow (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21617)
+    at yN.setScrollPositionSmooth (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21708)
+    at Kz._onMouseWheel (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:43046)
+    at HTMLDivElement.i (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:41572)
+2026-11-25 16:21:44.775 [warning] [CloudSandboxApi] No 'github' session with scopes [read:user, user:email, repo, workflow]
+2026-11-25 16:21:44.775 [warning] [CloudSandboxAgentHost] Discovery failed: Connecting to a cloud sandbox requires a signed-in GitHub account.
+2026-11-25 16:21:44.776 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 16:21:44.776 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 16:21:44.776 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 16:21:44.777 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 16:21:44.777 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 16:21:44.777 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 16:21:44.777 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 16:21:44.778 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 16:21:44.778 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 16:21:44.778 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 16:21:44.778 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 16:21:44.779 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 16:43:15.032 [warning] [CloudSandboxApi] No 'github' session with scopes [read:user, user:email, repo, workflow]
+2026-11-25 16:43:15.032 [warning] [CloudSandboxAgentHost] Discovery failed: Connecting to a cloud sandbox requires a signed-in GitHub account.
+2026-11-25 16:43:15.034 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 16:43:15.037 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 16:43:15.051 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 16:43:15.058 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 16:43:15.336 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 16:43:15.362 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 16:43:15.374 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 16:43:15.452 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 16:43:15.468 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 16:43:15.525 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com
+2026-11-25 16:43:15.592 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 16:43:15.595 [info] [AgentHost] No signed-in session resolved for resource: https://api.github.com/repos
+2026-11-25 16:44:24.596 [error] Error
+    at s.create (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:28:18540)
+    at sQ._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2425)
+    at Object.u [as onWillAddFirstListener] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:562:147432)
+    at Fwt._event [as onDidChange] (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:2677)
+    at bre._attachToolbar (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:65232)
+    at bre.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:62110)
+    at n7e._doRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:69317)
+    at n7e.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:68713)
+    at new s7e (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:78678)
+    at s._createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:2000)
+    at s.createInstance (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2046:1440)
+    at yre.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2408:132607)
+    at oJi.renderElement (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:361:2164)
+    at a_i.insertItemInDOM (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:23870)
+    at h (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22160)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22429
+    at zJt.transact (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:5970)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:22332)
+    at a_i.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2203:21877)
+    at a_i.onScroll (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:318:29080)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A._deliverQueue (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3758)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:4093)
+    at PVe.value (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:36792)
+    at A._deliver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3669)
+    at A.fire (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:30:3988)
+    at yN._setState (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:23224)
+    at yN.setScrollPositionNow (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21617)
+    at yN.setScrollPositionSmooth (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:39:21708)
+    at Kz._onMouseWheel (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:43046)
+    at HTMLDivElement.i (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:116:41572)

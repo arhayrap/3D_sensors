@@ -262,6 +262,7 @@ def calc_horizontal_array(points_per_frame,horizontal_interval,horizontal_offset
 sourceFiles=[]
 inputFiles=[]
 for ic in range(nchan):
+        # this_file = "%s/F%i--just_save_trigger.trc" % (RawDataPath, ic+1)
         # this_file = "%s/F%i--DJ100W50B9_strip3mm_bv120_mcp4400_trigExt_MCP_channel_only_3000.trc" % (RawDataPath, ic+1)
         this_file = "%s/%s%i--%s" % (RawDataPath, args.inputFilePattern.split("--")[0][0], ic+1, args.inputFilePattern.split("--")[1])
         print(this_file)
